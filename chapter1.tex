@@ -1,0 +1,529 @@
+\chapter{Superfield supergravity and component reduction}
+\label{chap:sugra}
+
+There are three off-shell formulations of $\cN=1$ superfield supergravity: (i) old-minimal supergravity\footnote{In appendix \ref{app:alt_sugra} we present an alternative realization of old-minimal supergravity.} \cite{Ferrara:1978em,Grimm:1977kp,Stelle:1978ye,Wess:1977fn,Wess:1978bu}; (ii) non-minimal supergravity \cite{Breitenlohner:1977jn,Siegel:1978mj}; and (iii) new-minimal supergravity \cite{Akulov:1977bu,Sohnius:1981tp}. Each corresponds to a different way of gauge-fixing 4D, $\cN=1$ conformal supergravity to produce Einstein supergravity. The dynamical objects describing Einstein supergravity are then the gravitational superfield $H^m={\bar H}^m$ and one of the following compensating superfields: (i) the chiral compensator for old-minimal supergravity; (ii) the complex linear compensator for non-minimal supergravity; and (iii) the real linear compensator for new-minimal supergravity. The supergravity multiplet for each formulation contains the graviton and gravitino as dynamical fields, but each differs in their auxiliary field content. The non-minimal multiplet has ($20+20$) bosonic and fermionic degrees of freedom, while the two minimal formulations, in terms of different sets of auxiliary fields, each have \mbox{($12+12$)}. In the case of pure supergravity, the three off-shell formulations are classically equivalent, {\it i.e.} they lead to the same dynamics on the mass shell. 
+
+Old-minimal supergravity plays an important role in that the other formulations may be treated as a super-Weyl invariant coupling of old-minimal supergravity to some special matter superfields. Even so, in certain circumstances, it is advantageous to formulate some problems in either the new- or non-minimal supergravity settings. In particular, coupling to K{\"a}hler sigma models is most natural in the new-minimal supergravity framework; a fact that we will exploit later when we couple K{\"a}hler sigma models to nonlinear self-dual electrodynamics.
+
+In this chapter we recall salient points of the old- and new-minimal formulations\footnote{Non-minimal supergravity does not lead to interesting matter couplings \cite{Buchbinder:1998qv}.} of $\cN=1$ supergravity (see \cite{Gates:1983nr,Bagger:1990qh,Buchbinder:1998qv} for more details) and also review the general procedure of reducing locally supersymmetric actions from superfields to components.
+
+
+\vskip0.5cm
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\section{Old-minimal supergravity}
+\noindent To formulate gravity, Einstein introduced the concept of a curved spacetime. Likewise, when formulating supergravity theories, it is useful to introduce the concept of a curved superspace. Using the notation\footnote{In particular, $z^M = (x^m, \theta^\m, {\bar \theta}_{\dot \m})$ are the coordinates of $\cN=1$ curved superspace, \mbox{${\rm d}^8 z={\rm d}^4 x\,{\rm d}^2 \theta\,{\rm d}^2 {\bar \theta}$} is the full flat superspace measure, and ${\rm d}^6 z={\rm d}^4 x\,{\rm d}^2 \theta$ is the measure in the chiral subspace.} and conventions as indicated in appendix \ref{app:conventions}, the supergeometry of $\cN=1$ curved superspace is described by the covariant derivatives
+\bea
+\label{eq:supergeometry}
+&&\qquad\qquad\qquad
+\cD_A = (\cD_a , \cD_\a ,{\bar \cD}^\ad ) = E_A + \O_A~, \\
+&&E_A = E_A{}^M \partial_M  ~, \quad\qquad
+\O_A = \frac{1}{2}\,\O_A{}^{bc} M_{bc}
+= \O_A{}^{\b \g} M_{\b \g}
++\O_A{}^{\bd \gd} {\bar M}_{\bd \gd} ~,\non
+\eea	
+where $E_A{}^M$ is the supervielbein, $\O_{A}$ is the Lorentz superconnection and $M_{bc} \Leftrightarrow (M_{\b\g},{\bar M}_{\bd\gd})$ are the Lorentz generators. The supertorsion and supercurvature are defined by the covariant derivative algebra as follows:
+\be
+[\cD_{A},\cD_{B}\}={T_{AB}}^{C}\cD_{C}+R_{AB}~.
+\ee
+The supergeometry (\ref{eq:supergeometry}) proves to be too general to describe Einstein supergravity. To obtain the correct geometry, one must impose the following supertorsion constraints:
+\bea
+\label{eq:torsion constraints}
+&&{T_{\a\b}}^{C}=0~,\quad\qquad
+{T_{\ad\bd}}^{C}=0~,\quad\qquad
+{T_{\a\ad}}^{B}+2{\rm i}\,{\d_{c}}^{B} (\s^{c})_{\a\ad}=0~,\non\\
+&&\phantom{{T_{\a\b}}^{C}=0}
+{R_{\a\ad}}^{cd}=0~,\quad\qquad
+{T_{\a b}}^{c}=0~,\quad\qquad
+{T_{\ad b}}^{c}=0~.
+\eea
+The covariant derivatives then obey the following algebra (see appendix \ref{app:conventions} for useful identities related to this algebra):
+\bea
+\label{eq:Dalgebra}
+&& \qquad \qquad \qquad 
+\{ \cD_\a , {\bar \cD}_\ad \} = -2{\rm i} \cD_{\a \ad} ~, \\
+&& \quad \{\cD_\a, \cD_\b \} = -4{\bar R} M_{\a \b}~, \qquad
+\{ {\bar \cD}_\ad, {\bar \cD}_\bd \} = - 4R {\bar M}_{\ad \bd}~,  \non \\
+\left[ { \bar \cD}_{\ad} , \cD_{ \b \bd } \right]
+\!&\!=\!&\!
+-{\rm i}{\ve}_{\ad \bd}
+\Big(R\,\cD_\b + G_\b{}^{\dot{\g}}  {\bar \cD}_{\dot{\g}}
+-({\bar \cD}^\gd G_\b{}^{\dot{\d}})
+{\bar M}_{\gd \dot{\d}}
++2W_\b{}^{\g \d}
+M_{\g \d} \Big)
+- {\rm i} (\cD_\b R)  {\bar M}_{\ad \bd}~,  \non  \\
+\left[ \cD_{\a} , \cD_{ \b \bd } \right]
+\!&\!=\!&\!
+\phantom{-}{\rm i}{\ve}_{\a \b}
+\Big({\bar R}\,{\bar \cD}_\bd + G^\g{}_\bd \cD_\g
+- (\cD^\g G^\d{}_\bd)  M_{\g \d}
++2{\bar W}_\bd{}^{\gd \dot{\d}}
+{\bar M}_{\gd \dot{\d} }  \Big)
++ {\rm i} ({\bar \cD}_\bd {\bar R})  M_{\a \b}~,  \non
+\eea
+where the tensors $R$, $G_a = {\bar G}_a$ and $W_{\a \b \g} = W_{(\a \b\g)}$ satisfy the Bianchi identities
+\bea
+\label{eq:sugra bianchi}
+{\bar \cD}_\ad R= {\bar \cD}_\ad W_{\a \b \g} = 0~, \quad
+{\bar \cD}^\gd G_{\a \gd} = \cD_\a R~, \quad
+\cD^\g W_{\a \b \g} = {\rm i} \,\cD_{(\a }{}^\gd G_{\b) \gd}~.
+\eea
+Modulo purely gauge degrees of freedom, all geometric objects -- the supervielbein and the superconnection -- can be expressed in terms of three unconstrained superfields (known as the prepotentials of old-minimal supergravity): gravitational superfield $H^m={\bar H}^m$, chiral compensator $\vf$ (${\bar E}_\ad \vf=0$) and its conjugate ${\bar \vf}$.
+
+The action for old-minimal supergravity is given in terms of the super-Poincar{\'e} invariant full curved superspace measure\footnote{We follow the conventions of \cite{Buchbinder:1998qv}, which slightly differ from those of \cite{Bagger:1990qh}. To convert to the conventions of \cite{Bagger:1990qh} one makes the replacements $E\to E^{-1}$, $R\to 2R$, $G_{a}\to 2G_{a}$ and $W_{\a\b\g}\to 2W_{\a\b\g}$.}, ${\rm d}^8z\,E^{-1}$, where $E={\rm Ber}(E_A{}^M)$ is the Berezinian or superdeterminant of the supervielbein. The action takes the form
+\be
+\label{eq:omsg}
+S_{\rm SG,old} = - 3
+{\int\!\!{\rm d}^8z}\,E^{-1}~,
+\ee
+where we have set the gravitational coupling constant to one.
+
+In the superspace geometry (\ref{eq:supergeometry}), integration by parts works as
+\be
+{\int\!\!{\rm d}^8z}\,E^{-1}(-1)^{\e_A}\cD_{A}V^{A}=
+{\int\!\!{\rm d}^8z}\,E^{-1}(-1)^{\e_B}V^{A}{T_{AB}}^{B}~,
+\ee
+where $\e_A$ is the Grassmann parity of $A$, {\it i.e.} $\e_A=1$, if $A$ is a spinor index, and $\e_A=0$ otherwise. Consequently, in old-minimal supergravity, the torsion constraints (\ref{eq:torsion constraints}) imply
+\be
+{\int\!\!{\rm d}^8z}\,E^{-1}\cD^{\a}\psi_{\a}=
+{\int\!\!{\rm d}^8z}\,E^{-1}\cD_{a} V^{a}=0~,
+\ee
+where $\psi_{\a}$ and $V^{a}$ are, respectively, arbitrary spinor and vector superfields under appropriate boundary conditions.
+
+Integration over full superspace and over chiral superspace can be related by the following {\it chiral superspace rule}:
+\bea
+\label{eq:chiralrule}
+{\int\!\!{\rm d}^8z}\,E^{-1}\,{\cal L} &=& 
+-\frac14 {\int\!\!{\rm d}^8z}\, {\frac{E^{-1}}{R}}\, {({\bar \cD}^2 - 4 R)} {\cal L} \non \\
+&=& -\frac14 {\int\!\!{\rm d}^6z}\, \vf^3 \,
+{({\bar \cD}^2 - 4 R)} {\cal L} ~,
+\eea
+where the equality in the last line takes place in the so-called chiral representation. This result is especially simple in the chiral case, ${\cal L}={\cal L}_{\rm c}/R$, with ${\cal L}_{\rm c}$ a covariantly chiral scalar, ${\bar \cD}_\ad {\cal L}_{\rm c}=0$.
+
+
+\vskip0.5cm
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\subsection{Supergravity-matter dynamical systems}
+${}$\newline
+\indent Systems in which old-minimal supergravity (\ref{eq:omsg}) is coupled to supersymmetric matter $\c$, have the general structure
+\be
+\label{eq:sugra-matter}
+S=S_{\rm SG,old}+S_{\rm M}[\c\,;\cD]~.
+\ee
+To calculate the dynamical equations of matter superfields in a supergravity background, one varies the matter superfields, whilst keeping the supergravity prepotentials constant. For a real covariantly scalar superfield $V(z)$, the functional variation is given by
+\be
+\d S[V;\cD]=S[V+\d V;\cD]-S[V;\cD]=
+{\int\!\!{\rm d}^8z}\,E^{-1}\,
+\d V(z)\frac{\d S[V;\cD]}{\d V(z)}~,
+\ee
+where
+\be
+\frac{\d V(z')}{\d V(z)}=
+E\,\d^4(x-x')\d^2(\theta-\theta')\d^2({\bar \theta}-{\bar \theta}')
+\equiv \d^8(z-z')~.
+\ee
+For a superfunctional action $S[\F,{\bar \F}]$ of a covariantly chiral scalar superfield $\F(z)$, ${\bar \cD}_\ad \F=0$, the functional variation is
+\bea
+\label{eq:phi-variation}
+\d S[\F,{\bar \F};\cD]&=&S[\F+\d \F, {\bar \F}+\d {\bar \F};\cD]-S[\F,{\bar \F};\cD]\\
+&=&{\int\!\!{\rm d}^8z}\, {\frac{E^{-1}}{R}}\,
+\d \F(z)\frac{\d S[\F,{\bar \F};\cD]}{\d \F(z)}~+~{\rm c.c.}\non~,
+\eea
+where, using the chiral superspace rule (\ref{eq:chiralrule}),
+\be
+\frac{\d \F(z')}{\d \F(z)}=
+-\frac{1}{4}{({\bar \cD}^2 - 4 R)}\d^8(z-z')
+\equiv \d_{+}(z-z')~.
+\ee
+To simplify notation in what follows, we introduce
+\be
+\label{eq:dot notation}
+A \cdot B = {\int\!\!{\rm d}^8z}\, {\frac{E^{-1}}{R}}\, A^\a B_\a~, \qquad
+{\bar A} \cdot {\bar B} ={\int\!\!{\rm d}^8z}\, {\frac{E^{-1}}{\bar R}}\,
+{\bar A}_\ad {\bar B}^\ad~,
+\ee
+with $A_\a$ and $B_\a$ covariantly chiral spinor superfields, ${\bar \cD}_\ad A_\a={\bar \cD}_\ad B_\a=0$. We will also use a similar notation for chiral scalars, in which case (\ref{eq:phi-variation}) can be written as
+\be
+\d S[\F,{\bar \F}]=
+\d\F\cdot\frac{\d S[\F,{\bar \F}]}{\d\F}+
+\d{\bar \F}\cdot\frac{\d S[\F,{\bar \F}]}{\d{\bar \F}}~.
+\ee
+
+\vskip0.2cm
+If we instead wish to calculate supergravity dynamical equations, then we must vary the supergravity prepotentials, which means a deformation of the supergeometry itself. This technique is outlined in appendix \ref{app:supercurrent_supertrace}, where we will use it to calculate the supercurrent and supertrace. The supercurrent, $T_a = {\bar T}_a$, and supertrace, $T$, ${\bar \cD}_\ad T=0$, are the superfield generalization of the energy-momentum tensor. They are defined in terms of covariantized variational derivatives with respect to the supergravity prepotentials (see appendix \ref{app:supercurrent_supertrace} for more details),
+\be
+\label{eq:supercurrent-supertrace}
+T_{\a \ad} = \frac{\D S_{\rm M}}{\D H^{\a \ad}} ~,
+\qquad \quad
+T = \frac{\D S_{\rm M}}{\D \vf} ~,
+\ee
+and satisfy the conservation equation
+\be
+\label{eq:conservation}
+{\bar \cD}^{\ad}T_{\a \ad} = -\frac{2}{3}\,\cD_\a T~,
+\ee
+when the matter superfields are put on the mass shell.
+
+Using the same technique, one can determine the covariantized variational derivatives, $\D S_{\rm SG,old}/\D H^a=G_a$ and \-$\D S_{\rm SG,old}/\D \vf=-3R$. Thus, the superfield dynamical equations for the supergravity-matter system (\ref{eq:sugra-matter}) are
+\be
+2G_a+T_a=0~,\quad\qquad
+-3R+T=0~.
+\ee
+In the matter free case, this reduces to the supergravity equations $G_a=R=0$.
+
+
+\vskip0.5cm
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\section{Super-Weyl transformations}\label{sec:super-weyl}
+\noindent Super-Weyl transformations, originally introduced in \cite{Howe:1978km}, are simply local rescalings of the chiral compensator in old-minimal supergravity \cite{Siegel:1978nn,Siegel:1978mj} (see also \cite{Gates:1983nr,Buchbinder:1998qv}),
+\be
+\label{eq:superweyl2}
+\vf\to{\rm e}^\s \vf~,
+\quad\qquad
+H^m\to H^m~,
+\ee
+with $\s(z)$ is an arbitrary covariantly chiral scalar parameter, ${\bar \cD}_{\ad}\s=0$. In terms of the covariant derivatives, the super-Weyl transformation is
+\be
+\label{eq:superweyl}
+\cD_\a ~\to~ {\rm e}^{ \s/2 - {\bar \s} } \Big(
+\cD_\a - (\cD^\b \s) \, M_{\a \b} \Big) ~, \qquad
+{\bar \cD}_\ad ~\to~ {\rm e}^{ {\bar \s}/2 - \s } \Big(
+{\bar \cD}_\ad -  ({\bar \cD}^\bd {\bar \s}) {\bar M}_{\bd\ad} \Big)~.
+\ee
+Additionally, the supergravity tensors $R$, $G_{\a\ad}$ and $W_{\a\b\g}$ transform as
+\bea
+&&\!\!\!
+R~\to~-\frac{1}{4}{\rm e}^{-2\s}\,
+({\bar \cD}^2 - 4R)\,{\rm e}^{\bar \s}~,
+\quad\qquad
+W_{\a\b\g}~\to~{\rm e}^{-3\s/2}\,W_{\a\b\g}~,\\
+&&G_{\a\ad}~\to~{\rm e}^{-(\s+{\bar \s})/2}
+\left(G_{\a\ad}
++\frac{1}{2}(\cD_\a\s)({\bar \cD}_\ad\s)
++{\rm i}\cD_{\a\ad}(\s-{\bar \s})\right)~.\non
+\eea
+It is also useful to note that, under the super-Weyl transformation (\ref{eq:superweyl}),
+\be
+\label{eq:D2super-weyl}
+(\cD^2 - 4 {\bar R}) ~ \to ~{\rm e}^{-2 \bar \s} \,
+(\cD^2 - 4 {\bar R})\,{\rm e}^{ \s}~,
+\ee
+while the full superspace measure and the chiral superspace measure transform as
+\be
+\label{eq:measure-super-weyl}
+{\rm d}^8 z\, E^{-1}~\to~ 
+{\rm d}^8 z\, E^{-1} \,{\rm e}^{\s+{\bar \s}}~,
+\quad\qquad
+{\rm d}^8 z\, \frac{E^{-1}}{R}~\to~ 
+{\rm d}^8 z\, \frac{E^{-1}}{R} \, {\rm e}^{3\s}~,
+\ee
+see eq. (\ref{eq:chiralrule}).
+
+
+\vskip0.5cm
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\section{New-minimal supergravity}\label{sec:new-minimal}
+\noindent We will also find it useful to deal with the new-minimal formulation of supergravity. New-minimal supergravity and old-minimal supergravity are both `minimal' in the sense that they are realized in terms of a minimal number of auxiliary field degrees of freedom. The actual field content of each is different, however, as pure supergravity theories, they both result in the same dynamics on the mass shell.
+
+New-minimal supergravity can be treated as a super-Weyl invariant coupling of old-minimal supergravity to the improved tensor multiplet \cite{deWit:1981fh}, described by a real covariantly linear scalar superfield, ${\mathbb L}={\bar {\mathbb L}}$,
+\be
+\label{eq:linear}
+{({\bar \cD}^2 - 4 R)}\, {\mathbb L} =
+(\cD^2 - 4 {\bar R})\, {\mathbb L} = 0~.
+\ee
+Due to (\ref{eq:D2super-weyl}), when acting on a scalar superfield, the super-Weyl transformation of ${\mathbb L}$ is uniquely fixed to be
+\be
+\label{eq:LsuperWeyl}
+{\mathbb L} ~\to ~ {\rm e}^{-\s - \bar \s} \, {\mathbb L}~.
+\ee
+The new-minimal supergravity action is \cite{Howe:1981et,Gates:1981tu}
+\be
+\label{eq:nmsg}
+S_{\rm SG,new} = 3 {\int\!\!{\rm d}^8z}\, E^{-1}\,
+{\mathbb L}\, {\rm ln} {\mathbb L}~.
+\ee
+
+The relationship between the old-minimal and new-minimal supergravity actions can be seen by relaxing the constraint (\ref{eq:linear}) on ${\mathbb L}$ and introducing the following auxiliary action
+\be
+\label{eq:aux1}
+S = 3 \int\!\!{\rm d}^8z E^{-1}\,(U\, {\mathbb L}
+- {\rm e}^{U})~,
+\ee
+where the Lagrange multiplier, $U$, is an unconstrained real scalar superfield. Under a super-Weyl transformation, $U$ must transform as
+\be
+\label{eq:UsuperWeyl}
+U ~\to~ U -\s - \bar \s~.
+\ee
+Eliminating $U$ by its equation of motion returns us to the new-minimal supergravity action (\ref{eq:nmsg}) with the linearity constraint (\ref{eq:linear}) on ${\mathbb L}$. On the other hand, solving the ${\mathbb L}$ equation of motion, we find that $U$ may be written as the sum of covariantly scalar chiral and antichiral superfields 
+\be
+\label{eq:Usolution}
+U = {\rm ln} \S + {\rm ln} {\bar \S}~,\quad\qquad
+{\bar \cD}_\ad \S = 0~.
+\ee
+Substituting into the auxiliary action we obtain
+\be
+\label{eq:omsg2}
+\tilde{S}_{\rm SG,old}  
+= - 3 {\int\!\!{\rm d}^8z}\,E^{-1}\,{\bar \S}\S~.
+\ee
+There remains a gauge freedom, since under super-Weyl transformations
+\be
+\label{eq:SWeylTransform}
+\S ~\to~ {\rm e}^{-\s}\, \S~.
+\ee
+Thus we are free to make the gauge choice $\S=1$, by which we regain the old-minimal supergravity action (\ref{eq:omsg}). However, it is not necessary that this particular gauge is chosen. We will find this freedom useful later, when determining the component structure of K{\"a}hler sigma models coupled to new-minimal supergravity.
+
+
+\vskip0.5cm
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\section{Components in old-minimal supergravity}\label{sec:comp-red}
+\noindent The old minimal  supergravity multiplet $\{{e_{a}}^{m}, {\J_{a}}^{\b}, {\bar \J}_{a \bd} \,;  A_{a}, B, {\bar B}\}$ comprises the (inverse) vierbein ${e_{a}}^{m}$, the gravitino ${\bf \J}_a = ( {\J_{a}}^{\b}, {\bar \J}_{a \bd} )$, and the auxiliary fields\footnote{These auxiliary fields are denoted as ${\mathbb A}_a$, ${\mathbb B}$ and ${\bar {\mathbb B}}$ in \cite{Buchbinder:1998qv}.} $A_a$, $ B$ and ${\bar B}$. Within the framework of superfield supergravity \cite{Wess:1977fn, Grimm:1977kp,Wess:1978bu}, these component fields naturally appear  in a Wess-Zumino gauge \cite{Wess:1978ns} (see \cite{Gates:1983nr,Bagger:1990qh,Buchbinder:1998qv} for reviews).  Here we use the Wess-Zumino gauge chosen in \cite{Buchbinder:1998qv}.
+
+We define the component fields of a superfield by space projection and covariant differentiation. For a superfield $V(z)$, the former is the zeroth order term in the power series expansion in $\q$ and ${\bar \q}$
+\be
+V| = V(x,\q = 0, {\bar \q} = 0)~.
+\ee
+The space projection of the vector covariant derivatives are
+\be
+\cD_{a}| = \nabla\!_{a}
+- \frac{1}{3}\ve_{abcd}\, {A}^{d} M^{bc}
++ \frac{1}{2} {\J_{a}}^{\b} \, \cD_{\b}|
++ \frac{1}{2} {\bar \J}_{a\bd} \, {\bar \cD}^{\bd}|~,
+\ee
+where we have introduced the spacetime covariant derivatives, $\nabla\!_{a} = e_{a} + \frac{1}{2} \o_{abc} M^{bc}$, with $\o_{abc}= \o_{abc}(e,\J) $ the connection and $e_{a}={e_{a}}^{m}\partial_{m}$. The explicit expressions for the projections $\cD_\a|$ and ${\bar \cD}^\ad|$ are
+\be
+\cD_\a |=\partial_\a-
+{\rm i}(\s^a {\bar \J}^b)_\a M_{ab}~,\quad\qquad
+{\bar \cD}^\ad |={\bar \partial}^\ad-
+{\rm i}({\tilde \s}^a \J^b)^\ad M_{ab}~.
+\ee
+The spacetime  covariant derivatives obey the following algebra
+\be
+\label{eq:covariant derivative algebra}
+\left[\nabla\!_{a}, \nabla\!_{b}\right] = {{\cal T}_{ab}}^{c}\,\nabla\!_{c}
++ \frac{1}{2}\,{\cal R}_{abcd} M^{cd}~,
+\ee
+where ${\cal R}_{abcd}$ is the curvature tensor and ${\cal T}_{abc}$ is the torsion. The torsion is related to the gravitino by
+\be
+\label{eq:torsion}
+{\cal T}_{abc} = -\frac{\rm i}{2}(\J_{a}\s_{c}{\bar \J}_{b}
+- \J_{b}\s_{c}{\bar \J}_{a})~.
+\ee
+Additionally, we can write the connection in terms of the supergravity fields as
+\be
+\o_{abc}  
+= \o_{abc}(e) - \frac{1}{2}({\cal T}_{bca}+{\cal T}_{acb}-{\cal T}_{abc})
+~, \qquad 
+\o_{abc}(e) = \frac{1}{2}({\cal C}_{bca}+{\cal C}_{acb}-{\cal C}_{abc}) ~,
+\ee
+where ${\cal C}_{abc}$ are the anholonomy coefficients,
+\be
+\left[e_{a},e_{b}\right] =
+{{\cal C}_{ab}}^{c}e_{c}~,
+\quad\qquad {{\cal C}_{ab}}^{c} =
+\left((e_{a}{e_{b}}^{m})
+- (e_{b}{e_{a}}^{m})\right) {e_{m}}^{c}~.
+\ee
+
+The supergravity auxiliary fields occur as follows
+\be
+R| = \frac{1}{3}{B}~,\quad\qquad
+G_{a}| = \frac{4}{3}{ A}_{a}~.
+\ee
+One also has 
+\bea
+\cD_{\a}R| &=& 
+-\frac{2}{3} (\s^{bc}\J_{bc})_{\a}
+-\frac{2{\rm i}}{3} {A}^{b}\J_{b \a}
++\frac{\rm i}{3} {\bar {B}} (\s^{b}{\bar \J}_{b})_{\a}~,\non\\
+{\bar \cD}_{(\ad}{G^{\b}}_{\bd)}| &=&
+-2{\J_{\ad\bd,}}^{\b}+\frac{\rm i}{3}{\bar { B}}
+{{\bar \J}^{\b}}\,_{(\ad,\bd)}
+-2{\rm i}({\tilde \s}^{ab})_{\ad\bd}{\J_{a}}^{\b}A_{b}
++\frac{2{\rm i}}{3}{\J_{\a(\ad,}}^{\a}A_{\bd)}{}^\b~,\non\\
+W_{\a\b\g}| &=& \J_{(\a\b,\g)}
+-{\rm i}(\s_{ab})_{(\a\b}
+{\J^a}_{\g)}A^{b}~,
+\eea
+and
+\bea
+{\bar \cD}^{2}{\bar R}|\!\!&=&\!\!\frac{2}{3} \left({\cal R}
++ \frac{\rm i}{2} \ve^{abcd}\, {\cal R}_{abcd}\right)
++\frac{16}{9}A^{a}A_{a}
++\frac{4}{9}\e^{abcd}{\cal T}_{abc}A_{d}
+-\frac{8{\rm i}}{3}(\nabla\!_{a}A^{a})
++\frac{8{\rm i}}{9}{{\cal T}_{ab}}^{b}A^{a}
+\non\\
+&&+\frac{8}{9} {B}{\bar {B}}
++ \frac{4}{9} { B} (\J_{a}\s^{ab}\J_{b})
++{\rm i} {\bar \cD}_{\ad}{\bar R}|
+({\tilde \s}^{a}\J_{a})^{\ad}
++ \frac{2{\rm i}}{3}\J^{\a\ad,\b}
+\cD_{(\a}G_{\b)\ad}|~,
+\eea
+where
+\bea
+&&\qquad\qquad
+\J_{ab}{}^\g = \nabla\!_{a}\J_{b}{}^\g - \nabla\!_{b}\J_{a}{}^\g
+- {{\cal T}_{ab}}^{c}\J_{c}{}^\g~,\non\\
+&&\J_{\a\b,}{}^\g=
+\frac{1}{2}(\s^{ab})_{\a\b}\J_{ab}{}^\g
+~,\quad\qquad
+\J_{\ad\bd,}{}^\g=
+-\frac{1}{2}({\tilde \s}^{ab})_{\ad\bd}\J_{ab}{}^\g~,
+\eea
+is the gravitino field strength and ${\cal R}=\eta^{ac}\eta^{bd}{\cal R}_{abcd}$ is the scalar curvature.
+
+With these objects and the covariant derivative algebra (\ref{eq:Dalgebra}), the method to obtain the component action is as follows\footnote{In general one would also require expressions for ${\bar \cD}_{(\ad}\cD^{(\g}G^{\d)}{}_{\bd)}|$ and $\cD_{(\a}W_{\b\g\d)} | $. However, these were not necessary for our particular calculations, and we refer to \cite{Buchbinder:1998qv} for these expressions.}.
+
+As a consequence of the chiral rule (\ref{eq:chiralrule}), modulo a total derivative, it is sufficient to work with chiral actions involving a chiral scalar lagrangian, ${\cal L}_{\rm c}$, ${\bar \cD}_{\ad}{\cal L}_{\rm c} = 0$. Such a chiral action generates the following component action \cite{Buchbinder:1998qv}:
+\bea
+\label{eq:reductionrule}	
+\int\!\!{\rm d}^8z\,\frac{E^{-1}}{R}{\cal L}_{\rm c}
+&=& \int\!\!{\rm d}^4x\,e^{-1}\Big\{-\frac{1}{4}
+\cD^2 {\cal L}_{\rm c}| 
+- \frac{\rm i}{2} ({\bar \J}^{b} 
+\tilde{\s}_{b})^{\a}\, \cD_{\a}{\cal L}_{\rm c}|
++ (B + {\bar \J}^{a}{\tilde \s}_{ab}{\bar \J}^{b}) \,
+{\cal L}_{\rm c}|
+\Big\}~, 
+\non  \\
+e &=& \det (e_a{}^m )~.
+\eea
+
+As an example, applying this procedure to the the old-minimal supergravity action (\ref{eq:omsg}), we obtain the well-known component action 
+\bea
+\label{eq:compsugra}
+S_{\rm SG,old} &=&
+-3\int\!\!{\rm d}^8z\,E^{-1}
+ ~=~-3\int\!\!{\rm d}^8z\,\frac{E^{-1}}{R}R\\
+&=&-3\int\!\!{\rm d}^4x\,e^{-1}\Bigg\{
+-\frac{1}{4}\cD^2 R| 
+- \frac{\rm i}{2} ({\bar \J}^{a}{\tilde \s}_{a})^{\a}\cD_{\a}
+R|
++ ({B} + {\bar \J}^{a}{\tilde \s}_{ab}{\bar \J}^{b})
+R|
+\Bigg\}\non\\
+&=&\int\!\!{\rm d}^4x\,e^{-1}\Bigg\{\frac{1}{2}{\cal R}
++\frac{4}{3}{A}^{a}{A}_{a} - \frac{1}{3}B{\bar B}
++ \frac{1}{4}\ve^{abcd} ({\bar \J}_{a} {\tilde \s}_{b} \J_{cd}
+- \J_{a} \s_{b} {\bar \J}_{cd})\Bigg\}~.\non
+\eea
+The auxiliary fields, $A^a$ and $B$ vanish on the mass shell.
+
+
+\vskip0.5cm
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\section{Reduction to flat superspace}\label{sec:flat-superspace}
+\noindent In chapter \ref{chap:fermionic}, our considerations will turn to flat superspace. Flat $\cN=1$ superspace is obtained from curved $\cN=1$ superspace by letting $H^{a}\to0,~\vf\to1$. In this limit, the superfield tensors $R, G_a, W_{\a\b\g}$ vanish and covariant derivatives reduce to the flat superspace covariant derivatives
+\be
+D_{\a}=\partial_{\a}+
+{\rm i}\,{\bar \theta}^{\ad}\partial_{\a\ad}~,
+\quad\qquad
+{\bar D}_{\ad}=-{\bar \partial}_{\ad}-
+{\rm i}\,\theta^{\a}\partial_{\a\ad}~.
+\ee
+For superspace integrals, one should take advantage of the last line in the chiral superspace rule (\ref{eq:chiralrule}) before taking the flat superspace limit. At the component level, for the supergravity multiplet, the vierbein becomes the Kronecker delta, while the gravitino and auxiliary fields are switched off.
+
+
+\vskip0.5cm
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\section{Matter supermultiplets}\label{sec:matter-supermultiplets}
+\noindent Here, we introduce three of the supersymmetry multiplets that we will work with: (i) the vector multiplet; (ii) the chiral scalar multiplet; and (iii) the tensor multiplet.
+
+
+\begin{itemize}
+\item {\it Vector multiplet} ($F_{ab},\j^\a,{\bar \j}_\ad\,;D$)
+
+The abelian $\cN=1$ vector multiplet is described by the covariantly (anti) chiral superfield stengths ${\bar W}_\ad$ and $W_\a$,
+\be
+\label{eq:w-bar-w}
+W_\a = -\frac{1}{4}\, {({\bar \cD}^2 - 4 R)} \cD_\a V~, \qquad \quad
+{\bar W}_\ad = -\frac{1}{4}\, {(\cD^2 - 4{\bar R})} {\bar \cD}_\ad V ~,
+\ee
+where the real scalar superfield $V$ is an unconstrained prepotential. The strengths are constrained superfields satisfying the Bianchi identity
+\be
+\label{eq:bianchi}
+\cD^\a W_\a = {\bar \cD}_\ad {\bar W}^\ad~.
+\ee
+The component fields in the Wess-Zumino gauge are introduced by
+\be
+W_{\a}| = \j_{\a}~,\quad~
+-\frac{1}{2}\cD^{\a}W_{\a}|=D~,
+\quad~
+\cD_{(\a}W_{\b)}| 
+=2 {\rm i} {\hat F}_{\a\b}
+= {\rm i} (\s^{ab})_{\a\b}{\hat F}_{ab}~,
+\ee
+where
+\bea
+\label{eq:F_ab defn}
+{\hat F}_{ab} &=& F_{ab} -
+\frac{1}{2}(\J_{a}\s_{b}{\bar \j} + 
+\j\s_{b}{\bar \J}_{a}) +
+\frac{1}{2}(\J_{b}\s_{a}{\bar \j} + 
+\j\s_{a}{\bar \J}_{b})~,
+\non\\
+F_{ab} &=& \nabla\!_{a}V_{b} 
+- \nabla\!_{b}V_{a} 
+- {{\cal T}_{ab}}^{c}V_{c}~,
+\eea
+with $V_a= e_a{}^m (x)\,V_m (x)$ the gauge one-form and ${\cal T}_{abc}$ defined in (\ref{eq:torsion}).
+
+
+
+\item {\it Scalar multiplet} ($Y,\c_\a\,;F$)
+
+The scalar multiplet is described by a chiral scalar superfield $\f$, ${\bar \cD}_\ad \f=0$. The component fields are defined by\footnote{Note that when we introduce the chiral scalar superfields for the K{\"a}hler sigma models and the dilaton-axion multiplet in chapter \ref{chap:matter_coupling}, the $F$-term definitions will be slightly modified so that they transform covariantly under holomorphic reparametrizations of the K{\"a}hler manifold.}
+\bea
+\label{eq:scalar-components}
+\f| = Y~,\qquad
+\cD_\a \f| = \c_{\a}~, \qquad
+-\frac{1}{4}\cD^2 \f^{i}| = F~.
+\eea
+
+
+
+\item {\it Tensor multiplet} ($\ell, {\tilde \j}^\a, {\bar {\tilde \j}}_\ad,{\tilde V}_a$)
+
+The tensor multiplet \cite{Siegel:1979ai} is described by a real linear superfield $L$, subject to the constraint
+\be
+\label{eq:linear constraint}
+(\cD^2-4{\bar R})L=({\bar \cD}^2-4R)L=0~,
+\quad\qquad
+L={\bar L}~.
+\ee
+The constraint may be solved in terms of an unconstrained chiral spinor prepotential, $\eta_\a$,
+\be
+L=\frac{1}{2}(\cD^\a \eta_\a+
+{\bar \cD}_\ad {\bar \eta}^\ad)~,
+\quad\qquad {\bar \cD}_\ad \eta_\a=0~.
+\ee
+We introduce the component fields of $L$ in the Wess-Zumino gauge as
+\be
+\label{eq:L-comp-def}
+L|=\ell~,\qquad
+\cD_{\a}L|={\tilde \j}_{\a}~,\qquad
+\frac{1}{2}[\cD_{\a},{\bar \cD}_{\ad}]L|=-(\s_a)_{\a\ad}{\hat V}^{a}~,
+\ee
+with
+\bea
+\label{eq:V-def}
+{\hat V}^{a}\!\!&=&\!\!{\tilde V}^{a}
+-\frac{1}{2}\e^{abcd}\big(\J_b\,\s_{cd}\,{\tilde \j}
++{\bar \J}_b\,{\tilde \s}_{cd}\,{\bar {\tilde \j}}
+-\,{\cal T}_{bcd}\,\ell\big)
+-\frac{4}{3}A^a \ell~,\\
+{\tilde V}^{a}\!\!&=&\!\!\frac{1}{2}\e^{abcd}
+\big({\nabla}_{b}B_{cd}
+-{\cal T}_{bc}{}^f B_{fd}\big)~,\non
+\eea
+where ${\tilde V}^a$ is the Hodge dual of the field strength of the gauge two-form $B_{ab}=-B_{ba}=e_a{}^m e_b{}^n B_{mn}$.
+
+It is worth pointing out that, for the compensator of new-minimal supergravity, we have used the notation $\mathbb L$.
+
+
+
+\end{itemize}
+
+

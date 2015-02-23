@@ -1,0 +1,482 @@
+\chapter{Nonlinear self-duality in components}
+\label{chap:components}
+
+\numberin{equation}{chapter} 
+While the considerations in chapters \ref{chap:em_duality} and \ref{chap:matter_coupling} were given mainly in terms of superspace and superfields, here we would now like to subject to scrutiny the component structure of self-dual supersymmetric systems.
+
+As we indicated in the introduction, reducing from a superfield action to components does not guarantee a component action in canonical form. For example, consider the action for a K{\"a}hler sigma model coupled to old-minimal supergravity 
+\be
+\label{eq:kahler-omsg}
+S=-3\int\!\!{\rm d}^8z\,E^{-1}
+\exp\!\!\left(-\frac{1}{3}K(\f,{\bar \f})
+\right)~,
+\ee
+(see eq. (\ref{eq:kahlermodel}) in the gauge where $\S=1$). A plain reduction to components will result in the scalar curvature and Rarita-Schwinger terms having a multiplicative exponential factor ${\rm e}^{-K(\f,{\bar \f})/3}$. To transform into a canonical form, we need to apply a field-dependent Weyl and local chiral transformation (accompanied by a gravitino shift). This traditional approach (reviewed in \cite{Bagger:1990qh}) can be applied to general supergravity-matter systems with at most two derivatives at the component level \cite{Cremmer:1978iv,Cremmer:1978hn, Cremmer:1982wb,Cremmer:1982en}.
+However, the required component level manipulations become extremely impractical and cumbersome, when applied to general theories which may contain any number of derivatives, including the nonlinear supersymmetric electrodynamics that we are investigating. It would make sense to look for an alternative in which such complications are removed through judicious use of superfield techniques. There exist two alternatives \cite{Kugo:1982mr,Binetruy:2000zx} that were originally developed for the systems scrutinized in \cite{Cremmer:1978iv,Cremmer:1978hn, Cremmer:1982wb,Cremmer:1982en} or slightly more generals ones, but remain equally powerful in a more general setting. 
+
+The first approach, described in \cite{Binetruy:2000zx}, involves enlarging the conventional superspace geometry to include a U(1) factor in the structure group. The geometry of the supersymmetry coupling is then obtained by replacing the gauge potential in U(1) superspace by the superfield K{\"a}hler potential. Such a superspace is called a K{\"a}hler superspace. In the case of the model (\ref{eq:kahler-omsg}), for the suitably modified supergeometry, the exponential factor is absorbed into the $E^{-1}$ term. Accordingly, when reducing to components, the resulting action will be in canonical form.
+
+We prefer to follow the second approach -- that of Kugo and Uehara \cite{Kugo:1982mr}. This approach does not require a modification of the underlying superspace and is quite natural in the framework of the Siegel-Gates formulation of superfield supergravity \cite{Siegel:1978nn,Siegel:1978mj}. We describe this method below.
+
+
+\numberin{equation}{section} 
+\vskip0.5cm
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\section{Kugo-Uehara method}
+\noindent The idea behind the Kugo-Uehara method \cite{Kugo:1982mr}, which conceptually originates in \cite{Das:1978nr,Kaku:1978nz,Kaku:1978ea}, is to follow the pattern of the Weyl invariant extension of Einstein gravity, 
+\be
+S[g] = \frac{1}{2} \int\!\!{\rm d}^4x 
+\sqrt{-g} \,{\cal R} ~ \longrightarrow ~
+S[g, \vf ] = 3\int\!\!{\rm d}^4x 
+ \sqrt{-g} \,
+\Big\{g^{mn} \, \partial_m \vf \partial_n \vf 
++ \frac{1}{6} {\cal R} \, \vf^2 \Big\}~,
+\ee
+and extend any supergravity-matter system to a super-Weyl invariant system (in the Howe-Tucker sense  \cite{Howe:1978km}) by introducing a compensating  covariantly chiral scalar superfield $\S$ (in addition to the supergravity chiral compensator \cite{Siegel:1978nn,Siegel:1978mj}). When reducing to components, canonically  normalized component actions are obtained simply by imposing a suitable super-Weyl gauge condition to effectively eliminate $\S$. Conveniently, we have already obtained such extensions in chapter \ref{chap:matter_coupling} when relating the old- and new-minimal supergravity formulations of our nonlinear electromagnetic models.
+
+
+\vskip0.5cm
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\subsection{Example: K{\"a}hler sigma models}
+${}$\newline
+\indent In order to illustrate the Kugo-Uehara method, we obtain the well known result for a K{\"a}hler sigma model coupled to supergravity (see, e.g., \cite{Bagger:1990qh}), {\it i.e.} we will determine the component structure of the model (\ref{eq:kahler-omsg}). The super-Weyl extension of (\ref{eq:kahler-omsg}) is (\ref{eq:kahlermodel}). We are required to make a particular super-Weyl gauge choice such that the Einstein and Rarita-Schwinger terms in the component action come out in canonical form.
+
+We define\footnote{Note this definition is different from (\ref{eq:scalar-components}). With this definition, both $\c^{i}$ and $F^{i}$ transform as tangent vectors under arbitrary holomorphic reparametrizations, $Y^{i} \to f^{i}(Y)$, of the K\"ahler manifold with K\"ahler potential $K(Y,{\bar Y})$.} the component fields of the chiral scalar superfields $\f^{i}$ by
+\bea
+\label{eq:scalarcompdef}
+\f^{i}| = Y^{i}~,\qquad
+\cD_\a \f^{i}| = \c^{i}_{\a}~, \qquad
+-\frac{1}{4}\cD^2 \f^{i}| = F^{i}
++ \frac{1}{4}\,{\G^{i}}_{jk} \, \c^{j}\c^{k}~,
+\eea
+where we have introduced the Christoffel symbols ${\G^{i}}_{jk}$ of the K\"ahler manifold defined by K{\"a}hler potential $K (Y,{\bar Y})$. The metric of the K\"ahler manifold is
+\be
+g_{i{\underline i}} =g_{{\underline i}i} =
+\frac{\partial^{2}K (Y,{\bar Y})}{
+\partial Y^{i} \partial {\bar Y}^{\underline i}}
+\equiv K_{i{\underline i}}~,
+\ee
+where the subscript $i$ (${\underline i}$) on $K$ denotes differentiation with respect to $Y^{i}$ (${\bar Y}^{\underline i}$). Similarly, we can write expressions for the Christoffel symbols and the curvature on the K\"ahler manifold
+\bea
+{\G^{i}}_{jk} = g^{i{\underline i}} K_{jk{\underline i}}~,
+\quad&~&\quad 
+{\G^{\underline i}}_{{\underline j}{\underline k}}
+= g^{{\underline i}i} K_{i{\underline j}{\underline k}}~,\non\\
+R_{ij{\underline i}{\underline j}} =
+K_{ij{\underline i}{\underline j}} 
+\!\!&-&\!\! g^{k{\underline k}}
+K_{ij{\underline k}} K_{k{\underline i}{\underline j}}
+~,
+\eea
+where the matrix elements $g^{i{\underline i}} = g^{{\underline i}i}$ correspond to  the inverse  K\"ahler metric, $g^{i{\underline j}} \,g_{{\underline j}k}=\d^i{}_k$.
+
+To reduce the K{\"a}hler sigma model (\ref{eq:kahlermodel}) to components, we apply the reduction formula (\ref{eq:reductionrule}) to obtain
+\bea
+\label{eq:compexpansion}
+S_{\rm Kahler} = -3&&\!\!\!\!\!\!\!\!\!\!
+\int\!\!{\rm d}^4x\,e^{-1}
+\Bigg\{\!\!\left(-\frac{1}{4}\cD^2 R| 
+- \frac{\rm i}{2} ({\bar \J}^{a}{\tilde \s}_{a})^{\a}\cD_{\a}
+R|
++ ({B} + {\bar \J}^{a}{\tilde \s}_{ab}{\bar \J}^{b})
+R|
+\right) \tilde{\U} | \non\\
+&&-\frac{1}{2}\cD^{\a}R|\cD_{\a}
+\tilde{\U}|
+-\frac{1}{4}R|
+\cD^2{\tilde \U}|
+-\frac{\rm i}{2}({\bar \J}^{a}{\tilde \s}_{a})^{\a}
+R|\cD_{\a} \tilde{\U} |\\
+&&-\frac{1}{16}\cD^{2}{\bar \cD}^{2}
+\tilde{\U} |
++\frac{\rm i}{8}({\bar \J}^{a}{\tilde \s}_{a})^{\a}\cD_{\a}{\bar \cD}^{2}
+\tilde{\U} 
+|
+-\frac{1}{4}({ B} + {\bar \J}^{a}{\tilde \s}_{ab}{\bar \J}^{b})
+{\bar \cD}^{2} \tilde{\U} 
+|
+\Bigg\} ~.\non
+\eea
+The first line of (\ref{eq:compexpansion}) reduces to the supergravity action (\ref{eq:compsugra}) if we make a super-Weyl gauge choice such that $\tilde{ \U} |=1$. This can be done by setting
+\be
+\S| = {\rm e}^{K (Y,\bar Y)/6}~.
+\ee
+We have now eliminated the need to perform a Weyl rescaling on the component action. Further specification of the components of $\S$ can be used to remove the need for the chiral rotation (and gravitino shift). We accomplish this with the following choices
+\bea
+\cD_\a \S| &=& \frac{1}{3}\,\c^{i}_{\a}
+K_{i}\,{\rm e}^{K(Y,\bar Y)/6}~,\\
+-\frac{1}{4}\cD^2 \S| &=&
+\left(\frac{1}{3} F^{i} K_{i}
+- \frac{1}{12}\,\c^{i}\c^{j} (K_{ij} - {\G^{k}}_{ij}K_{k}
++\frac{1}{3}K_{i} K_{j})\right)
+\,{\rm e}^{K(Y,\bar Y)/6}\non~.
+\eea
+Such a choice implies that $\cD_{\a}\tilde{\U}|=\cD^{2}\tilde{\U}|=0$, and thus the second line of (\ref{eq:compexpansion}) vanishes. The action reduces to
+\be
+S_{\rm Kahler} = S_{\rm SG,old}
+-3\int\!\!{\rm d}^4x\,e^{-1}\Big\{
+-\frac{1}{16}\cD^{2}{\bar \cD}^{2}
+\tilde{\U} |
++\frac{\rm i}{8}({\bar \J}^{a}{\tilde \s}_{a})^{\a}
+\cD_{\a}{\bar \cD}^{2}\tilde{\U} |
+\Big\}~.
+\ee
+We are now in a position to write down the component action for supergravity coupled to a K{\"a}hler sigma model. In agreement with the well known result (see, e.g., \cite{Bagger:1990qh}), we obtain
+\bea
+S_{\rm Kahler} =\int\!\!{\rm d}^4x\,e^{-1}
+\!\!\!\!\!\!&&\!\!\!\Bigg\{\frac{1}{2}{\cal R}
+~+~\frac{4}{3}{\mathbb A}\!^{a}{\mathbb A}_{a} ~-~ 
+\frac{1}{3}{\bar 
+{B}} B
+~+~ \frac{1}{4}\ve^{abcd} ({\bar \J}_{a} {\tilde \s}_{b} {\hat \J}_{cd}
+- \J_{a} \s_{b} {\hat {\bar \J}}_{cd})\non\\
+&&- g_{i{\underline i}}\Big( 
+\nabla^{a}Y^{i}\,\nabla\!_{a}{\bar Y}^{\underline i}
+~+~\frac{\rm i}{4}(\c^{i} \s^{a}
+\! \stackrel{\leftrightarrow}{\hat 
+\nabla\!}_{a}
+{\bar \c}^{\underline i})
+~-~F^{i}{\bar F}^{\underline i}\non\\
+&&-\frac{1}{2}(\J_{a}\s^{b}{\tilde \s}^{a}\c^{i})
+(\nabla\!_{b}{\bar Y}^{\underline i})
+~-~\frac{1}{2}({\bar \J}_{a}{\tilde \s}^{b}\s^{a}{\bar \c}^{\underline i})
+(\nabla\!_{b}Y^{i}) \\
+&&-\frac{1}{8}(\J^{a}\s_{b}{\bar \J}_{a})
+(\c^{i}\s^{b}{\bar \c}^{\underline i})
+~-~\frac{\rm i}{8}\ve^{abcd}(\J_{a}\s_{b}{\bar \J}_{c})
+(\c^{i}\s_{d}{\bar \c}^{\underline i}) \Big)\non\\
+&&+\frac{1}{16}\c^{i}\c^{j}{\bar \c}^{\underline i}{\bar 
+\c}^{\underline j}\,
+(R_{ij{\underline i}{\underline j}}
+- \frac{1}{2}g_{i{\underline i}}g_{j{\underline j}})\Bigg\}\non
+~,
+\eea
+where
+\bea
+{\hat \J}_{ab}{}^\g&=&\J_{ab}{}^\g
+~+~
+\frac{1}{4}\left(K_{i}\,\nabla\!_{a}Y^{i} -
+K_{\underline i}\,\nabla\!_{a}{\bar Y}^{\underline i}
+\right)\J_{b}{}^\g
+~-~
+\frac{1}{4}\left(K_{i}\,\nabla\!_{b}Y^{i} -
+K_{\underline i}\,\nabla\!_{b}{\bar Y}^{\underline i}
+\right)\J_{a}{}^\g ~,\non\\
+{\hat \nabla}\!_{a}\c^{i}_{\g}&=&\nabla\!_{a}\c^{i}_{\g} ~-~
+\frac{1}{4}\left(K_{j}\,\nabla\!_{a}Y^{j} -
+K_{\underline j}\,\nabla\!_{a}{\bar Y}^{\underline j}
+\right)\c^{i}_{\g}
+~+~ {\G^{i}}_{jk} (\nabla\!_{a}Y^{j})\c^{k}_{\g}
+~.
+\eea
+In order to  to diagonalize in the auxiliary field sector we have made the redefinition
+\be
+{A}_{a} ~=~ {\mathbb A}_{a} ~-~ \frac{\rm 
+i}{4}\left(K_{i}\,\nabla\!_{a}Y^{i}
+- K_{\underline i}\,\nabla\!_{a}{\bar Y}^{\underline i}\right)
+~-~ \frac{1}{16}\,g_{i{\underline i}} (\c^{i}\s_{a}{\bar 
+\c}^{\underline i})~, 
+\ee
+so that the auxiliary fields ${\mathbb A}_{a}, {B}$ and $F^{i}$ vanish on the mass shell.
+
+
+\vskip0.5cm
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\subsection{Components in new-minimal supergravity}
+${}$\newline
+\indent As a further example of the application of the Kugo-Uehara method, we consider the component reduction of the new-minimal supergravity action (\ref{eq:nmsg}). In this case, it is not actually necessary to introduce the chiral compensating superfield $\S$, since the new-minimal supergravity action is already super-Weyl invariant. As introduced in chapter \ref{chap:sugra}, new-minimal supergravity is a super-Weyl invariant coupling of old-minimal supergravity to the improved tensor multiplet described by the linear multiplet ${\mathbb L}$ (\ref{eq:linear}). The gauge freedom (\ref{eq:LsuperWeyl}) will allow us to impose a suitable gauge condition to eliminate ${\mathbb L}$ and result in a canonically normalised component action. 
+
+We begin the reduction to components as described in section \ref{sec:comp-red}. Using the chiral rule (\ref{eq:chiralrule}) and the constraint (\ref{eq:linear}), we can rewrite the new-minimal supergravity action (\ref{eq:nmsg}) as
+\be
+S_{\rm SG,new}=
+3 {\int\!\!{\rm d}^8z}\, E^{-1}\,
+{\mathbb L}\, {\rm ln} {\mathbb L}
+=-3\int\!\!{\rm d}^8z\,\frac{E^{-1}}{R}
+\Big\{ R\,{\mathbb L}
++\frac{1}{4}({\bar \cD}_\ad\,{\mathbb L})
+({\bar \cD}^\ad{\mathbb L}){\mathbb L}^{-1}
+\Big\}~.
+\ee
+Next, applying the the reduction rule (\ref{eq:reductionrule}), we obtain
+\bea
+\label{eq:nsmg-comp2}
+S_{\rm SG,new}\!\!\!&=&\!\!\!
+-3\int\!\!{\rm d}^4x\,e^{-1}
+\Bigg\{\!\!\left(-\frac{1}{4}\cD^2 R 
+- \frac{\rm i}{2} ({\bar \J}^{a}{\tilde \s}_{a})^{\a}\cD_{\a}
+R
++ ({B} + {\bar \J}^{a}{\tilde \s}_{ab}{\bar \J}^{b})
+R
+\right)\!{\mathbb L}\non\\
+&~&\quad
+-R{\bar R}\,{\mathbb L}
+-\frac{1}{8}(\cD_\a{\bar \cD}_\ad{\mathbb L})
+(\cD^\a{\bar \cD}^\ad{\mathbb L}){\mathbb L}^{-1}
+-\frac{1}{2}(\cD^\a R)(\cD_\a {\mathbb L})\\
+&~&\quad
+-\frac{\rm i}{8}(\J^a {\tilde \s}_a)^\a R\,\cD_\a {\mathbb L}
+-\frac{1}{8}(\cD^2{\bar \cD}_\ad{\mathbb L})
+({\bar \cD}^\ad{\mathbb L}){\mathbb L}^{-1}
++\frac{1}{4}({\bar \cD}_\ad{\mathbb L})
+({\bar \cD}^\ad{\mathbb L}){\bar R}\,{\mathbb L}^{-1}
+\non\\&~&\quad
++\frac{1}{4}(\cD^\a {\mathbb L})(\cD_\a{\bar \cD}_\ad{\mathbb L})
+({\bar \cD}^\ad{\mathbb L}){\mathbb L}^{-2}
++\frac{1}{8}({\bar \cD}_\ad{\mathbb L})({\bar \cD}^\ad{\mathbb L})
+(\cD^\a{\mathbb L})(\cD_\a{\mathbb L}){\mathbb L}^{-3}
+\non\\&~&\quad
+-\frac{\rm i}{4} ({\bar \J}^{a}{\tilde \s}_{a})^{\a}
+(\cD_\a{\bar \cD}_\ad{\mathbb L})
+({\bar \cD}^\ad{\mathbb L}){\mathbb L}^{-1}
++\frac{\rm i}{8} ({\bar \J}^{a}{\tilde \s}_{a})^{\a}
+(\cD_\a{\mathbb L})({\bar \cD}_\ad{\mathbb L})
+({\bar \cD}^\ad{\mathbb L}){\mathbb L}^{-2}
+\non\\&~&\quad
++\frac{1}{4}({B} + {\bar \J}^{a}{\tilde \s}_{ab}{\bar \J}^{b})
+({\bar \cD}_\ad{\mathbb L})({\bar \cD}^\ad{\mathbb L}){\mathbb L}^{-1}
+\Bigg\}\Big| \non~,
+\eea
+We see that if we now apply the following gauge choice:
+\be
+\label{eq:L-gauge-choice}
+{\mathbb L}|=1~,
+\quad\qquad
+\cD_\a {\mathbb L}|=0~,
+\ee
+then the first line of (\ref{eq:nsmg-comp2}) reduces to the old-minimal supergravity action (\ref{eq:compsugra}), while the rest of the action simplifies greatly,
+\be
+\label{eq;nmsg-red}
+S_{\rm SG,new}=
+S_{\rm SG,old}
+-3\int\!\!{\rm d}^4x\,e^{-1}\Bigg\{
+-\frac{1}{9}B{\bar B}-\frac{1}{32}
+\big[ \cD_\a,{\bar \cD}_\ad\big]{\mathbb L}|
+\big[ \cD^\a,{\bar \cD}^\ad\big]{\mathbb L}| 
+\Bigg\}~,
+\ee
+For simplicity, we will restrict ourselves to the bosonic sector, setting the gravitino field to zero. We then have have ({\it c.f.} (\ref{eq:L-comp-def}) and (\ref{eq:V-def}))
+\be
+\frac{1}{2}\big[ \cD_\a,{\bar \cD}_\ad\big]
+{\mathbb L}|=-(\s_a)_{\a\ad}{\hat w}^a
+~,\qquad\quad
+{\hat w}^a={\tilde w}^a
+-\frac{4}{3}A^{a}~,
+\ee
+where ${\tilde w}_a$ the Hodge dual of the field strength of the gauge two-form,
+\be
+{\tilde w}_a=e_a{}^m {\tilde w}_m~,\qquad
+{\tilde w}^m=\frac{1}{2}\e^{mnpq}\partial_n b_{pq}~,\quad b_{mn}=-b_{nm}~.
+\ee
+From (\ref{eq;nmsg-red}), we find the component action for new-minimal supergravity to be
+\bea
+\label{eq:nmsg-comp}
+\!S_{\rm bosonic}\!&\!\!=\!\!&\!
+\int\!\!{\rm d}^4x\,e^{-1}\Bigg\{\frac{1}{2}{\cal R}
++\,\frac{4}{3}A^{a}A_{a}-\frac{3}{4}\,{\hat w}^{a}{\hat w}_{a}
+\Bigg\}\\
+\!&\!\!=\!\!&\!
+\int\!\!{\rm d}^4x\,e^{-1}\Bigg\{\frac{1}{2}{\cal R}\,
+-\frac{3}{4}\,{\tilde w}^{a}{\tilde w}_{a}
++2 A^a{\tilde w}_a\Bigg\}
+~.\non
+\eea
+Note that the $B{\bar B}$ and $A^2$ terms from the old-minimal supergravity action (\ref{eq:compsugra}) are no longer be present. This can be considered to be as a result of the remaining super-Weyl gauge freedom. The gauge choice (\ref{eq:L-gauge-choice}) has required that we fix the components ${\rm Re}(\s) |$ and $\cD_\a \s|$ of the chiral parameter $\s(z)$, ${\bar \cD}_\ad \s=0$ from the super-Weyl transformation (\ref{eq:superweyl2}). The further freedom derived from $\cD^2 \s|$ allows one to arbitrarily shift $B$, eliminating it as a physical variable. Meanwhile, the residual freedom from the imaginary part of $\s$ means that the auxiliary field $A_a$ is now a gauge field of the local chiral transformation,
+\be
+\label{eq:A-gauge-transf}
+\d A_m\sim\partial_m{\rm Im}(\s)|~.
+\ee
+Any terms of the form $A^2$ would then be a mass term for the gauge field and, as such, must not be present. We indeed see that this is the case for the action (\ref{eq:nmsg-comp}), which is invariant under the gauge transformation (\ref{eq:A-gauge-transf}) due to the Bianchi identity $\partial_a{\tilde w}^a=0$. The two gauge fields $b_{mn}$ and $A_a$ do not propagate on the mass shell, where these auxiliary fields vanish to give the same on-shell dynamics as the component action from old-minimal supergravity (\ref{eq:compsugra}).
+
+
+\vskip0.5cm
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\section{Dilaton-axion multiplet model}
+\noindent In chapter \ref{chap:matter_coupling} we presented a SL(2,${\mathbb R}$) duality invariant model (\ref{eq:d-axcoupledaction}) for nonlinear electrodynamics coupled to the dilaton-axion multiplet, a duality inert K{\"a}hler sigma model and supergravity. We would now like to investigate the component structure of this theory by employing the Kugo-Uehara method.
+
+
+Similarly to our definition (\ref{eq:scalarcompdef}) of the component fields $\left\{Y^{i},\c^{i}_{\a},F^{i}\right\}$ of  the scalar superfield $\f^{i}$, we introduce the component fields $\left\{{\cal Y},\z_{\a},{\cal F}\right\}$ of the dilaton-axion multiplet $\F$ with K{\"a}hler potential (\ref{eq:kahlerpotential}). The dilaton $\vf$ and axion $a$ fields are related to the superfield $\F$ by
+\be
+\F|={\cal Y}=a-{\rm i}\,{\rm e}^{-\vf}~.
+\ee
+
+To reduce the dilaton-axion multiplet model (\ref{eq:d-axcoupledaction}) to components, we apply the reduction rule (\ref{eq:reductionrule}) to obtain
+\bea
+\label{eq:d-axcoupledaction2}
+S=S_{V}\!\!&\!\!-\!\!&\!\!3
+\int\!\!{\rm d}^4x\,e^{-1}\Big\{\Big(
+-\frac{1}{4}\cD^{2}R|-
+\frac{\rm i}{2} ({\bar \J}^{a}{\bar 
+\s}_{a})^{\a}\cD_{\a}R|
++ (B + {\bar \J}^{a}{\tilde \s}_{ab}{\bar \J}^{b}) R|
+\Big)
+\O|\non\\
+&&\qquad-\frac{1}{2}\cD^\a R|
+\cD_{\a}\O|
+-\frac{1}{4}R|
+\cD^2\O|
+-\frac{\rm i}{2}({\bar \J}^{a}{\tilde \s}_{a})^{\a}
+\cD_{\a}\O|\\
+&&\qquad
++\frac{1}{16} \cD^2{\bar \cD}^2\O|
++\frac{\rm i}{8}({\bar \J}^{a}{\tilde \s}_{a})^{\a}
+\cD_{\a}{\bar \cD}^2\O|
+-\frac{1}{4}(B+{\bar \J}^a{\tilde \s}_{ab}{\bar \J}^b)
+{\bar \cD}^2\O|
+\Big\}~,\non
+\eea
+where
+\be
+\O={\tilde {\bf \U}}+
+\frac{1}{48}(\F-{\bar \F})^2\frac{W^2{\bar W}^2}{\tilde{\bf \U}^2}\,
+\L\Big(\frac{\rm i}{2}(\F-{\bar \F})\,\frac{\o}{{\tilde {\bf \U}}^2} \;, \;
+\frac{\rm i}{2}(\F-{\bar \F})\,\frac{\bar \o}{{\tilde {\bf \U}}^2}\Big)~,
+\ee
+and we have separated out the following part of the action:
+\be
+S_{V}=\frac{\rm i}{4}{\int\!\!{\rm d}^8z}\, {\frac{E^{-1}}{R}}\,\F\,W^2 -
+\frac{\rm i}{4}{\int\!\!{\rm d}^8z}\, {\frac{E^{-1}}{\bar R}}\,
+{\bar \F}\,{\bar  W}^2~.
+\ee
+Since $S_{V}$ does not couple to $\S$ and $\bar \S$, its component form is independent of the super-Weyl gauge choice. It is therefore straightforward to evaluate the component structure of this part of the action\footnote{This result is in agreement with, for example, \cite{Binetruy:2000zx}.}
+\bea
+S_{V} \!&\!\!=\!\!&\!\! \int\!\!{\rm d}^4x\,e^{-1} \Bigg\{
+- \frac{1}{4}\,{\rm e}^{-\vf}\,F^{ab}F_{ab}
++\frac{1}{4}\,a\,F^{ab}{\tilde F}_{ab}
+-\frac{1}{2}(\j\s^{b}{\bar \j})\nabla\!_{b}a
+-\frac{\rm i}{2}\,{\rm e}^{-\vf}\,(\j\s^{a}\nabla\!_{a}{\bar \j})\non\\
+&&+\frac{1}{2}\,{\rm e}^{-\vf}\,F^{ab}
+(\J_{a}\s_{b}{\bar \j} + \j\s_{b}{\bar \J}_{a})
++\frac{\rm i}{2}\,{\rm e}^{-\vf}\,{\tilde F}^{ab}
+(\J_{a}\s_{b}{\bar \j} - \j\s_{b}{\bar \J}_{a})\non\\
+&&+\frac{1}{4}\,F^{ab}(\z\s_{ab}\j
++{\bar \z}{\tilde \s}_{ab}{\bar \j})
++\frac{1}{4}\left({\rm e}^{-\vf}
+(\eta^{ac}\eta^{bd}-\eta^{ad}\eta^{bc})
++a\,\e^{abcd}\right)
+(\J_{a}\s_{b}{\bar \j})(\j\s_{c}{\bar \J_{d}})\non\\
+&&+\frac{1}{16}\,{\rm e}^{-\vf}
+\Big((3{\bar \J}^{a}{\bar \J}_{a}
+-2{\bar \J}^{a}{\tilde \s}_{ab}{\bar \J}^{b})\j^{2}
++(3\J^{a}\J_{a}
+-2\J^{a}\s_{ab}\J^{b}){\bar \j}^{2}
+\Big)\non\\
+&&-\frac{1}{8}(\J_{a}\s_{b}{\bar \j})
+(\z\s^{ab}\j)
+-\frac{1}{8}({\bar \J}_{a}{\tilde \s}_{b}\j)
+({\bar \z}{\tilde \s}^{ab}{\bar \j})
+-\frac{1}{32}\j^2(\z\s^{a}{\bar \J}_{a})
++\frac{1}{32}{\bar \j}^2(\J_{a}\s^{a}{\bar \z})
+\non\\
+&&+\frac{1}{16}\,{\rm e}^{\vf}\,(\z^2\j^2
++{\bar \z}^{2}{\bar \j}^{2})
++\frac{1}{2}(\j\s^{a}{\bar \j}){{\cal T}_{ab}}^{b}
+-\frac{\rm i}{4}(\z\j-{\bar \z}{\bar \j})D\\
+&&+\frac{1}{2}\,{\rm e}^{-\vf}\,D^{2}
+-{\rm e}^{-\vf}
+(\j\s^{a}{\bar \j})A_{a}
++\frac{\rm i}{4}({\cal F}\j^2-{\bar {\cal F}}{\bar \j}^2)
+\Bigg\}~,\non
+\eea
+where we have used the explicit form of the K\"ahler potential (\ref{eq:kahlerpotential}).
+
+Looking at the first line of (\ref{eq:d-axcoupledaction2}) we notice that if a super-Weyl gauge choice is made such that $\O|=1$ then this will reduce to the supergravity action (\ref{eq:compsugra}), and not require a Weyl rescaling. To achieve this, we make the choice 
+\be
+\S| = 
+{\rm exp}\!\left(\frac{1}{6}K\!(Y,\bar Y) + 
+\frac{1}{6}\cK\!({\cal Y},\bar {\cal Y})
++\frac{1}{24}
+{\rm e}^{-2\vf}\j^2{\bar \j}^2 
+\L\!\!\left({\rm e}^{-\vf}\o|\;,\; 
+{\rm e}^{-\vf}{\bar \o}|\right)
+\right)~.
+\ee
+A number of options are available for the gauge choice for the other components of $\S$. If the following gauge choices are made
+\bea
+&&\quad
+\cD_\a\S|=\frac{1}{3}
+(\c^{i}_{\a}K_{i}-\frac{\rm i}{2}\,{\rm e}^{\vf}
+\z_\a)\,\S|~,\non\\
+-\frac{1}{4}\cD^2 \S| &=& 
+\frac{1}{3}\Big(F^{i} K_{i}
+- \frac{1}{4}\,\c^{i}\c^{j} (K_{ij} - {\G^{k}}_{ij}K_{k}
++\frac{1}{3}K_{i} K_{j}) \\
+&&\quad\quad\qquad
+-\frac{\rm i}{2}\,{\rm e}^{\vf}{\cal F}
+-\frac{1}{24}\,{\rm e}^{2\vf}\,\z^2 
++\frac{\rm i}{12}\,{\rm e}^{\vf}\,\z\c^{i}K_{i}
+\Big)\,\S|~,\non
+\eea
+then $\cD_{\a}{\tilde {\bf \U}}|=\cD^{2}{\tilde {\bf \U}}|=0$, and the action (\ref{eq:d-axcoupledaction2}) simplifies greatly.
+
+The complete component action turns out to be extremely complicated as far as the fermionic sector is concerned. The fermionic sector will be studied in the flat-space case in the following chapter. Here we only focus on the bosonic sector.
+\bea
+\label{eq:bosonic action}
+S_{\rm bosonic} \!\!&\!\!=\!\!&\!\! \int\!\!{\rm d}^4x\,e^{-1} \Bigg\{~
+\frac{1}{2} {\cal R} 
+- g_{i{\underline i}}\,
+\nabla^{a} 
+Y^{i}\,\nabla\!_{a}{\bar Y}^{\underline i}
+-\frac{1}{4}\Big( {\rm e}^{2\vf}\,
+(\nabla a)^2
++  (\nabla \vf )^2  \Big) \\
+&&\quad\qquad\qquad
+-\frac{1}{4}\,{\rm e}^{-\vf}F^{ab}F_{ab} 
++\frac{1}{4}\,a\,F^{ab}{\tilde F}_{ab}
++{\rm e}^{-2\vf}\,\o|\,
+{\bar \o}|\,\L\!\left(
+{\rm e}^{-\vf}\o|\,,
+\,{\rm e}^{-\vf}{\bar \o}|\right)
+\non\\
+&&\quad\qquad\qquad
++ \frac{4}{3}{\mathbb A}\!^{a}{\mathbb A}_{a} 
+- \frac{1}{3}B{\bar B}
++ \frac{1}{2} {\rm e}^{-\vf}D^{2}
++ g_{i{\underline i}} \,
+F^{i}{\bar F}^{\underline i}
++\frac{1}{4}\,{\rm e}^{2\vf}\,{\cal F}{\bar {\cal F}}~
+\Bigg\}\non~,
+\eea
+where
+\bea
+\o|
+&=&F^{\a\b}F_{\a\b}-\frac{1}{2} D^2~,\quad\qquad
+{\bar \o}|~=~
+{\bar F}^{\ad\bd}{\bar F}_{\ad\bd}-\frac{1}{2} D^2~,\non\\
+A_{a} &=& {\mathbb A}_{a} 
+-\frac{\rm i}{4}\left( K_i \,
+\nabla\!_{a}Y^{i}
+- K_{\underline i}\,
+\nabla\!_{a}{\bar Y}^{\underline i} \right)
+-\frac{1}{4}\,{\rm e}^{\vf} \,\nabla\!_a a
+~,
+\eea
+and ${\cal R}$ and $F_{ab}$ are as defined respectively in (\ref{eq:covariant derivative algebra}) and (\ref{eq:F_ab defn}), but with torsion set to zero.
+
+As a special representative in the family of self-dual actions (\ref{eq:family action})--(\ref{eq:differential}), 
+we would like to consider the supersymmetric Born-Infeld action (\ref{eq:super BI 2}) in curved superpace. In this case the function $\L(\o,{\bar\o})$ takes the form
+\bea
+\label{eq:lambda_function}
+&&\L(\o,{\bar\o}) =
+\frac{\k^2}
+{1+ \frac{1}{2}\, A \,+\sqrt{1+A+\frac{1}{4}\,B^2}}~,\\
+&&\quad
+A=\k^2(\o+{\bar \o})~,\qquad 
+B=\k^2(\o-{\bar \o})~,\non
+\eea
+where we have introduced the coupling constant $\k$. After eliminating the auxiliary fields, the bosonic action (\ref{eq:bosonic action}) becomes
+\bea
+\label{eq:BI-dil-ax-curved}
+S \!\!&\!\!=\!\!&\!\! \int\!\!{\rm d}^4x\,e^{-1} \Bigg\{\,
+\frac{1}{2}{\cal R}
+- g_{i{\underline i}}\,
+\nabla^{a} 
+Y^{i}\,\nabla\!_{a}{\bar Y}^{\underline i}
+-\frac{1}{4}\Big( {\rm e}^{2\vf}\,
+(\nabla a )^2 + (\nabla \vf )^2 \Big)
+\\
+&&\quad\qquad\qquad
++\frac{1}{\k^2}\left(1-\sqrt{-{\rm det}(\eta_{ab}
++\k\,{\rm e}^{-\vf/2}F_{ab})}\right)
++\frac{1}{4}\,a\,F^{ab}{\tilde F}_{ab}
+\Bigg\}~.\non
+\eea

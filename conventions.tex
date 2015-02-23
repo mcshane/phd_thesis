@@ -1,0 +1,251 @@
+\chapter{Conventions}
+\label{app:conventions}
+Throughout this thesis we have used the notation and conventions of \cite{Buchbinder:1998qv}, and a few of the more important are collected here. As is usual, our conventions for indices have lower case letters from the middle and beginning of the Latin (Greek) alphabets corresponding to curved and flat spacetime (spinor) coordinates respectively. Likewise curved and flat superspace coordinates are denoted by upper case letters from the middle and beginning of the Latin alphabet respectively.
+
+We use the mostly positive Minkowski metric,
+\be
+\eta_{ab}={\rm diag}(-1,~1,~1,~1)~,
+\ee 
+to raise and lower spacetime indices of tangent space tensors, $V_a=\eta_{ab}V^b$, $V^a=\eta^{ab}V_b$, where the indices $a,b=0,1,2,3$. Similarly, the curved spacetime metric $g_{mn}$, can be used to raise and lower indices of curved spacetime tensors. The two metrics are related by introducing the vierbein $e_m{}^a$,
+\be
+\label{eq:curved-flat}
+g_{mn}=e_m{}^a e_n{}^b \eta_{ab}~.
+\ee
+We also introduce the inverse vierbein $e_a{}^m$ by $e_a{}^m e_m{}^b=\d_a{}^b$ and $e_m{}^a e_a{}^n=\d_m{}^n$. 
+
+Symmetrization and antisymmetrization are denoted by parentheses and square brackets respectively,
+\be
+V_{(A_1\dots A_n)}=
+\frac{1}{n!}\sum_{\pi\in S_n}
+V_{A_{\pi(1)}\dots A_{\pi(n)}}~,
+\qquad
+V_{[A_1\dots A_n]}=
+\frac{1}{n!}\sum_{\pi\in S_n}
+{\rm sgn}(\pi)V_{A_{\pi(1)}\dots A_{\pi(n)}}~.
+\ee
+The totally antisymmetric tensor $\e_{abcd}$ is normalized such that $\e_{0123}=1$ and $\e^{0123}=-1$. The product of two antisymmetric tensors, with various index contractions is 
+\bea
+\e^{abcd}\e_{efgh}&=&-4!\,\d^a_{[e} \d^b_{f} \d^c_{g} \d^d_{h]}~,\non\\
+\e^{abcd}\e_{efgd}&=&-3!\,\d^a_{[e} \d^b_{f} \d^c_{g]}~,\non\\
+\e^{abcd}\e_{efcd}&=&-4\,\d^a_{[e} \d^b_{f]}~,\\
+\e^{abcd}\e_{ebcd}&=&-6\,\d^a_{e}~,\non\\
+\e^{abcd}\e_{abcd}&=&-24~.\non
+\eea
+In curved spacetime, the totally antisymmetric tensor $\e_{mnpq}$, is given by
+\be
+\label{eq:curved-antisymm}
+\e_{mnpq}=e_m{}^a e_n{}^b 
+e_p{}^c e_q{}^d \e_{abcd}~,
+\quad\qquad \e_{0123}=\sqrt{-g}=e^{-1}~,
+\ee
+where $g={\rm det}(g_{mn})$ and $e={\rm det}(e_a{}^m)$.
+
+Two-component spinors carry undotted and dotted indices, $\a=1,2$ and $\ad={\dot 1}, {\dot 2}$. The antisymmetric tensors, $\e_{\a\b}=-\e_{\b\a}$ and $\e_{\ad\bd}=-\e_{\bd\ad}$ are defined by
+\be
+\e^{12}=\e_{21}=1~,
+\quad\qquad
+\e^{{\dot 1}{\dot 2}}=\e_{{\dot 2}{\dot 1}}=1~,
+\ee
+and $\e^{\a\b}\e_{\b\g}=\d^\a{}_\g$ and $\e^{\ad\bd}\e_{\bd\gd}=\d^\ad{}_\gd$. They can be used to raise and lower spinor indices,
+\be
+\e^{\a\b}\j_{\b}=\j^{\a}~,\quad 
+\e_{\a\b}\j^{\b}=\j_{\a}~,\qquad\quad
+\e^{\ad\bd}{\bar \j}_{\bd}={\bar \j}^{\ad}~,\quad 
+\e_{\ad\bd}{\bar \j}^{\bd}={\bar \j}_{\ad}~,
+\ee
+The standard summation convention is
+\be
+\j\c=\j^\a \c_\a=\c^\a \j_\a=\c\j~,
+\quad\qquad
+{\bar \j}{\bar \c}={\bar \j}_\ad {\bar \c}^\ad
+={\bar \c}_\ad {\bar \j}^\ad={\bar \c}{\bar \j}~,
+\ee
+and $\j^2=\j\j$, ${\bar \j}^2={\bar \j}{\bar \j}$. Spinor conjugation is then understood as Hermitian conjugation, $(\j\c)^*=(\j^\a\c_\a)^*=(\c_\a)^*(\j^\a)^*={\bar \c}_\ad{\bar \j}^\ad$.
+
+The sigma matrices are defined as
+\be
+\s_{0}=
+\left(\begin{array}{cc}1 & 0 \\0 & 1\end{array}\right),\quad\!
+\s_{1}=
+\left(\begin{array}{cc}0 & 1 \\1 & 0\end{array}\right),\quad\!
+\s_{2}=
+\left(\begin{array}{cc}0 & -{\rm i} \\{\rm i} & 0\end{array}\right),\quad\!
+\s_{3}=
+\left(\begin{array}{cc}1 & 0 \\0 & -1\end{array}\right)~.
+\ee
+They have the spinor index structure, $(\s_a)_{\a\ad}$. Sigma matrices with raised indices are denoted by
+\be
+({\tilde \s}_a)^{\ad\a}=\e^{\a\b}\e^{\ad\bd}(\s_a)_{\b\bd}~.
+\ee
+Some useful properties of sigma matrices include
+\bea
+(\s_{a}{\tilde \s}_{b}+\s_{b}{\tilde \s}_{a})_\a{}^\b
+=-2\,\eta_{ab}\,\d_\a{}^\b~,\qquad&&\qquad\quad\!
+{\rm Tr}(\s_{a}{\tilde \s}_{b})
+=-2\,\eta_{ab}~,\\
+({\tilde \s}_{a}\s_{b}+{\tilde \s}_{b}\s_{a})^\ad{}_\bd
+=-2\,\eta_{ab}\,\d^\ad{}_\bd~,
+\qquad&&\quad
+(\s^{a})_{\a\ad}({\tilde \s}_{a})^{\bd\b}
+=-2\,\d_\a^\b\,\d^\bd_\ad~. \non
+\eea
+and
+\bea
+\s_{a}{\tilde \s}_{b}\s_{c}\!\!&=&\!\!
+\eta_{ac}\s_{b}-\eta_{bc}\s_{a}
+-\eta_{ab}\s_{c}+{\rm i}\e_{abcd}\s^{d}~,\\
+{\tilde \s}_{a}\s_{b}{\tilde \s}_{c}\!\!&=&\!\!
+\eta_{ac}{\tilde \s}_{b}-\eta_{bc}{\tilde \s}_{a}
+-\eta_{ab}{\tilde \s}_{c}+
+{\rm i}\e_{abcd}{\tilde \s}^{d}~.\non
+\eea
+The antisymmetric traceless matrices
+\be
+(\s_{ab})_\a{}^\b=-\frac{1}{4}
+(\s_a {\tilde \s}_b-\s_b {\tilde \s}_a)_\a{}^\b~,
+\quad\qquad
+({\tilde \s}_{ab})^\ad{}_\bd=-\frac{1}{4}
+({\tilde \s}_a \s_b-{\tilde \s}_b \s_a)^\ad{}_\bd~,
+\ee
+satisfy the Lorentz algebra.
+\be
+\label{eq:lorentz-algebra}
+[\s_{ab},\s_{cd}]=\eta_{ad}\s_{bc}-\eta_{ac}\s_{bd}
++\eta_{bc}\s_{ad}-\eta_{bd}\s_{ac}~,
+\ee
+and are (anti) self-dual,
+\be
+\label{eq:self-dual-sigma}
+\frac{1}{2} \,\ve_{abcd} \, \s^{cd} = - {\rm i} \,\s_{ab}~,
+\quad\qquad
+\frac{1}{2} \,\ve_{abcd} \, \tilde{\s}^{cd} = {\rm i} \,\tilde{\s}_{ab}~.
+\ee
+Also,
+\bea
+(\s^{ab}\s^{c})\!\!&=&\!\!-\frac{1}{2}
+(\eta^{ac}\eta^{bd}-\eta^{bc}\eta^{ad}
++{\rm i}\e^{abcd})\,\s_{d}~,\\
+(\s^{a}{\tilde \s}^{bc})\!\!&=&\!\!-\frac{1}{2}
+(\eta^{ac}\eta^{bd}-\eta^{ab}\eta^{cd}
++{\rm i}\e^{abcd})\,\s_{d}~,\non\\
+({\tilde \s}^{ab}{\tilde \s}^{c})\!\!&=&\!\!-\frac{1}{2}
+(\eta^{ac}\eta^{bd}-\eta^{bc}\eta^{ad}
+-{\rm i}\e^{abcd})\,{\tilde \s}_{d}~,\non\\
+({\tilde \s}^{a}\s^{bc})\!\!&=&\!\!-\frac{1}{2}
+(\eta^{ac}\eta^{bd}-\eta^{ab}\eta^{cd}
+-{\rm i}\e^{abcd})\,{\tilde \s}_{d}~,\non
+\eea
+and
+\bea
+{\rm tr}(\s^{ab}\s^{cd})\!\!&=&\!\!-\frac{1}{2}
+(\eta^{ac}\eta^{bd}-\eta^{ad}\eta^{bc}
++{\rm i}\e^{abcd})~,\\
+{\rm tr}({\tilde \s}^{ab}{\tilde \s}^{cd})\!\!&=&\!\!-\frac{1}{2}
+(\eta^{ac}\eta^{bd}-\eta^{ad}\eta^{bc}
+-{\rm i}\e^{abcd})~.
+\eea
+
+Products of two spinors may be reduced by
+\bea
+&&\!\!\!\!\!\!\!\!
+\j_\a\c_\b=\frac{1}{2}\e_{\a\b}\j\c
+-\frac{1}{2}(\s^{ab})_{\a\b}\j\s_{ab}\c~,
+\quad\qquad
+{\bar \j}_\ad{\bar \c}_\bd=
+-\frac{1}{2}\e_{\ad\bd}{\bar \j}{\bar \c}
+-\frac{1}{2}({\tilde \s}^{ab})_{\ad\bd}
+{\bar \j}{\tilde \s}_{ab}{\bar \c}~,\non\\
+&&\qquad\qquad\qquad\qquad\qquad
+\j_\a{\bar \c}_\ad=
+-\frac{1}{2}(\s^a)_{\a\ad}\j\s_a{\bar \c}~,
+\eea
+and the following Fierz identities hold for arbitrary spinors $\j^\a_1, \j^\a_2, \j^\a_3, \j^\a_4$:
+\bea
+&&(\j_1\j_2)(\j_3\j_4)=
+-(\j_1\j_3)(\j_2\j_4)
+-(\j_1\j_4)(\j_2\j_3)~,\\
+&&\qquad(\j_1\j_2)({\bar \j}_3{\bar \j}_4)
+=-\frac{1}{2}(\j_1\s^a{\bar \j}_4)
+(\j_2\s_a{\bar \j}_3)~.\non
+\eea
+
+
+The connection between spacetime and spinor indices is accomplished in terms of the sigma matrices by
+\be
+V_{\a\ad}=(\s^{a})_{\a\ad}V_{a}~,\quad\qquad
+V_{a}=-\frac{1}{2}({\tilde \s}_{a})^{\ad\a}V_{\a\ad}~.
+\ee
+For an antisymmetric tensor, $X_{ab}=-X_{ba}$ we can write
+\bea
+&& X_{\a\ad\,\b\bd}=
+(\s^{a})_{\a\ad}(\s^{b})_{\b\bd}X_{ab}=
+2\e_{\a\b}X_{\ad\bd}+
+2\e_{\ad\bd}X_{\a\b}~,\\
+&& X_{\a\b}=\frac{1}{2}(\s_{ab})_{\a\b}X_{ab}~,
+\quad\qquad
+X_{\ad\bd}=-\frac{1}{2}({\tilde \s}_{ab})_{\ad\bd}X_{ab}~,\non\\
+&& \qquad\quad\,\,
+X_{ab}=(\s_{ab})_{\a\b}X^{\a\b}
+-({\tilde \s}_{ab})_{\ad\bd}X^{\ad\bd}~,\non
+\eea
+where
+\be
+(\s_{ab})_{\a\b}
+=\e_{\b\g}(\s_{ab})_{\a}{}^{\g}
+=(\s_{ab})_{\b\a}~,\quad\qquad
+({\tilde \s}_{ab})_{\ad\bd}
+=\e_{\ad\gd}({\tilde \s}_{ab})^\gd{}_\bd
+=({\tilde \s}_{ab})_{\bd\ad}~.
+\ee
+The Hodge dual of $X$ is denoted by a tilde,
+\be
+{\tilde X}_{ab}\equiv\frac{1}{2}\e_{abcd}X^{cd}=
+(\s_{ab})_{\a\b}{\tilde X}^{\a\b}
+-({\tilde \s}_{ab})_{\ad\bd}{\tilde X}^{\ad\bd}~,
+\ee
+where, due to (\ref{eq:self-dual-sigma}), ${\tilde X}_{\a\b}=-{\rm i}X_{\a\b}$, ${\tilde X}_{\ad\bd}={\rm i}X_{\ad\bd}$ and ${\tilde {\tilde X}}=-X$. If $X_{ab}$ is a real tensor, then $X_{\a\b}$ and $X_{\ad\bd}$ are conjugate to each other, ${\bar X}_{\ad\bd}=X_{\ad\bd}$. In particular, this applies to the Lorentz generators, $M_{ab}=-M_{ba} \Leftrightarrow (M_{\a\b},{\bar M}_{\ad\bd})$, which satisfy the same algebra (\ref{eq:lorentz-algebra}) as the $\s_{ab}$ matrices. They act on arbitrary spinors as follows:
+\bea
+M_{\a\b}(\j_{\g})=
+\frac{1}{2}(\e_{\g\a}\j_{\b}+\e_{\g\b}\j_{\a})
+~,\quad&&\qquad M_{\a\b}({\bar \j}_{\gd})=0~,\\
+{\bar M}_{\ad\bd}({\bar \j}_{\gd})=
+\frac{1}{2}(\e_{\gd\ad}{\bar \j}_{\bd}+\e_{\gd\bd}{\bar \j}_{\a})
+~,\quad&&\qquad {\bar M}_{\ad\bd}(\j_{\g})=0~.\non
+\eea
+
+Also, of some use during calculation are the following identities, which follow from the covariant derivative algebra (\ref{eq:Dalgebra}):
+\bea
+\cD_\a\cD_\b
+\!&=&\!\frac{1}{2}\e_{\a\b}\cD^2-2{\bar R}\,M_{\a\b}~,
+\quad\qquad
+{\bar \cD}_\ad{\bar \cD}_\bd
+=-\frac{1}{2}\e_{\ad\bd}{\bar \cD}^2+2R\,{\bar M}_{\ad\bd}~,\\
+\cD_\a\cD^2
+\!&=&\!4{\bar R}\,\cD^\b(\e_{\a\b}+M_{\a\b})~,
+\quad\qquad
+\cD^2\cD_\a
+=-2{\bar R}\,\cD^\b(\e_{\a\b}+M_{\a\b})~,\non\\
+{\bar \cD}_\ad{\bar \cD}^2
+\!&=&\!4R\,{\bar \cD}^\bd(\e_{\ad\bd}+{\bar M}_{\ad\bd})~,
+\quad\qquad
+{\bar \cD}^2{\bar \cD}_\ad
+=-2R\,{\bar \cD}^\bd(\e_{\ad\bd}+{\bar M}_{\ad\bd})~,\non\\
+\left[\cD^2,{\bar \cD}_\ad\right]
+\!&=&\!-4(G_{\a\ad}+{\rm i}\cD_{\a\ad})\cD^\a
++4{\bar R}\,{\bar \cD}_\ad
+-4(\cD^\g G^\d{}_\ad)M_{\g\d}
++8{\bar W}_\ad{}^{\gd\dd}{\bar M}_{\gd\dd}~,\non\\
+\left[{\bar \cD}^2,\cD_\a\right]&=&
+-4(G_{\a\ad}-{\rm i}\cD_{\a\ad}){\bar \cD}^\ad
++4R\,\cD_\a
+-4({\bar \cD}^\gd G_\a{}^\dd){\bar M}_{\gd\dd}
++8W_\a{}^{\g\d}M_{\g\d}~,
+\non
+\eea
+where $\cD^2=\cD^\a\cD_\a$, and ${\bar \cD}^2={\bar \cD}_\ad{\bar \cD}^\ad$. Note also that 
+\be
+(\cD_\a V)^* =(-1)^{\e(V)}{\bar \cD}_\ad V^*~,
+\quad\qquad
+(\cD^2 V)^* ={\bar \cD}^2 V^*~,
+\ee
+where $\e(V)$ is the Grassmann parity of $V$, {\it i.e.} $\e(V)=1$, if $V$ is a fermionic superfield, and $\e(V)=0$, if it is bosonic.

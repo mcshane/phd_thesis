@@ -1,0 +1,231 @@
+\chapter{Self-dual electrodynamics and matter coupling in supergravity} 
+\label{chap:matter_coupling}
+
+\numberin{equation}{chapter} 
+
+We now turn to systems in which the models for self-dual electrodynamics of chapter \ref{chap:em_duality} are coupled to supersymmetric matter. We will first look at coupling to K{\"a}hler sigma models in which the chiral multiplets parametrizing the target space are inert under duality transformations. We will than consider theories in which the coordinates are allowed to change under duality transformations, focussing on the so-called dilaton-axion multiplet.
+
+In phenomenological applications of supergravity-matter theories, chiral matter is described by supersymmetric nonlinear sigma models. As first realized by Zumino \cite{Zumino:1979et}, target spaces for $\cN=1$ supersymmetric sigma models must be complex K{\"a}hler manifolds. Chiral scalar superfields correspond to complex coordinates on a K{\"a}hler manifold \cite{Alvarez-Gaume:1983ab,Bagger:1982fn,Bagger:1984ge,Bagger:1987xg}. A detailed discussion of supersymmetric sigma models in supergravity is given in \cite{Bagger:1990qh}.
+
+The dilaton and axion are massless scalar fields that appear in the low-energy effective action of string theory \cite{Green:1987sp,Green:1987mn,Polchinski:1998rq,Polchinski:1998rr}. The significance of the dilaton is that its vacuum expectation value determines the string coupling constant, while the axion arises in the solution to the strong CP-problem via the Peccei-Quinn mechanism (see, e.g., \cite{Mohapatra:1986uf} for more details). We note that the axion may equivalently be described by a gauge two-form. These fields also turn out to be of importance from the point of view of duality invariance. If one starts with Maxwell electrodynamics and then couples the gauge field to the dilaton and axion, then the lagrangian takes the form
+\bea
+-\frac{1}{4}{\rm e}^{-\vf}F^{ab}F_{ab}
++\frac{1}{4}\,a\,F^{ab}{\tilde F}_{ab}~,
+\eea
+where $\vf$ and $a$ are the dilaton and axion respectively. The remarkable feature of this theory is that the original U(1) duality invariance of Maxwell's theory is enhanced to the non-compact group SL($2,{\mathbb R}$) \cite{Gaillard:1981rj}. In $\cN=1$ supersymmetric theories the dilaton and axion belong to the same multiplet (the dilaton-axion multiplet), which can be realized as either a chiral scalar multiplet or its tensor multiplet dual.
+
+To facilitate our discussion of the coupling of nonlinear electrodynamics to supersymmetric nonlinear sigma models, we begin by formulating nonlinear self-duality in new-minimal supergravity.
+
+\numberin{equation}{section} 
+
+\vskip0.5cm
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\section{Coupling to new-minimal supergravity}
+\noindent In order to couple our self-dual models to new-minimal supergravity, we note that any system of matter fields $\J$ coupled to new-minimal supergravity can be treated as a super-Weyl invariant coupling of old minimal supergravity to the matter superfields $\J$ and the real linear scalar superfield ${\mathbb L}$ defined by (\ref{eq:linear}).
+
+For the massless vector multiplet, the gauge superfield $V$ is inert under super-Weyl transformations, whilst $W_\a$ transforms as
+\be
+\label{eq:Wsuper-weyl}
+W_\a ~\to ~ {\rm e}^{-3  \s /2} \, W_\a ~.
+\ee
+Thus the linear part of the family model (\ref{eq:family action}) is already super-Weyl invariant. To promote the nonlinear part to a super-Weyl invariant form we notice that the following combination is invariant\footnote{Here we actually generalize the construction \cite{Kuzenko:2000tg} of $\cN=1$ superconformal $U(1)$ duality invariant systems in flat superspace.}:
+\be
+(\cD^2 - 4 {\bar R}) \Big( \frac{W^2}{{\mathbb L}^2 } \Big)~.
+\ee
+As a result, we can replace the action (\ref{eq:family action}) by the following functional\footnote{Without spoiling the super-Weyl invariance and self-duality of the action (\ref{eq:SED-NSG}), the `compensator' $\mathbb{L}$ can be replaced in (\ref{eq:SED-NSG}) by $\mathbb{L}/\k$, with $\k$ a coupling constant. We set this constant to be one since it can be absorbed via renormalization of the self-interaction, ${\hat \L}(\o, {\bar \o}) = \k^2 \L(\k^2 \o, \k^2 {\bar \o})$, see \cite{Kuzenko:2000uh}.}:
+\bea
+\label{eq:SED-NSG}
+S[W,{\bar W},{\mathbb L}] =
+\frac{1}{4}{\int\!\!{\rm d}^8z}\, {\frac{E^{-1}}{R}}\,W^2
+\!\!&+&\!\!
+\frac{1}{4}{\int\!\!{\rm d}^8z}\, {\frac{E^{-1}}{\bar R}}\, {\bar  W}^2
+\\
+\!\!&+&\!\!
+\frac14\, {\int\!\!{\rm d}^8z}\, E^{-1} \,
+\frac{W^2\,{\bar W}^2}{{\mathbb L}^2}\,
+\L\!\left(\frac{\o}{{\mathbb L}^2},
+\frac{\bar \o}{{\mathbb L}^2}\right)~.\non
+\eea
+Combined with the new-minimal supergravity action (\ref{eq:nmsg}), this gives a description of self-dual electrodynamics in new-minimal supergravity. The action is (i) super-Weyl invariant; and (ii) self-dual, {\it i.e.} it solves the $\cN=1$ self-duality equation (\ref{eq:sde}). 
+
+
+\vskip0.5cm
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\section{K{\"a}hler sigma models in supergravity}\label{sec:kahler-sugra}
+\noindent K{\"a}hler sigma models are most easily described within the framework of new-minimal supergravity \cite{Ferrara:1983dh}. Given a K{\"a}hler manifold parameterized by $n$ complex coordinates $\f^{i}$ and their conjugates ${\bar \f}^{\underline i}$, with $K(\f,{\bar \f})$ the K{\"a}hler potential, the corresponding supergravity-matter action is
+\be
+\label{eq:sigma}
+S= 3 {\int\!\!{\rm d}^8z}\, E^{-1}\,
+{\mathbb L}\, {\rm ln} {\mathbb L} + {\int\!\!{\rm d}^8z}\, E^{-1}\,
+{\mathbb L}\,K(\f, \bar \f )~.
+\ee
+The dynamical variables $\f^{i}$ are covariantly chiral scalar superfields, ${\bar \cD}_\ad \f^{i}=0 $, being inert with respect to the super-Weyl transformations. The action is obviously super-Weyl invariant. Moreover, the action is invariant under the K\"ahler transformations
+\be
+\label{eq:kahler}
+K(\f, \bar \f) \to K(\f, \bar \f) + \l(\f) + \bar \l(\bar \f)~,
+\ee
+with $\l(\f)$ an arbitrary holomorphic function.
+
+The relationship with old-minimal supergravity can be shown by using the procedure described in section 1.3. We first relax the constraint (\ref{eq:linear}) on ${\mathbb L}$ and introduce the auxiliary action
+\be
+\label{eq:aux2}
+S = 3 {\int\!\!{\rm d}^8z}\, E^{-1}\,
+\left(U\, {\mathbb L} - \U\right)~,
+\ee
+where
+\be
+\label{eq:upsilon}
+\U  = {\rm exp}\!\left(U - \frac{1}{3}
+K(\f, {\bar \f})\right)~,
+\ee
+and $U$ is a real unconstrained scalar superfield transforming under super-Weyl transformations as in (\ref{eq:UsuperWeyl}). To maintain invariance under K\"ahler transformations (\ref{eq:kahler}), $U$ must transform as
+\be
+U ~\to~ U + \frac{1}{3}\left(\l(\f) + \bar \l(\bar \f)\right)~.
+\ee
+If $U$ is eliminated from the auxiliary action (\ref{eq:aux2}) by its equation of motion we regain the action (\ref{eq:sigma}) with the linearity constraint (\ref{eq:linear}) on ${\mathbb L}$. On the other hand, substituting in the solution to the ${\mathbb L}$ equation of motion (\ref{eq:Usolution}) we obtain the dual model
+\be
+\label{eq:kahlermodel}
+S_{\rm Kahler} = -3  \int\!\!{\rm d}^8z\, E^{-1}\,
+{\bar \S}\S \, 
+{\rm exp}\!\left(-\frac 13 K\!(\f,{\bar \f})\right)
+=  -3\int\!\!{\rm d}^8z\, E^{-1}\, \tilde{\U}~,
+\ee
+where $\S$ is a covariantly chiral scalar superfield, ${\bar \cD}_\ad\S=0$, and
+\be
+\label{eq:tilde-upsilon}
+{\tilde \U} = \S{\bar \S} \,
+{\rm exp}\!\left(-\frac{1}{3} K\!(\f,{\bar \f})\right)~.
+\ee
+To maintain K{\"a}hler invariance, $\S$ transforms under K{\"a}hler transformations (\ref{eq:kahler}) as
+\be
+\S ~\to~ {\rm e}^{\l(\f)/3}\,\S~.
+\ee
+The super-Weyl gauge freedom (\ref{eq:SWeylTransform}) allows us some flexibility. If we make the gauge choice $\S=1$, K{\"a}hler transformations (\ref{eq:kahler}) must be accompanied by a special super-Weyl transformation with $\s=(1/3)\l(\f)$. In addition to U(1) duality invariance, the model (\ref{eq:kahlermodel}) would then also enjoy the so-called super-Weyl-K{\"a}hler invariance.
+
+
+\vskip0.5cm
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\section{Coupling to nonlinear sigma models}
+\noindent For matter superfields, $\f$ and ${\bar \f}$, inert under duality transformations, it is easy to couple the K{\"a}hler sigma model (\ref{eq:sigma}) in new-minimal supergravity to self-dual supersymmetric electrodynamics (\ref{eq:SED-NSG}). The supergravity-matter system is described by the action
+\be
+\label{eq:NSG-ED-sigma}
+S[W,{\bar W}, \f, {\bar \f},{\mathbb L}]
+= 3 {\int\!\!{\rm d}^8z}\, E^{-1}\,
+{\mathbb L}\, {\rm ln} {\mathbb L} + {\int\!\!{\rm d}^8z}\, E^{-1}\,
+{\mathbb L}\,K(\f, \bar \f )
++ S[W,{\bar W},{\mathbb L}] ~,
+\ee
+and this theory possesses several important symmetries: (i) super-Weyl invariance; (ii) K{\"a}hler invariance; and (iii) U(1) duality invariance. To establish the link to this theory's description in the framework of old-minimal supergravity, the procedure described above can be used to obtain the dual model
+\be
+\label{eq:U(1)}
+S[W, {\bar W}, \f, {\bar \f}, \S, \bar \S] =
+- 3 {\int\!\!{\rm d}^8z}\, E^{-1}\,  \tilde{\U}
++ S[W,{\bar W}, \tilde{\U}]~.
+\ee
+Again, if we choose the super-Weyl gauge such that $\S=1$, this theory, unlike (\ref{eq:NSG-ED-sigma}) enjoys the super-Weyl-K{\"a}hler invariance in addition to U(1) duality invariance.
+
+In flat superspace the K{\"a}hler sigma model, $K(\f, \bar \f )$ couples only trivially to supersymmetric nonlinear self-dual electrodynamics, through the addition of the kinetic term ${\int\!{\rm d}^8z}\,K(\f, \bar \f )$ \cite{Kuzenko:2000uh}. The result (\ref{eq:U(1)}) shows that in curved superspace more care needs to be taken. Even for matter that is inert under duality transformations, the coupling of a K{\"a}hler sigma model to supersymmetric nonlinear self-dual electrodynamics is nontrivial.
+
+
+\vskip0.5cm
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\section{Coupling to the dilaton-axion multiplet}\label{sec:dil-ax}
+\noindent In the above analysis of the coupling of self-dual supersymmetric electrodynamics to K\"ahler sigma models in curved superspace, it was assumed that the matter superfields, $\f$ and $\bar \f$, are inert under the electromagnetic duality rotations. Of some interest is a more general situation when, say,  a chiral matter superfield $\F$ and its conjugate $\bar \F$ {\it do} transform under duality rotations, which can now span a larger group than the one corresponding to the pure gauge field case. Coupling to the so-called dilaton-axion supermultiplet is an important example.
+
+We start by formulating the conditions of duality invariance for the abelian vector multiplet $(W_\a, \,{\bar W}_\ad )$ interacting with chiral matter $(\F, \,{\bar \F})$ in curved superspace. Let $S[v] = S[W, {\bar W}, \F,{\bar \F}]$ be the action functional of the supergravity-matter systems, with the dependence of $S[v]$ on the supergravity prepotentials being implicit. We again introduce covariantly  (anti) chiral spinor superfields ${\bar M}^{\ad }$ and $M_\a$ defined by the rule (\ref{eq:Mdefinition}). Since the Bianchi identity $\cD^\a W_\a = {\bar \cD}_\ad {\bar W}^{\ad }$ and the gauge field equation of motion $\cD^\a M_\a = {\bar \cD}_\ad {\bar M}^{\ad }$ are of the same functional form, we may consider infinitesimal duality transformations
+\bea
+\label{eq:matter duality transformation}
+\d \left( \begin{array}{c} M_\a  \\  W_\a  \end{array} \right)
+&=&  \left( \begin{array}{cc} ~a~& ~b~ \\
+~c~ & ~d~ \end{array} \right)
+\left( \begin{array}{c} M_\a \\ W_\a  \end{array} \right) ~, \qquad \quad
+\d \F = \x (\F)~,
+\eea
+with $\x (\F )$ a {\it holomorphic} function and $a, b, c$ and $d$ real numbers.
+
+We understand the conditions for self-duality to be that (i) $M'[v']$ should be defined as in (\ref{eq:sd condition}); and (ii) that the equation of motion for $\F$,
+\be
+\label{eq:phi-eom}
+\Pi [v]=\frac{\d}{\d \F}S[v]~,
+\ee
+should transform covariantly under duality transformations
+\bea
+\label{eq:phi-eom-covariance}
+&&\phantom{\d \Pi=\Pi'[v']-\Pi [v]~,\quad}
+\d \Pi=-\frac{\partial \x(\F)}{\partial \F}\Pi [v]~,\\
+&&\d \Pi=\Pi'[v']-\Pi [v]~,\quad\qquad 
+\Pi'[v']=\frac{\d}{\d \F'}S[v']=
+\frac{\d}{\d \F'}S[v]+\frac{\d}{\d \F}\d S~.\non
+\eea
+
+
+Following \cite{Kuzenko:2000uh} (see appendix \ref{app:sd_equation} for details), the conditions of duality invariance in the presence of matter can be shown to be
+\bea
+\label{eq:sd matter equations}
+\d \F \cdot \frac{\d S}{\d \F } +
+\d {\bar \F} \cdot \frac{\d S}
+{\d {\bar\F} }
+&=& \frac{\rm i}{4} \, b \,\Big( W \cdot W -
+{\bar W} \cdot {\bar W} \Big) - \frac{\rm i}{4}\, c \,\Big(
+M \cdot M -
+{\bar M} \cdot {\bar M} \Big) \non \\
+&+& \frac{\rm i}{2} \,a  \,\Big(
+W \cdot M -
+{\bar W} \cdot {\bar M} \Big)~,
+\eea
+with $d=-a$. We see that the  maximal group of duality transformations is ${\rm Sp}(2, {\mathbb R})$ $\cong$ ${\rm SL}(2, {\mathbb R})$. The complex variable $\F$ should then parametrize the homogeneous space SL$(2,{\mathbb R}) /$U(1), with the vector field $\x (\F)$ in (\ref{eq:sd matter equations}) generating the action of SL$(2,{\mathbb R})$ on the coset space. The matter-free case, which was considered before, corresponds to freezing the superfield $\F(z)$ to a given point of the space SL$(2,{\mathbb R}) /$U(1).  In such a case, the duality group, SL$(2,{\mathbb R})$,  reduces to U(1) -- the stabilizer of the point chosen.
+
+To describe the dilaton-axion multiplet, we make use of the lower half-plane realization of the coset space SL$(2,{\mathbb R}) /$U(1). Then, the variation $\d \F = \x (\F)$ in (\ref{eq:matter duality transformation}) is
+\be
+\d \F = b +2a \,\F -c \, \F^2~.
+\ee
+Our solution to the equations (\ref{eq:sd matter equations}) reads
+\bea
+\label{eq:dil-ax1}
+S &=& 3 {\int\!\!{\rm d}^8z}\, E^{-1}\,
+{\mathbb L}\, {\rm ln} {\mathbb L} + {\int\!\!{\rm d}^8z}\, E^{-1}\,
+{\mathbb L}\, \Big( \cK(\F, \bar \F ) + K(\f, \bar \f) \Big) \non \\
+&&
++ \frac{\rm i}{4}{\int\!\!{\rm d}^8z}\, {\frac{E^{-1}}{R}}\, \F\,W^2 -
+\frac{\rm i}{4}{\int\!\!{\rm d}^8z}\, {\frac{E^{-1}}{\bar R}}\,
+{\bar \F}\,{\bar  W}^2\\
+&&-  \frac{1}{16}\, {\int\!\!{\rm d}^8z}\, E^{-1} \,
+(\F-{\bar \F})^2\, \frac{W^2\,{\bar W}^2}{{\mathbb L}^2}  \,
+\L \Big( \frac{\rm i}{2} (\F - {\bar \F}) \,
+\frac{\o}{{\mathbb L}^2} \; , \;
+\frac{\rm i}{2} (\F-{\bar \F}) \,
+\frac{\bar \o}{{\mathbb L}^2} \Big)~,\non
+\eea
+where $\o$ is defined in (\ref{eq:u}). Here $\cK(\F,{\bar \F})$ is the K\"ahler potential of the K\"ahler mainfold SL$(2,{\mathbb R}) /$U(1). It takes the form 
+\be
+\label{eq:kahlerpotential}
+\cK(\F,{\bar \F})=-{\rm ln}\,\frac{\rm i}{2}
+(\F-{\bar \F})~.
+\ee
+The term ${\int\!{\rm d}^8z}\, E^{-1}\,{\mathbb L}\,K(\f, {\bar \f})$ in (\ref{eq:dil-ax1}) corresponds
+to the chiral matter which is inert under the duality rotations. For $\F= - {\rm i}$, the action (\ref{eq:dil-ax1}) reduces to (\ref{eq:NSG-ED-sigma}).
+
+The supergravity-matter system (\ref{eq:dil-ax1}) enjoys the following important properties:
+(i) super-Weyl invariance; (ii) K{\"a}hler invariance; and (iii)  SL$(2,{\mathbb R})$ duality invariance.
+To re-formulate this theory in the framework of the old-minimal version of $\cN=1$ supergravity, one should eliminate the real linear compensator ${\mathbb L}$ following the procedure described in section \ref{sec:kahler-sugra}. This will lead to
+\bea
+\label{eq:d-axcoupledaction}
+S\!\!&\!=\!&\!\!- 3 {\int\!\!{\rm d}^8z}\, E^{-1}\,{\tilde {\bf \U}}
++ \frac{\rm i}{4}{\int\!\!{\rm d}^8z}\, {\frac{E^{-1}}{R}}\, \F\,W^2 -
+\frac{\rm i}{4}{\int\!\!{\rm d}^8z}\, {\frac{E^{-1}}{\bar R}}\,
+{\bar \F}\,{\bar  W}^2
+\\
+&&-  \frac{1}{16}\, {\int\!\!{\rm d}^8z}\, E^{-1} \,
+(\F-{\bar \F})^2\, \frac{W^2\,{\bar W}^2}{{\tilde {\bf \U}}^2 }  \,
+\L \Big( 
+\frac{\rm i}{2}(\F-{\bar \F})\,\frac{\o}{{\tilde {\bf \U}}^2}\;,\;
+\frac{\rm i}{2}(\F-{\bar \F})\,\frac{\bar \o}{{\tilde {\bf \U}}^2} 
+\Big)~,\non
+\eea
+where
+\be
+{\tilde {\bf \U}}=\S{\bar \S}
+\exp\!\Big(-\frac{1}{3}\cK\!(\F, \bar \F )
+-\frac{1}{3} K\!(\f, \bar \f) \Big)~.
+\ee
+The chiral superfield $\S$ may be gauged away using the super-Weyl gauge freedom (\ref{eq:SWeylTransform}). If we make the gauge choice $\S=1$ then, unlike (\ref{eq:dil-ax1}), this action enjoys the super-Weyl--K{\"a}hler invariance.

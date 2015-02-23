@@ -1,0 +1,363 @@
+\chapter{Electromagnetic duality rotations in curved superspace} 
+\label{chap:em_duality}
+
+\numberin{equation}{chapter} 
+
+In 1934 Born and Infeld \cite{Born:1934gh}, seeking a solution to the problem of the infinite self-energy of the electron, proposed an alternative formulation of electromagnetism. It involved replacing the linear Maxwell lagrangian by the following lagrangian:
+\be
+-\frac{1}{4} %\int\!\!{\rm d}^4x\,
+F^{ab}F_{ab}\quad\longrightarrow\quad
+\frac{1}{\k^2} %\int\!\!{\rm d}^4x\,
+\left(1-\sqrt{-{\rm det}(\eta_{ab}
++\k\,F_{ab})}\right)~,
+\ee
+where $\k$ is a coupling constant. Such a replacement modifies the dynamics at short distances and results in a finite electron self-energy. It was soon realized by Schr{\"o}dinger \cite{Schrodinger:1935} that Born-Infeld theory possesses the remarkable property of U(1) duality invariance. The linear theory ($\k\to0$), corresponding to Maxwell's equations in vacuum, is invariant under the continuous U(1) transformation $\vec{E}+{\rm i}\vec{B}\to{\rm e}^{-{\rm i}\t}(\vec{E}+{\rm i}\vec{B})$, and Schr{\"o}dinger showed that this property extends to the Born-Infeld theory, at the cost of the U(1) duality transformation being realized nonlinearly.
+
+Although the expectations that led the authors of \cite{Born:1934gh} to put forward their theory were never fully realized, the Born-Infeld action has reappeared in the context of the low energy effective actions in string theory \cite{Fradkin:1985qd,Leigh:1989jq}. In conjunction with the appearance of patterns of duality invariance in extended supergravity \cite{Ferrara:1976iq,Cremmer:1979up}, this motivated the development of a general theory of nonlinear self-duality in four and higher spacetime dimensions \cite{Gaillard:1981rj,Zumino:1981pt,Gibbons:1995cv,Gibbons:1995ap,Gaillard:1997zr,Gaillard:1997rt,Tanii:1998px,Araki:1998nn,Kimura:1999jb,Brace:1999zi,Hatsuda:1999ys,Aschieri:1999jr,Aschieri:2000dx,Ivanov:2002ab,Ivanov:2003uj}, and later an extension to 4D $\cN=1,2$ globally supersymmetric theories \cite{Kuzenko:2000tg,Kuzenko:2000uh}. Indeed, as indicated in the introduction, self-duality is an important feature of a number of supersymmetric theories, particularly ones describing spontaneous partial breaking of supersymmetry. This provides our motivation for the investigation of general nonlinear self-dual supersymmetric theories.
+
+Given that string theory contains gravity as a fundamental excitation, the corresponding low energy effective actions should incorporate gravity. It is therefore important, when studying the nonlinear self-dual electrodynamic models, which are related to such effective actions, to understand how they couple to gravity and, in the extended case, to supergravity. We will begin this chapter with a brief review of self-duality in curved spacetime \cite{Gibbons:1995cv,Gibbons:1995ap,Gibbons:2000mx}, before going on to develop the curved superspace extension.
+
+\numberin{equation}{section} 
+
+\vskip0.5cm
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\section{Self-duality in curved spacetime}\label{sec:non-susy-sd}
+\noindent Consider a nonlinear theory\footnote{The lagrangian is also a function of the gravitational field $g_{mn}$, $L(F)=L(F,g)$, however this dependence is not indicated explicitly.} $S[F,g]=\int\!{\rm d}^4x \,\sqrt{-g}\,L(F)$, $g={\rm det}(g_{mn})$ of the electromagnetic field strength\footnote{Here, in manifestly a covariant form, we actually have $F_{mn}=\nabla_m V_n-\nabla_n V_m$, where $\nabla_m v_n=\partial_{m}v_{n}-\G^{p}{}_{mn}v_{p}$, for a covector field $v_m$, with $\G^{p}{}_{mn}$ being the Christoffel symbols. However, this reduces to $F_{mn}=\partial_m V_n-\partial_n V_m$, since torsion vanishes in this purely bosonic system.}, $F_{mn}=\partial_m V_n-\partial_n V_m$ in curved spacetime such that $L(F)=(-1/4)F^{mn}F_{mn}+O(F^4)$. We introduce
+\be
+{\tilde G}_{mn}(F)~=~
+\frac{1}{2}\e_{mnpq}G^{pq}(F)~\equiv~
+2\frac{\partial L(F)}{\partial F^{mn}}~,
+\ee
+where the totally antisymmetric tensor $\e_{mnpq}$ is defined by (\ref{eq:curved-antisymm}). For a theory $S[\l]$ in which the parameter $\l$ is varied such that $\l\to\l+\d\l$, the partial derivative of the lagrangian with respect to $\l$ is defined by
+\be
+S[\l+\d \l]-S[\l]=
+\int\!{\rm d}^4x \,\sqrt{-g}\,\d \l
+\frac{\partial L(F)}{\partial \l}~.
+\ee
+In the linear case, where the lagrangian is the Maxwell lagrangian in vacuum $L(F)=(-1/4)F^{mn}F_{mn}$, we have $G={\tilde F}$, the Hodge dual of the electromagnetic field strength. The Bianchi identity and equation of motion have the same form
+\be
+\nabla^{n}{\tilde F}_{mn}=0~,\quad\qquad
+\nabla^{n}{\tilde G}_{mn}=0~,
+\ee
+so we may consider U(1) duality rotations such that
+\bea
+\label{eq:em-duality-rotation}
+\left( \begin{array}{c}  G'(F') \\ F'  \end{array} \right)
+~=~  \left( \begin{array}{cr} \cos \t ~& ~
+-\sin \t \\ \sin \t ~ &  ~\cos \t \end{array} \right) \;
+\left( \begin{array}{c}  G(F) \\ F \end{array} \right) ~,
+\eea
+where
+\be
+{\tilde G'}_{mn}(F')
+=2\frac{\partial L'(F')}{\partial F'^{mn}}~,
+\ee
+and the gravitational field, $g_{mn}$ is inert under duality transformations. If one requires that the theory be self dual, {\it i.e.} that $L'(F)=L(F)$, then we have the following restriction placed upon the model:
+\be
+\label{eq:sde-non-susy}
+G^{mn}{\tilde G}_{mn}+F^{mn}{\tilde F}_{mn}=0~.
+\ee
+This is called the self-duality equation. Any solution is a minimal coupling of U(1) duality invariant nonlinear electrodynamics to Einstein gravity,
+\be
+\label{eq:gravity-curved}
+S_{\rm G}= \frac{1}{2} \int\!\!{\rm d}^4x \,\sqrt{-g}\,{\cal R}~.
+\ee
+
+As an important example, consider the Born-Infeld lagrangian minimally coupled to gravity
+\be
+L_{\rm BI-curved}=\frac{1}{\k^2}\left( 
+1-\frac{1}{\sqrt{-g}}\sqrt{-{\rm det}(g_{mn}+\k F_{mn})}
+\right)~.
+\ee
+The model is a solution to the self-duality equation (\ref{eq:sde-non-susy}). For later comparison, using (\ref{eq:curved-flat}), the Born-Infeld action in the vierbein formalism is
+\be
+\label{eq:BI-curved}
+S_{\rm BI-curved}= \frac{1}{\k^2} \int\!\!{\rm d}^4x \,e^{-1}
+\left(1-\sqrt{-{\rm det}(\eta_{ab}
++\k\,F_{ab})}\right)~,
+\ee
+where $F_{ab}$ is as defined in (\ref{eq:F_ab defn}), but with torsion set to zero.
+
+Such theories have a number of interesting properties, including invariance under Legendre transformation \cite{Gaillard:1981rj,Gibbons:1995cv} and duality invariance of the energy-momentum tensor \cite{Gaillard:1981rj,Gibbons:1995cv}. In addition, when coupled to the dilaton and axion, the duality group is enlarged to the non-compact SL($2,{\mathbb R}$) group of symmetries \cite{Gaillard:1981rj,Gibbons:1995ap} (see chapter \ref{chap:matter_coupling}).
+
+\vskip0.5cm
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\subsection{Invariance under Legendre transformation}
+${}$\newline
+\indent Invariance under Legendre transformation can be shown by simultaneously relaxing the constraint on the field strength so that it is now an unconstrained antisymmetric field, and introducing a Lagrange multiplier field $A_{\rm D}$ in the following manner:
+\be
+\label{eq:Faux}
+L(F,F_{\rm D})=
+L(F)-\frac{1}{2}F_{mn}{\tilde F}_D^{mn}~,
+\quad\qquad
+F_{\rm D}^{mn}=
+\nabla^m V_{\rm D}^n-\nabla^n V_{\rm D}^m~,
+\ee
+where $F_{\rm D}$ is the dual field strength. Solving the equation of motion for $A_{\rm D}$ requires that $F$ satisfy the Bianchi identity $\nabla^{n}{\tilde F}_{mn}=0$, and the model (\ref{eq:Faux}) reduces to the original one. On the other hand, one can also consider the equation of motion for $F$:
+\be
+G(F)=F_{\rm D}~,
+\ee
+the solution of which is $F=F(F_{\rm D})$. Substituting back into (\ref{eq:Faux}), one obtains the dual model
+\be
+\label{eq:em-dual}
+L_{\rm D}(F_{\rm D})\equiv
+\Big(L(F)-\frac{1}{2}F_{mn}{\tilde F}_D^{mn}
+\Big)\Big|_{F=F(F_{\rm D})}~.
+\ee
+Since the following combination is invariant under arbitrary duality transformations (\ref{eq:em-duality-rotation})
+\be
+L(F)-\frac{1}{4}F_{mn}G^{mn}(F)
+=L(F')-\frac{1}{4}F'_{mn}G'^{mn}(F')~,
+\ee
+we find that, for a finite rotation by $\t=\pi/2$,
+\be
+L(F)-\frac{1}{2}F_{mn}{\tilde F}_{\rm D}^{mn}
+=L(F_{\rm D})~.
+\ee
+Comparing with (\ref{eq:em-dual}) we see that $L=L_{\rm D}$.
+
+
+\vskip0.5cm
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\subsection{Duality invariance of the energy-momentum tensor}\label{subsec:sd-em-tensor}
+${}$\newline
+\indent An elegant, model independent proof that the energy-momenum tensor is invariant under U(1) duality transformations was given by Gaillard and Zumino \cite{Gaillard:1981rj,Gaillard:1997rt}. Suppose we have a duality invariant parameter $\l$, in our nonlinear self-dual theory $S[F,\l]$. Then the observable $Q$, defined by
+\be
+\sqrt{-g}\,Q=\frac{\partial}{\partial \l}\Big(\sqrt{-g}\,L(F,\l)\Big)~,
+\ee
+is itself duality invariant. To see this, consider an infinitesimal duality transformation $\d F=\t G$, $\d G=-\t F$,
+\be
+\sqrt{-g}\,\d Q=\frac{\partial}{\partial \l}\Big(\sqrt{-g}\,\d L\Big)
+=\frac{\t}{2}\,\frac{\partial}{\partial \l}
+\Big(\sqrt{-g}\,G_{mn} {\tilde G}^{mn}\Big)~.
+\ee
+Using the self-duality equation (\ref{eq:sde-non-susy}) we see that 
+\be
+\sqrt{-g}\,\d Q=-\frac{\t}{2}\,\frac{\partial}{\partial \l}
+\Big(\sqrt{-g}\,F_{mn} {\tilde F}^{mn}\Big)
+=-\frac{\t}{4}\,\frac{\partial}{\partial \l}
+\Big(\sqrt{-g}\,\e^{mnpq}\,F_{mn}F_{pq}\Big)
+=0~,
+\ee
+where the totally antisymmetric tensor is given by (\ref{eq:curved-antisymm}). As a consequence, if we take the invariant parameter to be the metric $g_{mn}$, then the energy-momentum tensor $T^{mn}$, defined by
+\be
+\sqrt{-g}\,T^{mn}=
+-2\frac{\partial}{\partial g_{mn}}
+\Big(\sqrt{-g}\,L(F)\Big)~,
+\ee
+is invariant under U(1) duality rotations.
+
+
+\vskip0.5cm
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\section{Self-duality in curved superspace}
+\noindent To extend the concept of nonlinear electromagnetic self-duality to curved superspace we consider models of a single abelian $\cN=1$ vector multiplet (see section \ref{sec:matter-supermultiplets}) generated by the action $S[W,{\bar W}]$. The multiplet is described by the covariantly (anti) chiral superfield stengths ${\bar W}_\ad$ and $W_\a$, which are defined by (\ref{eq:w-bar-w}) and satisfy the Bianchi identity (\ref{eq:bianchi}).
+
+Let us consider general actions that do not involve the combination $\cD^\a W_\a$ as an independent variable. In such cases, $S[W,{\bar W}] \equiv S[v]$ can be unambiguously defined as if it were a functional of {\it unconstrained} (anti) chiral superfields ${\bar W}_\ad$ and $W_\a$, and one can define (anti) chiral superfields ${\bar M}_\ad$ and $M_\a$ as
+\be
+\label{eq:Mdefinition}
+{\rm i}\,M_\a [v]\equiv 2\, \frac{\d }{\d W^\a}\,S[v]
+~, \qquad \quad
+- {\rm i}\,{\bar M}^\ad [v]\equiv 2\,
+\frac{\d }{\d {\bar W}_\ad}\, S[v] ~.
+\ee
+Here, using the notation (\ref{eq:dot notation}), the functional derivatives are defined by
+\be
+\d S=S[W+\d W,{\bar W}+\d{\bar W}]-S[W,{\bar W}]=
+\d W(z) \cdot \frac{\d S[v]}{\d W(z)} +
+\d {\bar W}(z) \cdot \frac{\d S[v]}{\d {\bar W}(z)} ~,
+\ee
+and
+\be
+\frac{\d}{\d W^\a(z)}W^\b(z')={\d_\a}^\b \d_{+}(z-z')~.
+\ee
+With this definition, the vector multiplet equation of motion following from the action $S[W,{\bar W}]$ is 
+\be
+\label{eq:eom}
+\cD^\a\!M_\a ~=~ {\bar \cD}_\ad {\bar M}^\ad~.
+\ee
+
+Now, since the Bianchi identity (\ref{eq:bianchi}) and the equation of motion (\ref{eq:eom}) have the same functional form, one may consider (see appendix \ref{app:sd_equation} for more details) U(1) duality transformations of the form
+\bea
+\label{eq:duality rotation}
+\left( \begin{array}{c}  M'_\a [v'] \\ W'_\a  \end{array} \right)
+~=~  \left( \begin{array}{cr} \cos \t ~& ~
+-\sin \t \\ \sin \t ~ &  ~\cos \t \end{array} \right) \;
+\left( \begin{array}{c}  M_\a [v] \\ W_\a  \end{array} \right) ~,
+\eea
+where $M'$ should be
+\be
+\label{eq:sd condition}
+{\rm i}\,M'_\a [v']= 2\, \frac{\d }{\d W'^\a}\,S[v']
+=2\,\frac{\d }{\d W'^\a}\,S[v]+2\, \frac{\d }{\d W^\a}\,\d S~,
+\ee
+with $\d S=S[v']-S[v]$.
+
+As detailed in appendix  \ref{app:sd_equation}, the condition of self-duality leads to the following restriction:
+\be
+\label{eq:sde}
+{\rm Im} \Big( W \cdot W ~+~ M \cdot M \Big) ~=~0~.
+\ee
+We call this the $\cN=1$ {\it self-duality equation}. When combined with the old-minimal supergravity action (\ref{eq:omsg}), any solution $S[W,{\bar W}]$ which satisfies this equation generates a U(1) duality invariant supersymmetric electrodynamics coupled to old-minimal supergravity. 
+
+
+\vskip0.5cm
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\section{Invariance under superfield Legendre transformation}
+\noindent As we showed in section \ref{sec:non-susy-sd}, one of the important properties of all models of self-dual electrodynamics is invariance under Legendre transformation \cite{Gaillard:1997rt}. It was shown in \cite{Kuzenko:2000tg} that this property also holds for any globally supersymmetric model of the massless vector multiplet that is invariant under U(1) duality rotations. We will demonstrate that this property also naturally extends to curved superspace.
+
+Consider the auxiliary action
+\be
+\label{eq:legendre}
+S[W , {\bar W}, W_{\rm D}, {\bar W}_{\rm D}] =
+S[W,{\bar W} ] - \frac{\rm i}{2}\,
+(W \cdot W_{\rm D} - {\bar W} \cdot {\bar W}_{\rm D})~,
+\ee
+where $W_\a$ is now an {\it unconstrained} covariantly chiral spinor superfield and $W_{{\rm D}\,\a}$ is the dual field strength defined by
+\be
+W_{{\rm D}\,\a} = -\frac14\, {({\bar \cD}^2 - 4 R)} \cD_\a \, V_{\rm D}~,
+\qquad \quad
+{\bar W}_{{\rm D}\, \ad }= -\frac14\,{(\cD^2 - 4{\bar R})} {\bar \cD}_\ad \,
+V_{\rm D} ~,
+\ee
+with the Lagrange multiplier, $V_{\rm D}$ a real scalar superfield.
+
+Upon elimination of $W_{\rm D}$ by its equation of motion we regain $S[W,{\bar W}]$ with the condition that $W$ satisfy the Bianchi identity (\ref{eq:bianchi}). On the other hand, the equation of motion for $W_\a$ is $M[W,{\bar W}]=W_{\rm D}$. Solving this equation, $W=W[W_{\rm D},{\bar W}_{\rm D}]$, and substituting into the auxiliary action (\ref{eq:legendre}) we obtain the dual action $S_{\rm D}[W_{\rm D},{\bar W}_{\rm D}]$,
+\be
+\label{eq:dual action}
+S_{\rm D}[W_{\rm D},{\bar W}_{\rm D}]=
+\Big( S[W,{\bar W} ] - \frac{\rm i}{2}\,
+(W \cdot W_{\rm D} - {\bar W} \cdot {\bar W}_{\rm D})
+\Big)
+\Big|_{W=W[W_{\rm D},{\bar W}_{\rm D}]}~.
+\ee
+Since the following combination is invariant under arbitrary duality transformations (\ref{eq:duality rotation})
+\be
+\label{eq:inv-con}
+S[v'] - \frac{\rm i}{4} \Big( W' \cdot M' [v']
+-{\bar W}' \cdot {\bar M}' [v'] \Big)
+= S[v] - \frac{\rm i}{4} \Big( W \cdot M [v]
+-{\bar W} \cdot {\bar M} [v] \Big)~,
+\ee
+we find that, for a finite rotation by $\t=\pi/2$,
+\be
+S[W,{\bar W}] - \frac{\rm i}{2} \Big( W \cdot M
+-{\bar W} \cdot {\bar M} \Big)
+= S[W_{\rm D},{\bar W}_{\rm D}]~.
+\ee
+Comparing with (\ref{eq:dual action}) we see that $S=S_{\rm D}$.
+
+
+\vskip0.5cm
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\section{Family of self-dual models}
+\noindent Extending the globally supersymmetric results of \cite{Kuzenko:2000uh}, we now present a family of $\cN=1$ supersymmetric self-dual models with actions of the general form
+\be
+\label{eq:family action}
+S [W, {\bar W}] =
+\frac{1}{4}\, {\int\!\!{\rm d}^8z}\, {\frac{E^{-1}}{R}}\, W^2 +
+\frac{1}{4}\, {\int\!\!{\rm d}^8z}\, {\frac{E^{-1}}{\bar R}}\, {\bar W}^2
++  \frac{1}{4}\, {\int\!\!{\rm d}^8z}\, E^{-1} \, W^2\, {\bar W}^2\,
+\L(\o, {\bar \o})~,
+\ee
+where $\L(\o,{\bar \o})$ is a real analytic function of the variables
+\be
+\label{eq:u}
+\o \equiv \frac{1}{8} {(\cD^2 - 4{\bar R})}\, W^2~,
+\quad\qquad
+{\bar \o} \equiv \frac{1}{8} {({\bar \cD}^2 - 4R)}\, {\bar W}^2~.
+\ee
+If this model (\ref{eq:family action}) is to solve the self-duality equation (\ref{eq:sde}), it requires that $\L$ satisfy the following differential equation:
+\be
+\label{eq:differential}
+{\rm Im} \,\Big\{ \G
+- \bar{\o}\, \G^2
+\Big\} = 0~, \qquad \quad
+\G=\frac{\partial (\o\,\L) }{\partial \o}~.
+\ee
+We will often refer to this general family of models throughout the thesis.
+
+As an important example, consider a minimal curved superspace extension\footnote{Such a curved superspace action was discussed in \cite{Gates:2001ff}.} of the $\cN=1$ supersymmetric Born-Infeld action. The action can be written in the form
+\be
+\label{eq:super BI 1}
+S_{\rm SBI} =  \frac{1}{4} {\int\!\!{\rm d}^8z}\, {\frac{E^{-1}}{R}}\, X ~+~
+\frac{1}{4} {\int\!\!{\rm d}^8z}\, {\frac{E^{-1}}{\bar R}}\, {\bar  X}~,
+\ee
+with the following nonlinear constraint on the chiral scalar superfield $X$:
+\be
+\label{eq:constraint}
+X + \frac{1}{16}\, X{({\bar \cD}^2 - 4 R)}\,
+{\bar X} = W^2~,
+\quad\qquad
+{\bar \cD}_\ad X=0~.
+\ee
+Using the fact that $W_\a W_\b W_\g=0$, this can be shown to be equivalent to
+\be
+\label{eq:super BI 2}
+S_{\rm SBI} =
+\frac{1}{4}\, {\int\!\!{\rm d}^8z}\, {\frac{E^{-1}}{R}}\, W^2 +
+\frac{1}{4}\, {\int\!\!{\rm d}^8z}\, {\frac{E^{-1}}{\bar R}}\, {\bar W}^2
++\frac{1}{4} {\int\!\!{\rm d}^8z}\, E^{-1} \frac{W^2\,{\bar W}^2  }
+{ 1 + \frac{1}{2}\, A \, + \sqrt{1 + A +\frac{1}{4} \,B^2} }~,
+\ee
+where
+\be
+A = \o + \bar \o~, \qquad \quad
+B = \o - \bar \o~.
+\ee
+This action is of the form (\ref{eq:family action}), and it is easy to check that the differential equation (\ref{eq:differential}) is satisfied. Thus the minimal curved superspace extension of the $\cN=1$ supersymmetric Born-Infeld action is a self-dual theory. %As we will see later, in the purely bosonic sector, this action reduces to the Born-Infeld action (\ref{eq:BI-curved}) minimally coupled to gravity.
+
+
+\vskip0.5cm
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\section{Duality invariance of the supercurrent and supertrace}
+\noindent In the bosonic case, self-dual models have the important property that the energy-momentum tensor is invariant under U(1) duality rotations \cite{Gaillard:1981rj,Gaillard:1997rt,Gibbons:1995ap,Gibbons:1995cv,Schrodinger:1935}. It is natural to ask whether this property extends to the supersymmetric case, the superfield generalization of the energy-momentum tensor being the supercurrent $T_a = {\bar T}_a$ and supertrace $T$, ${\bar \cD}_\ad T=0$ (\ref{eq:supercurrent-supertrace}).
+
+Gaillard and Zumino \cite{Gaillard:1981rj,Gaillard:1997rt} developed an elegant, model-independent proof of the fact that the energy-momentum tensor of any self-dual bosonic system is invariant under U(1) duality rotations (see section \ref{subsec:sd-em-tensor}). It is not quite trivial however to generalize this proof to the supersymmetric case, and this is why we will follow a brute-force approach, similar to \cite{Gibbons:1995ap,Gibbons:1995cv,Schrodinger:1935}, and directly check duality invariance of the supercurrent and supertrace for the family model (\ref{eq:family action}).
+
+Firstly, using the techniques outlined in appendix \ref{app:supercurrent_supertrace}, we find that the supertrace of the model (\ref{eq:family action}) is
+\be
+\label{eq:supertrace}
+T = \frac{1}{8}\,W^2 {({\bar \cD}^2 - 4 R)}\!\left[ {\bar W}^2
+\Big(\G +{\bar \G}- \L \Big)\right]~,
+\ee
+with $\G$ defined in (\ref{eq:differential}). Consider an infinitesimal duality rotation $\d W_\a = \t M_\a~$, $\d M_\a = -\t W_\a$, where
+\be
+\label{eq:familyM}
+{\rm i}\,M_\a = W_\a \left\{ 1 - \frac{1}{4} {({\bar \cD}^2 - 4 R)}\! \,
+\Big[{\bar W}^2 \Big(\L + \frac{1}{8} {(\cD^2 - 4{\bar R})}
+\Big(W^2 \, \frac{\partial \L }{\partial \o} \Big) \Big) \Big] \right\}~.
+\ee
+For such a transformation it can be shown that $\d T$ vanishes for $\L \neq 0$ only if the self-duality equation (\ref{eq:differential}) is taken into account. Now, the conservation equation (\ref{eq:conservation}) is to be satisfied both before and after applying the duality rotation. Since $T$ is duality invariant, the left hand side of (\ref{eq:conservation}) should also be invariant. This essentially implies duality invariance of the supercurrent.
+
+Turning now to the supercurrent, and again using the techniques described in appendix \ref{app:supercurrent_supertrace}, we find
+\bea
+\label{eq:supercurrent}
+T_{\a \ad} \!\!&=&\!\! {\rm i}\,M_\a {\bar W}_\ad - {\rm i}\,W_\a {\bar M}_\ad
+- \frac{\rm i}{4} \cD_{\a \ad}\!\left(W^2 {\bar W}^2
+\left(\G - {\bar \G} \right)\right) \non \\
+\!\!&-&\!\!
+\frac16 G_{\a \ad} W^2 {\bar W}^2\!\left(\G +{\bar \G} - \L \right)
+- \frac{1}{24} \left[ \cD_\a , {\bar \cD}_\ad \right]
+\!\left(W^2 {\bar W}^2\!\left(\G +{\bar \G} - \L \right) \right) \\
+\!\!&-&\!\!
+\frac{\rm i}{4} ( W^2 \stackrel{\longleftrightarrow}{\cD_{\a \ad}}
+  {\bar W}^2 ) \L
+- \frac{\rm i}{4} W^2 {\bar W}^2 (\cD_{\a \ad} \o)
+\frac{\partial \L }{\partial \o}
++ \frac{\rm i}{4} W^2 {\bar W}^2 (\cD_{\a \ad} {\bar \o})
+\frac{\partial \L }{\partial {\bar \o}} \non \\
+\!\!&+&\!\!
+\frac{\rm i}{16} (\cD_{\a \ad} W^2) {\bar W}^2
+{(\cD^2 - 4 {\bar R})}\!\Big(W^2 \, \frac{\partial \L }{\partial \o} \Big)
+- \frac{\rm i}{16} W^2 (\cD_{\a \ad} {\bar W}^2)
+{({\bar \cD}^2 - 4 R)}\!\Big({\bar W}^2 \, \frac{\partial \L }{\partial {\bar \o}} \Big)~. \non
+\eea
+Off the mass shell, the variational derivative $\D S/\D H$ can be shown to include the extra (gauge non-invariant) term
+\be
+\frac{\rm i}{4} (\cD^\b M_\b - {\bar \cD}_\bd {\bar M}^\bd )
+\left[ \cD_\a , {\bar \cD}_\ad \right] V~,
+\ee
+which involves the naked prepotential $V$ and therefore does not allow a naive generalization of the Gaillard-Zumino proof \cite{Gaillard:1981rj,Gaillard:1997rt} to superspace. After a tedious calculation one can explicitly show that (i) the conservation equation (\ref{eq:conservation}) is indeed satisfied; and (ii) the supercurrent (\ref{eq:supercurrent}) is duality invariant.
+
+ 

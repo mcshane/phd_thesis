@@ -1,0 +1,743 @@
+\chapter{Fermionic dynamics in flat spacetime} 
+\label{chap:fermionic}
+
+If supersymmetry were an unbroken symmetry then superpartners, while displaying opposite statistics, would be expected to have the same mass. The fact that superpartners have not yet been observed implies that, if supersymmetry exists, it must be broken at an energy scale beyond the reach of today's accelerators. As indicated in the introduction, self-dual theories have a strong connection to theories in which supersymmetry is partially broken spontaneously. Such a process is always accompanied by a fermionic particle called the goldstino \cite{Volkov:1972jx,Volkov:1973ix}.
+
+The $\cN =1$ supersymmetric Born-Infeld (SBI) action \cite{Cecotti:1986gb} is known to describe the Maxwell-Goldstone multiplet for spontaneous partial supersymmetry breaking $\cN=2 \to \cN=1$ \cite{Bagger:1996wp,Rocek:1997hi}. As a consequence, its purely fermionic sector (\ref{eq:fac3}), turns out to describe spontaneous breakdown of $\cN=1$ supersymmetry \cite{Hatanaka:2003cr}. However, the standard action describing the breakdown of $\cN=1$ supersymmetry is the Akulov-Volkov (AV) action \cite{Volkov:1972jx,Volkov:1973ix} for the goldstino. Universality of the goldstino dynamics implies that the SBI and AV actions be related. Indeed it was conjectured in \cite{Hatanaka:2003cr} that the two actions are related by a nontrivial field redefinition. Moreover, guided by considerations of nonlinearly realized supersymmetry, the authors of \cite{Hatanaka:2003cr} proposed a nice scheme for constructing such a field redefinition.
+
+The fermionic sector of the SBI action contains higher derivative terms, and yet, remarkably, the above argument says that there exists a field redefinition that will eliminate these terms bringing the action into the Akulov-Volkov form. Now, it is a general feature of nonlinear self-dual systems that their component structure is highly nontrivial, even in the case of flat global superspace. This occurs not only for the models of the massless vector multiplet discussed in previous chapters, but also for the nonlinear self-dual models of the tensor multiplet introduced in \cite{Kuzenko:2000uh}. The fermionic sector of these models proves to contain higher derivative terms. We will show that, as in the specific case of the SBI action, it is possible to remove these terms by implementing a nonlinear field redefinition. The resulting action will be a one-parameter deformation of the AV action. We will also investigate the fermionic sector of the chiral-scalar-Goldstone theory \cite{Bagger:1997pi,Rocek:1997hi}, dual to the tensor-Goldstone theory.
+
+
+\vskip0.5cm
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\section{The family model in flat superspace}
+\noindent Our discussion of the fermionic dynamics in $\cN=1$ supersymmetric nonlinear electrodynamics will be restricted to the case of flat global superspace (see section \ref{sec:flat-superspace}). Here, the condition for self-duality becomes
+\be
+\label{eq:sde-flat}
+{\rm Im} \int\!\!{\rm d}^6 z \, \Big\{ 
+W^2 + M^2 \Big\} =0 ~, 
+\qquad 
+\frac{\rm i}{2} \,M_\a  = 
+\frac{\d}{\d W^\a} \,S [W, {\bar W}]~.
+\ee
+The family action takes the form 
+\be
+\label{eq:family-flat}
+S [W, {\bar W}] =
+\frac{1}{4} \int\!\!{\rm d}^6 z \, W^2 +
+\frac{1}{4} \int\!\!{\rm d}^6 {\bar z} \, {\bar W}^2
++\frac{1}{4} {\int\!\!{\rm d}^8z}\, W^2\, {\bar W}^2\,
+\L(\o, {\bar \o})~,
+\ee
+where now
+\be
+\o ~ \equiv ~ \frac{1}{8} D^2 W^2~,
+\quad\qquad
+{\bar \o} ~ \equiv ~ \frac{1}{8} {\bar D}^2 {\bar W}^2~,
+\ee
+and the function $\L(\o,{\bar \o})$ still satisfies the differential equation (\ref{eq:differential}).
+
+In the case of the globally supersymmetric version of (\ref{eq:super BI 2}), we obtain the $\cN=1$ supersymmetric Born-Infeld (SBI) action \cite{Cecotti:1986gb},
+\bea
+\label{eq:super BI-flat}
+S_{\rm SBI} \!\!&\!\!=\!\!&\!\!
+\frac{1}{4} \int\!\!{\rm d}^6 z \, W^2 +
+\frac{1}{4} \int\!\!{\rm d}^6 {\bar z} \, {\bar W}^2
++\frac{\k^2}{4} {\int\!\!{\rm d}^8z}\,\frac{W^2\, {\bar W}^2}
+{ 1 + \frac{1}{2}\, A \, + \sqrt{1 + A +\frac{1}{4} \,B^2} }~, 
+\non\\
+&& \qquad\qquad 
+A=\k^2\,(\o  + \bar \o)~, \qquad 
+B = \k^2\,(\o - \bar \o)~,
+\eea
+with the coupling constant $\k$ introduced. This action describes the dynamics of the Maxwell-Goldstone multiplet for the spontaneous partial breaking of supersymmetry $\cN=2\to\cN=1$ \cite{Bagger:1996wp,Rocek:1997hi}. The broken supersymmetry is nonlinearly realized; the SBI action (\ref{eq:super BI-flat}) being invariant under the second supersymmetry transformation
+\be
+\label{eq:nonlinear-susy}
+\d X=2\,\eta^\a W_\a~,
+\quad\qquad
+\d W_\a=\eta_\a\left(1+
+\frac{\k^2}{16}{\bar D}^2{\bar X}\right)+
+\frac{{\rm i}\k^2}{4}\partial_{\a\ad}X{\bar \eta}^\ad~,
+\ee
+where $\eta_\a$ is a constant parameter and $X$, ${\bar D}_\a X=0$, is the constrained chiral scalar superfield of (\ref{eq:super BI 1}, \ref{eq:constraint}) in the flat superspace limit,
+\be
+S_{\rm SBI}=
+\frac{1}{4}\int\!\!{\rm d}^6 z\,X+
+\frac{1}{4}\int\!\!{\rm d}^6 {\bar z}\,{\bar X}~,
+\quad\qquad
+X + \frac{\k^2}{16}\,X\,{\bar D}^2
+{\bar X} = W^2~.
+\ee
+
+
+\vskip0.5cm
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\section{Fermionic dynamics of the family model}
+\noindent Now, to pick out the fermionic sector of the family model (\ref{eq:family-flat}), we can safely set the bosonic coordinates to zero. The reason for this is that the action has the following symmetry at the superfield level.
+\be
+\label{eq:vector symmetry}
+W_\a (x, \q) ~ \longrightarrow ~
+W_\a (x, -\q)~.
+\ee
+At the component level, the spinor field is invariant
+\be 
+\j_\a(x) = W_\a | ~ \longrightarrow ~
+\j_\a(x)~, 
+\ee
+whilst the bosonic fields transform as
+\be
+F_{\a \b}(x) = \frac{1}{2{\rm i}} D_{(\a} W_{\b)} |
+~ \longrightarrow ~ -F_{\a\b}(x) ~, 
+\qquad 
+D(x) = -\frac{1}{2} D^\a W_\a |
+~ \longrightarrow ~ -D(x)~.
+\ee
+This symmetry implies that the component action contains only even powers of the bosonic fields. It is therefore consistent, when discussing the component structure,  to restrict our attention to the purely fermionic sector specified by\footnote{As an additional argument, in the case of the SBI action (\ref{eq:super BI-flat}), the restriction (\ref{eq:ferm-reduc}) is consistent with the nonlinear second supersymmetry (\ref{eq:nonlinear-susy}), since it is invariant under this transformation, {\it i.e.} $\d(D_\a W_\b)|_{F_{ab}=D=0}=0$.}
+\be 
+\label{eq:ferm-reduc}
+D_\a W_\b | =0~. 
+\ee
+
+Let $S[\j, {\bar \j}]$ be the fermionic action that follows from (\ref{eq:family-flat}) upon switching off all the bosonic fields. It turns out that $S[\j, {\bar \j}]$ obeys a functional equation which is induced by the self-duality  (\ref{eq:sde-flat}).
+ 
+The self-duality equation (\ref{eq:sde-flat}) must hold for an arbitrary chiral spinor $W_\a(z)$ and its conjugate ${\bar W}_\ad (z)$. This means that the spinors $W_\a$ and ${\bar W}_\ad$ are chosen in (\ref{eq:sde-flat}) to satisfy only the chirality constraints ${\bar D}_\ad W_\a =0$ and $D_\a {\bar W}_\ad =0$, but not the Bianchi identity  
+\be 
+D^\a W_\a = {\bar D}_\ad {\bar W}^\ad ~. 
+\ee
+Thus $W_\a$ now contains two independent fermionic components
+\be
+\j_\a(x) = W_\a | ~, \qquad 
+\r_\a(x) = -\frac{1}{4} D^2 W_\a|~.
+\ee
+Let $\hat{S} \equiv S[\j, {\bar \j}, \r , {\bar \r}]$ be the component action that follows from (\ref{eq:family-flat}) upon relaxing  the Bianchi identity and restricting to the fermionic sector (\ref{eq:ferm-reduc}). Then, the  self-duality equation (\ref{eq:sde-flat}) reduces to 
+\be 
+{\rm Im} \int\!\!{\rm d}^4 x \, \Big\{ 
+\j^\a \r_\a  + 4 \, 
+\frac{\d \hat{S}}{\d \j^\a} \,
+\frac{\d \hat{S}}{\d \r_\a} \Big\} =0~.
+\ee
+The genuine fermionic action, $S[\j, {\bar \j}]$, is obtained from the self-dual action $\hat{S}$ by imposing the ``fermionic Bianchi identities'' $ \r_\a = - {\rm i} \,(\s^b \partial_b {\bar \j})_\a$ and ${\bar \r}_\ad =  {\rm i} \,( \partial_b \j \s^b)_\ad\,$,
+\be 
+S[\j, {\bar \j}] = S[\j, {\bar \j}, \r, 
+{\bar \r}]
+\Big|_{ \r
+= - {\rm i} \,(\s^b \partial_b {\bar \j})}~.
+\ee
+
+A short calculation leads to the fermionic action  
+\bea
+\label{eq:fac}
+S[\j, {\bar \j}] \!\!&\!=\!\!&\!\!  \int\!\!{\rm d}^4 x\, \Big\{ 
+- \frac{1}{2} \la  u+ {\bar u}  \ra 
++ \Big( \la  u \ra \la {\bar u}  \ra 
+-\frac{1}{4}  (\partial^a \j^2) (\partial_a {\bar \j}^2) \Big)\,
+\L(0,0) \non \\
+&&+ \Big( \la  u \ra^2 \la {\bar u}  \ra 
++\frac{1}{2} ({\bar \j}^2 \Box \j^2)  \Big) \,\L_\o(0,0)
++  \Big( \la  u \ra \la {\bar u}  \ra^2 
++\frac{1}{2} (\j^2 \Box {\bar \j}^2)  \Big) \,\L_{\bar \o}(0,0)
+\non \\
+&&+ \Big( \la  u \ra^2 \la {\bar u}  \ra^2
+- \frac{1}{2}  (\partial^a \j^2) (\partial_a {\bar \j}^2) 
+\la  u \ra \la {\bar u}  \ra 
++\frac{1}{16} \j^2{\bar \j}^2 
+(\Box \j^2) ( \Box {\bar \j}^2) \Big) 
+\L_{\o{\bar \o}}(0,0) \non \\
+&&+ \frac{3}{8} ({\bar \j}^2 \Box \j^2)
+ \la  u \ra^2 \,\L_{\o \o}(0,0)
++\frac{3}{8} (\j^2 \Box {\bar \j}^2) 
+\la {\bar u}  \ra^2 \, 
+\L_{{\bar \o}{\bar \o}}(0,0)\Big\}~. 
+\eea
+Here we have introduced the following $4 \times 4$ matrices: 
+\be 
+ u_a{}^b = {\rm i} \,\j \s^b \partial_a{\bar \j}~, 
+\qquad 
+{\bar u}_a{}^b = - {\rm i}\, (\partial_a \j) \s^b {\bar \j}~, 
+\ee
+as well as made use of the useful compact notation 
+\be
+\la F \ra \equiv {\rm tr}\, F = F_a{}^a~,
+\label{eq:not}
+\ee 
+for an arbitrary  $4 \times 4$ matrix $F=(F_a{}^b)$.
+
+The fermionic action obtained involves several constant parameters associated with the function $\L(\o,{\bar \o}) $ that enters the original supersymmetric action. However, not all of these parameters are 
+independent since $\L(\o,{\bar \o}) $ must be a solution to the self-duality equation (\ref{eq:differential}). This restriction proves to imply 
+\be 
+\label{eq:sel-d-con-1}
+\L_\o(0,0)= \L_{\bar \o}(0,0) =- \L^2(0,0)~, 
+\qquad 
+\L_{\o \o}(0,0) = \L_{{\bar \o}{\bar \o}}(0,0)
+= 2\L^3(0,0)~.
+\ee
+The self-duality equation imposes no restrictions on $\L(0,0)$ and $\L_{\o{\bar \o}}(0,0) $. For later convenience, we represent 
+\be 
+\label{eq:sel-d-con-2}
+\L(0,0) = \frac{\k^2}{2}~,\quad \qquad~
+\L_{\o{\bar \o}}(0,0)=\frac{\k^{6}}{8}(\m+3)~. 
+\ee
+
+\vskip0.5cm
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\subsection{Fermionic sector of the supersymmetric BI action}
+${}$\newline
+\indent For the particular case of the SBI action (\ref{eq:super BI-flat}), we have the parameter $\m=0$ and the fermionic action (\ref{eq:fac}) taking the form
+\bea
+\label{eq:fac3}
+S_{\rm BG}[\j, {\bar \j}] \!\!&\!=\!\!&\!\! \int\!\!{\rm d}^4 x\, \Big\{ 
+-\frac{1}{2} \la  u+ {\bar u}  \ra 
++\frac{\k^2}{2}
+ \Big( \la  u \ra \la {\bar u}  \ra 
+-\frac{1}{4}  (\partial^a \j^2) (\partial_a {\bar \j}^2) \Big)\,
+\\
+&&\qquad\quad
+-\frac{\k^4}{4} \Big( \la  u \ra^2 \la {\bar u}  \ra 
++ \la  u \ra \la {\bar u}  \ra^2 
++\frac{1}{2} ({\bar \j}^2 \Box \j^2) 
++\frac{1}{2} (\j^2 \Box {\bar \j}^2)  \Big) 
+\non \\
+&&\qquad\quad
++ \frac{3\k^6}{32} \Big( 4\la  u \ra^2 \la {\bar u}  \ra^2
+- 2  (\partial^a \j^2) (\partial_a {\bar \j}^2) 
+\la  u \ra \la {\bar u}  \ra 
++\frac{1}{4} \j^2{\bar \j}^2 
+(\Box \j^2) ( \Box {\bar \j}^2) 
+\non \\
+&&
+\phantom{+ 6 \k^2 \Big( 4\la  u \ra^2 \la {\bar u}  \ra^2}
++ ({\bar \j}^2 \Box \j^2)
+ \la  u \ra^2 
++ (\j^2 \Box {\bar \j}^2) 
+\la {\bar u}  \ra^2 \, 
+\Big)\Big\}~.\non
+\eea
+
+
+\vskip0.5cm
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\section{The Akulov-Volkov action}
+\noindent In the pioneering papers \cite{Volkov:1972jx,Volkov:1973ix} on supersymmetry Akulov and Volkov obtained the action for the goldstino associated with the spontaneous breaking of $\cN=1$ supersymmetry. The Akulov-Volkov (AV) action takes the form\footnote{Note that the normalization factor used here differs from that of $1/2\k^2$ usually found in the literature. This is in order to match up with the coupling constant in the bosonic sector of the SBI action (\ref{eq:BI}).}
+\be
+\label{eq:AV}
+S_{\rm AV}[\l, {\bar \l}] =  \frac{2}{\k^2} \int\!\!{\rm d}^4 x
+\, \Big\{ 1 - \det \Xi \Big\} ~, 
+\ee
+where 
+\bea
+\Xi_a{}^b = \d_a{}^b 
++\frac{\k^2}{4}  \Big({\rm i} \,\l \s^b \partial_a{\bar \l}  
+- {\rm i}\, (\partial_a \l) \s^b {\bar \l} \Big) 
+\equiv \d_a{}^b + \frac{\k^2}{4}(v +{\bar v})_a{}^b~,
+\eea
+having defined 
+\bea
+\label{eq:vab}
+v_a{}^b = 
+{\rm i} \,\l \s^b \partial_a{\bar \l}  ~,
+\qquad 
+{\bar v}_a{}^b=
+- {\rm i}\, (\partial_a \l) \s^b {\bar \l}~. 
+\eea
+The broken supersymmetry is nonlinearly realized, with the AV action (\ref{eq:AV}) being invariant under the transformation
+\be
+\label{eq:nonlinear-susy-av}
+\d \l_\a = \frac{2}{\k}\,\eta_\a
+-\frac{{\rm i}\k}{2}\big(
+\l\,\s^a{\bar \eta}-\eta\,\s^a{\bar \l}
+\big)\partial_a\l_\a~,
+\ee
+where $\eta_\a$ is a constant parameter.
+
+
+\vskip0.5cm
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\section{The family action and the Akulov-Volkov action}\label{sec:field-redef}
+\noindent Looking at the fermionic action (\ref{eq:fac}), it is hardly possible to imagine that it is related somehow to the AV action (\ref{eq:AV}) describing goldstino dynamics. Nevertheless, the two fermionic theories turn out to be closely related in the following sense. There exists a nonlinear field redefinition, $(\j_\a , {\bar \j}^\ad ) \to   (\l_\a , {\bar \l}^\ad )$, that eliminates all the higher derivative terms in (\ref{eq:fac}) and brings this action to a one-parameter deformation of the AV action. The two theories coincide, modulo such a field redefinition, under the choice 
+\be
+\label{eq:cond-for-AV}
+\L_{\o{\bar \o}}(0,0) = \frac{3}{8} \k^{6} = 3 \L^{3}(0,0) 
+\quad \Longleftrightarrow \quad \m=0~,
+\ee
+which occurs, in particular, in the case of the SBI action (\ref{eq:super BI-flat}). The remainder of this section is devoted to the proof of the above statement.
+
+
+\vskip0.5cm
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\subsection{Field redefinition}
+${}$\newline
+\indent Before we begin looking for a field redefinition, we first note that the the AV action may be written in the form (\ref{eq:AV}) (see appendix \ref{app:av} for more details)
+\bea
+\label{eq:AV3}
+S_{\rm AV}[\l, {\bar \l}] 
+\!\!&\!\!=\!\!&\!\!\int\!\!{\rm d}^4 x\,\Big\{
+-\frac{1}{2} \la v+ {\bar v} \ra 
+-\frac{\k^2}{4} \Big(
+\la v  \ra \la {\bar v} \ra
+- \la v  {\bar v} \ra \Big)\\
+&&\qquad\quad
+-\frac{\k^4}{32} \Big( 
+\la  v^2 {\bar v} \ra
+-\la v  \ra \la  v {\bar v} \ra
+-\frac{1}{2} \la  v^2 \ra \la  {\bar v}  \ra
++\frac{1}{2} \la v  \ra^2 \la {\bar v } \ra  
+~+~ {\rm c.c.} \Big)  \Big\}~.\non
+\eea 
+We wish to find a field redefinition which will bring the action (\ref{eq:fac}) in to the form (\ref{eq:AV3}). We begin by first noting that the leading order terms must match, $\psi_{\a} = \l_{\a} + O(\k^{2})$. 
+A general redefinition takes the form
+\be
+\label{eq:general-redef}
+\psi_\a = \l_{\a}+\frac{\k^2}{2}\,\L^{\!(3)}_\a(\a_i)
++\frac{\k^4}{4}\,\L^{\!(5)}_\a(\b_i)
++\frac{\k^6}{8}\L^{\!(7)}_\a(\g_i)~,
+\ee
+where $\L^{\!(n)}_\a$  are terms of $n$-th order in fields $\l_\a$ and ${\bar \l}_\ad$ containing $(n-1)/2$ partial derivatives. They are parametrized by a number of constant coefficients $\a_i$, $\b_i$ and $\g_i$ that can be chosen to be real. Higher order terms do not contribute due to the nilpotency of the spinor fields, $\l^3=0$.
+
+At third-order in fields we can write $\L^{\!(3)}_\a$ as
+\be
+\label{eq:cub-red}
+\L^{\!(3)}_\a(\a_i) 
+= \l_{\a}\Big\{\a_{1} \la v \ra 
++\a_{2} \la \bar{v} \ra \Big\}
++{\rm i}\a_{3} (\s^{a}\bar{\l})_{\a} (\partial_{a}\l^{2})~.
+\ee
+With this, if we substitute (\ref{eq:general-redef}) into (\ref{eq:fac}) we obtain
+\bea
+S[\j, {\bar \j}] \!\!&\!\!=\!\!&\!\!
+\int\!\!{\rm d}^4 x \, \Big \{
+-\frac{1}{2} \la  v+ {\bar v}  \ra 
+-\frac{\k^2}{2}\a_{1} 
+\left(\la v \ra^{2} + \la {\bar v} \ra^{2}\right)
+-\k^{2} (\a_{2}+\a_{3}
+-\frac{1}{2}) \la v \ra \la \bar{v} \ra\non\\
+&&\qquad\qquad 
++\,\k^{2} \a_{3} \la v {\bar v} \ra
++\frac{\k^2}{2}(\a_3-\frac{1}{4}) 
+(\partial^{a}\l^2) (\partial_{a} \bar{\l}^2)
+\Big\} + O(\k^{4})~.
+\eea
+The requirement that the transformed action match with the AV action (\ref{eq:AV3}), uniquely fixes the coefficients $\a_{1} = 0, \a_{2} =1/2, \a_{3} =1/4$.
+
+At fifth-order there exist many more admissible structures that can contribute to the field redefinition under consideration. We can write $\L^{\!(5)}_\a$ as
+\bea
+\label{eq:fifth-red}
+&&\!\!\!\!\!\!\!\!\!
+\L^{\!(5)}_\a(\b_i)= \l_\a\Big\{
+\b_{1} \la v \ra \la \bar{v} \ra
++\b_{2} \la \bar{v} \ra^{2} 
++\b_{3} (\partial^{a}\l^2) (\partial_{a} \bar{\l}^2)
++\b_{4} \la v\bar{v} \ra
++\b_{5} \la \bar{v}^{2} \ra 
++\b_{6} (\bar{\l}^{2} \Box \l^{2})\Big\}
+\non\\ && \qquad\qquad\quad
++\,{\rm i}(\s^{a}\bar{\l})_{\a} (\partial_{a}\l^{2})
+\Big\{
+ \b_{7} \la v \ra +
+ \b_{8} \la \bar{v} \ra 
+\Big\}~.
+\eea
+Substituting into (\ref{eq:fac}), after a tedious calculation, we are able to match the AV action (\ref{eq:AV3}) if
+\be
+\b_{4}=2\b_{3}-\frac{1}{4}~,\quad
+\b_{5}=-\frac{1}{4}~,\quad
+\b_{6}=\frac{1}{16}~,\quad
+\b_{7}=\frac{1}{4}-(\b_{1}+\b_{2}+\b_{3})~,\quad
+\b_{8}=\b_{3}~.
+\ee
+Unlike the third-order case, not all coefficients are uniquely fixed -- we are left with three free parameters, $\b_{1}, \b_{2}, \b_{3}$. 
+
+At the highest-order, we can write $\L^{\!(7)}_\a$ as
+\bea
+\label{eq:seventh-red}
+&&\!\!\!\!\!\!\!\!\!
+\L^{\!(7)}_\a(\g_i) 
+= \l_{\a}\Big\{\g_{1} \la v \ra \la {\bar v} \ra^{2}
++\g_{2} \la v{\bar v}^2 \ra
++\g_{3} \la \bar{v} \ra (\partial^{a}\l^2) (\partial_{a} \bar{\l}^2)
++\g_{4} \la v \ra (\bar{\l}^{2} \Box \l^{2})\Big\}
+\non\\ && \qquad\qquad\quad
++\,{\rm i}\g_{5} (\s^{a}\bar{\l})_{\a} (\partial_{a}\l^{2})
+ \la v \ra \la {\bar v} \ra~.
+\eea
+Again, substituting into (\ref{eq:fac}), we try to match the AV action (\ref{eq:AV3}), which vanishes at this order. We obtain the following restrictions:
+\bea
+\g_{1}\!\!&\!\!=\!\!&\!\!\frac{1}{8}(3\m+1+4(\b_{1}-2\b_{3}-2\g))~,\quad\qquad
+\g_{2}=\b_{1} + \b_{2} - \b_{3}~,\\
+\g_{3}\!\!&\!\!=\!\!&\!\!-\frac{1}{4}(\m-2\b_{1}-2\b_{2})~,
+\quad\qquad\qquad\qquad\,\,\,
+\g_{4}=\frac{1}{8}(\m - \frac{1}{4}-2\b_{1}+4\b_{3})~,\non
+\eea
+where we have gained another free parameter, $\g\equiv\g_{5}$. However, at this order, even with this freedom in the redefinition, it is impossible to match the AV action unless a restriction is placed on the type of model we are investigating, {\it i.e.} we must choose a particular value for $\m$ or, equivalently, $\L_{\o{\bar \o}}(0,0)$.
+
+If we do not restrict the model then, with the following field redefinition
+\bea 
+\label{eq:field-redef}
+\psi_\a \!\!&\!\!=\!\!&\!\!
+\l_{\a}\Big\{1+\frac{\k^{2}}{4} \la \bar{v} \ra
++ \frac{\k^{4}}{4} \Big(\b_{1} \la v \ra \la \bar{v} \ra
++ \b_{2} \la \bar{v} \ra^{2} 
++ (2\b_{3}-\frac{1}{4}) \la v\bar{v} \ra
+ \\
+&&
+\phantom{\l_{\a}\Big\{1}
+-\frac{1}{4} \la \bar{v}^{2} \ra 
++ \b_3 (\partial^{a}\l^2) (\partial_{a} \bar{\l}^2)
++ \frac{1}{16} (\bar{\l}^{2} \Box \l^{2}) \Big)\non\\
+&& \phantom{ \l_{\a}\Big\{1 }
++\frac{\k^{6}}{64} \Big( (3 \m+1+4(\b_{1}-2\b_{3}-2\g)) 
+\la v \ra \la \bar{v} \ra^{2} 
+\non \\
+&&\phantom{ \l_{\a}\Big\{1+\frac{\k^{6}}{64} \Big( }
+-2(\m-2\b_{1}-2\b_{2}) 
+\la \bar{v} \ra (\partial^{a}\l^2) (\partial_{a} \bar{\l}^2)
+\non \\
+&&\phantom{ \l_{\a}\Big\{1+\frac{\k^{6}}{64} \Big( }
++ (\m - \frac{1}{4}-2\b_{1}+4\b_{3}) \la v \ra (\bar{\l}^{2} \Box \l^{2}) 
++ 8(\b_{1} + \b_{2} - \b_{3}) \la v\bar{v}^{2} \ra
+\Big)\Big\} \non\\ 
+&&+ \frac{\rm{i}}{8}\k^2 (\s^{a}\bar{\l})_{\a} (\partial_{a}\l^{2})
+ \Big\{
+1 + \frac{\k^{2}}{2} (1-4(\b_{1}+\b_{2}+\b_{3})) \la v \ra 
+\non \\ 
+&&\phantom{+ \frac{\rm{i}}{8}\k^2 (\s^{a}\bar{\l})_{\a} (\partial_{a}\l^{2})
+\Big\{1+ \frac{\k^{2}}{2} (1}
++ 2\k^{2} \b_{3} \la \bar{v} \ra 
++ \k^{4} \g \la v \ra \la \bar{v} \ra
+\Big\}~,\non
+\eea
+the transformed action is
+\bea
+\label{eq:fac2}
+S[\j, {\bar \j}] = S_{\rm AV}[\l, {\bar \l}] + 
+\frac{\k^{6}}{32}\,\m \int\!\!{\rm d}^4 x
+\, \la v^2 \bar{v}^2 \ra ~.
+\eea
+We see that the action (\ref{eq:fac}), in conjunction with (\ref{eq:sel-d-con-1}) and (\ref{eq:sel-d-con-2}), is equivalent to the AV action (\ref{eq:AV3}) if eq. (\ref{eq:cond-for-AV}) holds. In particular, the SBI action (\ref{eq:super BI-flat}) has this property.
+
+Our field redefinition (\ref{eq:field-redef}) involves four free parameters, $\b_{1}, \b_{2}, \b_{3}$ and  $\g$,
+which do not show up in the transformed action (\ref{eq:fac2}). This means that these parameters correspond to some symmetries of the original theory (\ref{eq:fac}). Indeed, if we modify the field redefinition (\ref{eq:field-redef}) by varying any of the parameters, the action is not affected.
+
+
+\vskip0.5cm
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\subsection{Discussion}
+${}$\newline
+\indent At first glance, the existence of the field redefinition (\ref{eq:field-redef}) that turns the action (\ref{eq:fac}) into (\ref{eq:fac2}), looks absolutely fantastic and unpredictable. However, it has a solid theoretical justification in one special case of self-dual supersymmetric electrodynamics (\ref{eq:family-flat}) -- the $\cN =1$ supersymmetric Born-Infeld action (\ref{eq:super BI-flat}). As we have already mentioned, this action is known to describe the Maxwell-Goldstone multiplet for spontaneous partial supersymmetry breaking $\cN=2 \to \cN=1$ \cite{Bagger:1996wp,Rocek:1997hi}. As a consequence, its purely fermionic sector (\ref{eq:fac3}), turns out to describe spontaneous breakdown of $\cN=1$ supersymmetry \cite{Hatanaka:2003cr}. This goldstino action clearly does not coincide with the standard goldstino action (\ref{eq:AV}) or, equivalently, with (\ref{eq:AV3}). Universality of the goldstino dynamics, on the other hand, implies that the two goldstino actions, (\ref{eq:AV}) and (\ref{eq:fac3}), should be related to each other. It was therefore conjectured in \cite{Hatanaka:2003cr} that the actions (\ref{eq:AV}) and (\ref{eq:fac3}) are related by a nontrivial field redefinition. Moreover, guided by considerations of nonlinearly realized supersymmetry, the authors of \cite{Hatanaka:2003cr} proposed a nice scheme for constructing such a field redefinition and also confirmed it to order $\k^2$. Pushing their scheme to higher orders seems to give the redefinition (\ref{eq:field-redef}) with all the parameters fixed as follows: $\b_{1} =1/16,$ $\b_{2} = 0$, $\b_{3} = 1/32$ and $\g = 0$. We have checked the correspondence to order $\k^4$.
+
+The broken supersymmetry is nonlinearly realized. From (\ref{eq:nonlinear-susy}) we find that (\ref{eq:fac3}) is invariant under the transformation
+\be
+\label{eq:nonlinear-susy-comp}
+\d \j_\a=\d W_\a|
+=\eta_\a\left(1+
+\frac{\k^2}{16}{\bar D}^2{\bar X}|\right)+
+\frac{{\rm i}\k^2}{4}\partial_{\a\ad}X|\,{\bar \eta}^\ad~,
+\ee
+where
+\bea
+X|\!\!&=&\!\!\j^2\Big(
+1-\frac{\k^2}{2}\la {\bar u} \ra
++\frac{\k^4}{4}\la {\bar u} \ra^2
++\frac{\k^4}{16}\,{\bar \j}^2 \Box \j^2
+\Big)~,\\
+\frac{1}{8}D^2 X|\!\!&=&\!\!
+\la u \ra -\frac{\k^2}{2}\la u \ra \la {\bar u} \ra
++\frac{\k^4}{4}\Big(
+\la u \ra^2 \la {\bar u} \ra
++\la u \ra \la {\bar u} \ra^2
+-\la u \ra (\partial^a \j^2) (\partial_a {\bar \j}^2) \non\\
+&~&\quad\qquad\qquad\qquad\qquad
++\,\frac{1}{4}\la u \ra ({\bar \j}^2 \Box \j^2) 
++\frac{1}{4}\la {\bar u} \ra (\j^2 \Box {\bar \j}^2)
++\frac{1}{4}\j^2{\bar \j}^2\Box \la u \ra 
+\Big)\non\\
+&~&\quad\qquad
+-\,\frac{3\k^6}{8}\Big(
+\la u \ra^2 \la {\bar u} \ra^2
+-\frac{1}{2}\la u \ra \la {\bar u} \ra 
+(\partial^a \j^2) (\partial_a {\bar \j}^2)
++\frac{1}{4}\la u \ra^2 ({\bar \j}^2 \Box \j^2) \non\\
+&~&\quad\qquad\qquad\qquad\qquad\quad
++\,\frac{1}{6}\la {\bar u} \ra^2 (\j^2 \Box {\bar \j}^2)
++\frac{1}{16}\j^2 {\bar \j}^2 (\Box \j^2) (\Box {\bar \j}^2)
+\Big)~.\non
+\eea
+
+We would also like to remark that, the field redefinition (\ref{eq:field-redef}) corresponds to the purely fermionic sector of the globally supersymmetric theory (\ref{eq:family-flat}). In the case when both bosonic and fermionic fields are present, as well as in the presence of supergravity -- the case we analyzed in chapter \ref{chap:components}, there should exist an extension of (\ref{eq:field-redef}) that, at least, eliminates all higher derivative terms from the component action. But here our brute-force approach becomes extremely cumbersome and tedious to follow (even the fermionic case was quite taxing). We believe that there should be a more efficient approach to construct such field redefinitions, but have not yet been able to determine such an approach.
+
+
+\vskip0.5cm
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\section{Self-duality and the tensor multiplet}\label{sec:tensor_multiplet}
+\noindent In \cite{Kuzenko:2000uh}, the concept of self-duality was extended to general globally supersymmetric models of the tensor multiplet. Motivated by our results from the previous section, we would like to now consider the fermionic sector of such self-dual models of the tensor multiplet, with the expectation that there will again be a close relationship with the AV action. This motivation stems from the fact that the tensor-Goldstone theory describing the spontaneous partial supersymmetry breaking $\cN=2 \to \cN=1$, belongs to the class of self-dual models introduced in \cite{Kuzenko:2000uh}, {\it i.e.} the tensor-Goldstone theory displays U(1) duality invariance. 
+
+
+\vskip0.5cm
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\subsection{Self-duality equation for the tensor multiplet}
+${}$\newline
+\indent Here, we briefly relate, following \cite{Kuzenko:2000uh}, the formulation of self-dual models of the tensor multiplet, before going on to investigate the component structure of such models. The tensor multiplet was introduced in section \ref{sec:matter-supermultiplets} in terms of the real linear scalar superfield $L$, which is subject to the constraint (\ref{eq:linear constraint}). We consider the antichiral spinor superfield\footnote{Our inability to define such a superfield in curved superspace prevents a simple extension of these ideas to the locally supersymmetric case.} defined by
+\be
+\J_{\a}=D_{\a}L~,\quad\qquad D_{\b}\J_{\a}=0~,
+\ee
+which, as a consequence of the constraint (\ref{eq:linear constraint}), must satisfy the Bianchi identity
+\be
+\label{eq:tensor bianchi}
+-\frac{1}{4}{\bar D}^2 \J_\a +
+{\rm i} \partial_{\a\ad}{\bar \J}^\ad = 0~.
+\ee
+Analagous to the electrodynamic case considered in chapter \ref{chap:em_duality}, for a theory with action $S[\J,{\bar \J}]$, we define (anti) chiral superfields $\U_\a$ and ${\bar \U}_\ad$ as
+\be
+{\rm i}\,\U_\a \equiv 2\, \frac{\d }{\d \J^\a}\,S
+~, \qquad \quad
+- {\rm i}\,{\bar \U}^\ad \equiv 2\,
+\frac{\d }{\d {\bar \J}_\ad}\, S ~.
+\ee
+The equation of motion for such models reads:
+\be
+-\frac{1}{4}{\bar D}^2 \U_\a +
+{\rm i} \partial_{\a\ad}{\bar \U}^\ad = 0~.
+\ee
+Now, since the Bianchi identity (\ref{eq:bianchi}) and the equation of motion (\ref{eq:eom}) have the same functional form, one may consider U(1) duality transformations of the form
+\bea
+\left( \begin{array}{c}  \U'_\a \\ \J'_\a  \end{array} \right)
+~=~  \left( \begin{array}{cr} \cos \t ~& ~
+-\sin \t \\ \sin \t ~ &  ~\cos \t \end{array} \right) \;
+\left( \begin{array}{c}  \U_\a \\ \J_\a  \end{array} \right) ~,
+\eea
+This leads us to the following condition for self-duality
+\be
+{\rm Im} {\int\!\!{\rm d}^6{\bar z}}\,
+\Big(\J^\a \J_\a ~+~ \U^\a \U_\a \Big) ~=~0~.
+\label{eq:tensor sde}
+\ee
+
+In \cite{Kuzenko:2000uh}, the authors showed that such models are invariant under a superfield Legendre transformation, and indicated that many of the results that held for the nonlinear self-dual models of the vector multiplet translated directly to the tensor multiplet case. To go from a vector multiplet theory to a tensor multiplet theory one should (i) switch the chirality of the $\cN=1$ superspace by $x^a \to x^a$, $\theta_\a\to{\bar \theta}_\ad$, ${\bar \theta}_\ad\to\theta_\a$, mapping the chiral superspace into the anitchiral superspace, and vice versa; and (ii) the chiral spinor superfield $W_\a$ becomes the anitchiral spinor superfield $\J_\a$, $W_\a(x,\theta)\to\J_\a(x,{\bar \theta})$. In particular, applying this to the vector multiplet family model (\ref{eq:family action}), we would like to consider the family of actions
+\be
+\label{eq:tensor family}
+S=\frac{1}{4}{\int\!\!{\rm d}^6z}\,{\bar \J}^2
++\frac{1}{4}{\int\!\!{\rm d}^6{\bar z}}\,\J^2
++\frac{1}{4}{\int\!\!{\rm d}^8z}\,\J^2{\bar \J}^2\L(\o,{\bar \o})~,
+\ee
+where $\L(\o,{\bar \o})$ is now an analytic function of the variables
+\be
+\o=\frac{1}{8}{\bar D}^2\J^2~,\quad\qquad~
+{\bar \o}=\frac{1}{8}D^2{\bar \J}^2~.
+\ee
+The action (\ref{eq:tensor family}) is a solution of the self-duality equation (\ref{eq:tensor sde}) if $\L(\o,{\bar \o})$ satisfies the differential equation (\ref{eq:differential}).
+
+The action for the tensor-Goldstone multiplet \cite{Bagger:1997pi} is a particular example of this family of self-dual models (\ref{eq:tensor family}). The action is constructed in a similar way to the supersymmetric Born-Infeld action (\ref{eq:super BI-flat}). We consider the following action for an antichiral superfield $X$
+\be
+\label{eq:tensor-goldstone2}
+S=\frac{1}{4} {\int\!\!{\rm d}^6z}\, {\bar X} ~+~
+\frac{1}{4} {\int\!\!{\rm d}^6{\bar z}}\, X~,
+\quad\qquad
+D_\a X=0~,
+\ee
+satisfying the nonlinear constraint
+\be
+\label{eq:tensor constraint}
+X+\frac{\k^2}{16}\, X D^2{\bar X} = \J^2~.
+\ee
+Solving the constraint, we find that the action (\ref{eq:tensor-goldstone2}) can be written in the form
+\bea
+\label{eq:tensor-goldstone}
+S \!\!&\!\!=\!\!&\!\!
+\frac{1}{4}\, {\int\!\!{\rm d}^6z}\, {\bar \J}^2 +
+\frac{1}{4}\, {\int\!\!{\rm d}^6\bar z}\, \J^2
++\frac{\k^2}{4} {\int\!\!{\rm d}^8z}\, \frac{\J^2\,{\bar \J}^2}
+{1 + \frac{1}{2}\, A \, + \sqrt{1 + A +\frac{1}{4} \,B^2} }~,
+\non\\
+&& \qquad\qquad 
+A=\k^2\,(\o  + \bar \o)~, \qquad 
+B = \k^2\,(\o - \bar \o)~.
+\eea
+The action describes spontaneous partial supersymmetry breaking $\cN=2\to\cN=1$ --  the broken supersymmetry being nonlinearly realized in the following way:
+\be
+\d X=2\,\eta^\a \J_\a~,\quad\qquad
+\d\J_\a=\eta_\a\left(1+\frac{\k^2}{16}D^2{\bar X}\right)+
+\frac{{\rm i}\k^2}{4}\partial_{\a\ad}X\,{\bar \eta}^\ad~,
+\ee
+where $\eta_\a$ is a constant parameter. The action (\ref{eq:tensor-goldstone}) is of the form (\ref{eq:tensor family}), and one can check that the self-duality equation (\ref{eq:differential}) is satisfied. Thus the dynamics of the tensor-Goldstone multiplet is a U(1) duality invariant theory. 
+
+
+\vskip0.5cm
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\subsection{Tensor multiplet family model in components}
+${}$\newline
+\indent We would now like to investigate the fermionic structure of the family model (\ref{eq:tensor family}). We take the flat superspace limit of the component fields of the tensor multiplet, $\ell$, ${\tilde \j}_\a$, ${\tilde V}_a$, defined by (\ref{eq:L-comp-def}) and (\ref{eq:V-def}). The absence of auxiliary fields means we are free to set the bosonic sector to zero, $\ell={\tilde V}_a=0$. 
+
+Reducing to components in the usual manner, the fermionic action $S[{\tilde \j},{\bar {\tilde \j}}]$ corresponding to the tensor multiplet family model (\ref{eq:tensor family}) turns out to have {\it exactly the same} form as the fermionic action $S[\j,{\bar \j}]$ for vector multiplet family model (\ref{eq:fac}). Therefore, under the trivial field redefinition ${\tilde \j}_\a=\j_\a$, followed by the nonlinear field redefinition (\ref{eq:field-redef}), we have
+\be
+S[{\tilde \j},{\bar {\tilde \j}}]=S[\j,{\bar \j}]
+= S_{\rm AV}[\l, {\bar \l}] + 
+\frac{\k^{6}}{32}\,\m \int\!\!{\rm d}^4 x
+\, \la v^2 \bar{v}^2 \ra~.
+\ee
+Thus, as for the vector multiplet family action (\ref{eq:family action}), the fermionic action for the tensor multiplet family of models, (\ref{eq:tensor family}), is equivalent to a one-parameter deformation of the AV action (\ref{eq:AV}). Indeed, under the condition (\ref{eq:cond-for-AV}), it reduces to exactly AV action. In particular, this occurs for the tensor-Goldstone action (\ref{eq:tensor-goldstone}). This is to be expected since, as with the Maxwell-Goldstone case of the previous section, the tensor-Goldstone multiplet describes the spontaneous breakdown of $\cN=1$ supersymmetry, and as a result the fermionic action should correspond up to a field redefinition to the standard goldstino action (\ref{eq:AV}). Moreover,  this action will be invariant under the second nonlinear supersymmetry (\ref{eq:nonlinear-susy-comp}), with ${\tilde \j}_\a=\j_\a$.
+
+We also note that, in the case of the tensor-Goldstone model (\ref{eq:tensor-goldstone}), it should also be possible to transfer the scheme of \cite{Hatanaka:2003cr} to determine this field redefinition in this case.
+
+For completeness, we briefly mention that the bosonic sector of the tensor multiplet family action (\ref{eq:tensor family}) is given by
+\be
+S= \int\!\!{\rm d}^4x\left\{
+-\frac{1}{2}(\o+{\bar \o})|+
+\o|\,{\bar \o}|\,
+\L(\o|,
+{\bar \o}|)\right\}~,
+\ee
+where
+\be
+\o|=
+-\frac{1}{2}({\tilde V}+{\rm i}\partial \ell)^{2}~,\quad\qquad
+{\bar \o}|=
+-\frac{1}{2}({\tilde V}-{\rm i}\partial \ell)^{2}~.
+\ee
+In the case of the tensor-Goldstone action (\ref{eq:tensor-goldstone}), it takes the form
+\be
+\label{eq:D3-5D}
+S = \frac{1}{\k^2}\int\!\!{\rm d}^4x\left\{1-
+\sqrt{1-\k^2({\tilde V}^{2}-{\partial \ell}^{2})
+-\k^4({\tilde V}^{a}\partial_{a} \ell)^2}
+\right\}~.
+\ee
+
+\vskip0.5cm
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\section{Chiral-scalar-Goldstone multiplet}\label{sec:chiral_scalar}
+\noindent There is a third Goldstone multiplet associated with the spontaneous partial breaking of $\cN=2 \to \cN=1$ supersymmetry. It is given in terms of the chiral scalar multiplet obtained by dualizing the tensor-Goldstone multiplet \cite{Bagger:1997pi}. We would like to investigate the fermionic action associated with this action. Again, universality of goldstino dynamics implies that there should exist a nonlinear field redefinition taking this action into the Akulov-Volkov form (\ref{eq:AV}).
+
+\vskip0.5cm
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\subsection{Dual of the tensor-Goldstone action}
+${}$\newline
+\indent We begin by dualizing the tensor-Goldstone action (\ref{eq:tensor-goldstone}), as outlined in \cite{Bagger:1997pi}, and detailed in \cite{Gonzalez-Rey:1998kh} . We start with the the tensor family model (\ref{eq:tensor family}), and rewrite the action it in terms of the real linear superfield, $L$:
+\be
+S[L]={\int\!\!{\rm d}^8z}\left\{-L^2+
+\frac{1}{4}(DL)^2({\bar D}L)^2\L(\o,{\bar \o})
+\right\}~,
+\ee
+where now
+\be
+\o=\frac{1}{4}(D^{\a}{\bar D}^{\ad}L)(D_{\a}{\bar D}_{\ad}L)~,\quad\qquad
+{\bar \o}=\frac{1}{4}({\bar D}^{\ad}D^{\a}L)({\bar D}_{\ad}D_{\a}L)~.
+\ee
+The constraint (\ref{eq:tensor constraint}) and the Bianchi identity (\ref{eq:tensor bianchi}), can be used to determine the nonlinear second supersymmetry in terms of $L$:
+\be
+\d L=\theta\eta+{\bar \theta}{\bar \eta}
+-\frac{\k^2}{8}D^{\a}\!{\bar X}\,\eta_{\a}
+-\frac{\k^2}{8}{\bar D}_{\ad} X\,{\bar \eta}^{\ad}~.
+\ee
+
+To dualize $S[L]$, we then relax the constraint (\ref{eq:linear constraint}) on $L$ while simultaneously adding a Lagrange multiplier to $S[L]$,
+\be
+\label{eq:tensor-aux1}
+S=S[L]+2{\int\!\!{\rm d}^8z}\,L(\f+{\bar \f})~,
+\ee
+where $\f$ is a covariantly chiral scalar superfield, ${\bar \cD}_\ad \f=0$. If we substitute in the solution to the $\f$ equation of motion we regain the action $S[L]$ with the linearity contraint (\ref{eq:linear constraint}) on $L$. On the other hand, if we solve the $L$ equation of motion (see \cite{Gonzalez-Rey:1998kh} and appendix \ref{app:tensor_dual} for details) we obtain the dual action. In general, it is difficult to solve the equation of motion for $L$, however in the case of the tensor-Goldstone action (\ref{eq:tensor-goldstone}), we are indeed able to find a solution. The dual action of the tensor-Goldstone action is (see appendix \ref{app:tensor_dual}):
+\be
+\label{eq:chiral-scalar-goldstone}
+S[\f,{\bar \f}]={\int\!\!{\rm d}^8z}\left\{2\f{\bar\f}+
+\frac{(\k^2/4)\,(D\f)^2({\bar D}{\bar \f})^2}
+{1+p+\sqrt{(1+p)^2-q{\bar q}}}
+\right\}=
+{\int\!\!{\rm d}^8z}\,{\cal L}(\f,{\bar \f})~,
+\ee
+where
+\be
+p=-\k^2(\partial^{\a\ad} \f)(\partial_{\a\ad} {\bar \f})~,\quad
+q=-\k^2(\partial^{\a\ad} \f)(\partial_{\a\ad} \f)~,\quad
+{\bar q}=-\k^2(\partial^{\a\ad}{\bar \f})(\partial_{\a\ad}{\bar \f})~.
+\ee
+
+
+\vskip0.5cm
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\subsection{Chiral-scalar-Goldstone in components}
+${}$\newline
+\indent We now turn to the fermionic sector of this action the action (\ref{eq:chiral-scalar-goldstone}). To determine this, we note that it is invariant under the transformation
+\be
+\f(x,\theta)~\longrightarrow~-\f(x,-\theta)~.
+\ee
+At the component level, the spinor field is invariant
+\be
+\c_{\a}(x)=D_{\a}\f| \to \c_{\a}(x)~,
+\ee
+whilst the bosonic fields change as follows
+\be
+Y(x)=\f|\longrightarrow-Y(x)~,\quad\qquad
+F(x)=-\frac{1}{4}D^2\f|\longrightarrow-F(x)~.
+\ee
+Thus we are free to set the bosonic fields to zero to give us the purely fermionic sector. A standard reduction to components then reveals the fermionic action to be
+\bea
+\label{eq:chiral-fermionic}
+S[\c, {\bar \c}] 
+\!\!&\!\!=\!\!&\!\! \int\!\!{\rm d}^4 x \,\Big\{
+\!\!-\frac{1}{2} \la w+ {\bar w} \ra 
++\frac{\k^2}{2} \Big(
+\la w  \ra^2 + \la {\bar w} \ra^2
++ \la w  {\bar w} \ra + 
+\frac{1}{4}(\partial^{a}\c^2) (\partial_{a} \bar{\c}^2) \Big)\non\\
+&&\quad\qquad
+-\frac{\k^4}{8}  \Big( 
+\la  w^2 {\bar w} \ra
++\la w  \ra \la  w {\bar w} \ra
+-\frac{1}{2}\la w \ra (\partial^{a}\c^2) (\partial_{a} \bar{\c}^2)
+~+~ {\rm c.c.} \Big)\\
+&&\quad\qquad
++\frac{\k^6}{32}(\partial^{a}\c^2) (\partial_{a} \bar{\c}^2)
+(\partial^{b}\c^2) (\partial_{b} \bar{\c}^2)\Big\}~,\non
+\eea
+where
+\be 
+w_a{}^b = {\rm i} \,\c \s^b \partial_a{\bar \c}~, 
+\qquad 
+{\bar w}_a{}^b = - {\rm i}\, (\partial_a \c) \s^b {\bar \c}~.
+\ee
+This action is not of the same form, nor does it contain higher-derivative terms as for the fermionic actions of the vector and tensor-Goldstone multiplets (\ref{eq:fac}). However, it is still the action of the goldstino for spontaneous breaking of $\cN=1$ supersymmetry, since it is invariant under the transformation
+\be
+\label{eq:nonlinear-susy-chiral}
+\d \c_\a=D_\a \d\f|=
+\eta_\a+\frac{\k^2}{16} D_\a\big[
+\eta^\b{\bar D}^2 D_\b {\cal L}(\f,{\bar \f})
+\big]\Big|~,
+\ee
+where ${\cal L}(\f,{\bar \f})$ is defined by (\ref{eq:chiral-scalar-goldstone}). Therefore, there should exist a field redefinition taking it into the AV action form. To obtain this field redefinition, we use the same brute force technique that we employed in section \ref{sec:field-redef} for the vector multiplet model. A general field redefinition takes the form
+\be
+\label{eq:general-redef-chiral}
+\c_\a = \l_{\a}+\frac{\k^2}{2}\,\L^{\!(3)}_\a(\a_i)
++\frac{\k^4}{4}\,\L^{\!(5)}_\a(\b_i)
++\frac{\k^6}{8}\L^{\!(7)}_\a(\g_i)~,
+\ee
+where, again, $\L^{\!(n)}_\a$  are terms of $n$-th order in fields $\l_\a$ and ${\bar \l}_\ad$ containing $(n-1)/2$ partial derivatives, and are parametrized by the real constant coefficients $\a_i$, $\b_i$ and $\g_i$. The general form of the $\L^{\!(n)}_\a$ are given by (\ref{eq:cub-red}), (\ref{eq:fifth-red}) and (\ref{eq:seventh-red}). 
+
+Substituting (\ref{eq:general-redef-chiral}) into (\ref{eq:chiral-fermionic}), the requirement that the transformed action match the AV action (\ref{eq:AV3}), means that, to fourth order in $\k$, the field redefinition takes the form:
+\bea 
+\label{eq:field-redef2}
+\c_\a \!\!&\!=\!&\!\!
+\l_{\a}\Big\{1+\frac{\k^{2}}{2} \big(\la v \ra+\frac{1}{2}\la {\bar v} \ra\big)
++ \frac{\k^{4}}{4} \Big(\b_{1} \la v \ra \la \bar{v} \ra
++ \b_{2} \la \bar{v} \ra^{2} 
++ (2\b_{3}+\frac{1}{4}) \la v\bar{v} \ra
+ \\
+&&
+\phantom{\l_{\a}\Big\{1+\frac{\k^{2}}{4} \la v \ra+ \frac{\k^{4}}{4}}
+-\frac{1}{4} \la \bar{v}^{2} \ra 
++ \b_3 (\partial^{a}\l^2) (\partial_{a} \bar{\l}^2)
++ \frac{3}{4} (\bar{\l}^{2} \Box \l^{2}) \Big)
+\Big\} \non\\ 
+&&\!\!\!-\,\frac{\rm{i}}{4}\k^2 (\s^{a}\bar{\l})_{\a} (\partial_{a}\l^{2})
+ \Big\{
+\frac{1}{2} + \k^{2}(\b_{1}+\b_{2}+\b_{3}-\frac{23}{4}) \la v \ra
+\!- \k^{2} (\b_{3}-\frac{7}{4}) \la \bar{v} \ra
+\Big\}\!+O(\k^6)~,\non
+\eea
+where $v_a{}^b$ is defined in (\ref{eq:vab}). Again, at order $\k^2$, the field redefinition is uniquiely fixed, while at order $\k^4$, there remains three free parameters, $\b_1$, $\b_2$ and $\b_3$. We can see that there exists a field redefinition for which $S[\c,{\bar \c}]=S_{\rm AV}[\l,{\bar \l}]$. This result is perhaps not as dramatic as for the vector and tensor multiplet actions (\ref{eq:fac}), seeing as the fermionic action (\ref{eq:chiral-fermionic}) does not contain higher derivative terms; however it is a very nice result in that we have now shown that the fermionic sectors of all three actions associated with the spontaneous partial breaking of $\cN=2\to\cN=1$ supersymmetry are equivalent, up to a nonlinear field redefinition to the AV action (\ref{eq:AV}).
+
+For completeness, we briefly mention that the bosonic sector of the chiral-scalar-Goldstone multiplet action (\ref{eq:chiral-scalar-goldstone}) is
+\be
+\label{eq:D3-6D}
+S_{\rm bosonic}=\frac{1}{\k^2}{\int\!\!{\rm d}^4x}\left\{1-
+\sqrt{(1+2\k^2\,\partial Y\,\partial {\bar Y})^2-
+4\k^4 (\partial Y)^2 (\partial{\bar Y})^2}
+\right\}~.
+\ee

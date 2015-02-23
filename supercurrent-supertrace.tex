@@ -1,0 +1,281 @@
+\chapter{Calculation of the supercurrent and supertrace}
+\label{app:supercurrent_supertrace}
+
+\numberin{equation}{section} 
+
+The calculation of the supercurrent and supertrace requires a covariant variational technique involving the disturbance of the supergravity prepotentials, {\it i.e.} a deformation of the supergeometry. We first outline the procedure as detailed in \cite{Buchbinder:1998qv}, and then go on to give some specific details for the calculation of the supercurrent and supertrace of the family model (\ref{eq:family action}).
+
+\vskip0.5cm
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\section{Covariant variational technique}
+\noindent We consider a disturbance of the supergravity prepotentials $H_a$ and $\vf\to{\rm e}^{\s}\vf$ in terms of the infinitesimal superfields ${\mathbf H}_a(z)$ and $\s(z)$, ${\bar \cD}_\ad \s=0$,
+\be
+{\rm e}^{-2{\rm i}{\mathbf H}^a\cD_a}\approx
+1-2{\rm i}{\mathbf H}^a\cD_a~,\quad\qquad
+\mbox{\boldmath $\vf$}={\rm e}^{\s}
+\approx 1+\s~,
+\ee
+which results in a shift in the covariant derivatives as
+\bea
+\label{eq:prepotential_deformation}
+\cD_{\a}&\longrightarrow&
+\nabla_\a={\rm e}^{-{\rm i}{\mathbf H}^a\cD_a}\left(
+{\cal F}\cD_\a+\frac{1}{2}\D \O_\a{}^{bc}M_{bc}
+\right){\rm e}^{{\rm i}{\mathbf H}^a\cD_a}~,\\
+{\bar \cD}_{\ad}&\longrightarrow&
+{\bar \nabla}_\a={\rm e}^{{\rm i}{\mathbf H}^a\cD_a}\left(
+{\bar {\cal F}}{\bar \cD}_\ad+
+\frac{1}{2}\D {\bar \O}_\ad{}^{bc}M_{bc}
+\right){\rm e}^{-{\rm i}{\mathbf H}^a\cD_a}~,\non\\
+\cD_{\a\ad}&\longrightarrow&
+\nabla_{\a\ad}=\frac{\rm i}{2}\{
+\nabla_\a,{\bar \nabla}_\ad\}~,\non
+\eea
+where
+\be
+{\cal F}=1+\D{\cal F}~,\quad\qquad
+\D{\cal F}=\frac{1}{2}\s-{\bar \s}
+-\frac{1}{3}G_{a}{\mathbf H}^{a}
++\frac{2{\rm i}}{3}\cD_{a}{\mathbf H}^{a}
+-\frac{1}{12}{\bar \cD}_{\ad}\cD_{\a}{\mathbf H}^{\a\ad}~,
+\ee
+and
+\bea
+\D {\bar \O}_{\ad\a\b}={\bar \cD}_{\ad}A_{\a\b}~,
+&\quad&\qquad
+\D {\bar \O}_{\ad\bd\gd}=
+\e_{\ad\bd}{\bar \cD}_\gd \D{\bar {\cal F}}+
+\e_{\ad\gd}{\bar \cD}_\bd \D{\bar {\cal F}}~,\\
+A_{\a\b}&=&
+\frac{1}{2}{\bar \cD}^{\bd}\cD_{(\a}{\mathbf H}_{\b)\bd}
++G_{(\a}{}^{\bd}{\mathbf H}_{\b)\bd}~.\non
+\eea
+Any variation (\ref{eq:prepotential_deformation}) of the supergeometry will be accompanied by a variation in the matter superfields
+\be
+\c \longrightarrow \c_{(\nabla)}
+=f(\c\,;{\mathbf H},\mbox{\boldmath $\vf$})~,
+\ee
+which will depend on the superfield type. For example, a chiral scalar superfield will change as $\f_{(\nabla)}={\rm e}^{{\rm i}{\mathbf H}^a\cD_a}\f$, ${\bar \nabla}_\ad\f_{(\nabla)}=0$. The action transforms as
+\be
+S[\c\,;\cD]\longrightarrow S[\c_{(\nabla)}\,;\nabla]
+\equiv S[\c\,;\cD\arrowvert {\mathbf H},\mbox{\boldmath $\vf$}]
+={\int\!\!{\rm d}^8z}\,{\cal E}^{-1}\,
+{\cal L}(\c_{(\nabla)}\,;\nabla)~.
+\ee
+In practice, it is helpful to switch to the so-called `quantum chiral representation',
+\bea
+&&{\tilde \c}_{(\nabla)}=
+{\rm e}^{-{\rm i}{\mathbf H}^a \cD_a}
+\c_{(\nabla)}~,\quad\qquad
+{\tilde \nabla}_A=
+{\rm e}^{-{\rm i}{\mathbf H}^a \cD_a}
+\nabla_A
+{\rm e}^{{\rm i}{\mathbf H}^a \cD_a}~,\\
+&&\quad\qquad
+S[\c\,;\cD\arrowvert {\mathbf H},\mbox{\boldmath $\vf$}]
+={\int\!\!{\rm d}^8z}\,{\tilde {\cal E}}^{-1}\,
+{\cal L}({\tilde \c}_{(\nabla)}\,;{\tilde \nabla})~,\non
+\eea
+where\footnote{For general calculations, expressions for how $G_{\a\ad}$ and $W_{\a\b\g}$ vary under supergravity prepotential deformations are needed. However, they were unnecessary for our calculation and we refer to \cite{Buchbinder:1998qv} for these expressions.}
+\bea
+\label{eq:E-Rvariation}
+&&{\tilde {\cal E}}^{-1}=
+E^{-1}\left(1+\s+{\bar \s}+
+\frac{1}{3}G_{\a\ad}{\mathbf H}^{\a\ad}
++\frac{1}{12}[\cD_{\a},{\bar \cD}_{\ad}]
+{\mathbf H}^{\a\ad}
++\frac{\rm i}{2}\cD_{\a\ad}{\mathbf H}^{\a\ad}
+\right)~,\non\\
+&&\phantom{E^{-1}\longrightarrow{\tilde {\cal E}}^{-1}=
+E^{-1}(1}
+{\tilde {\mathbf R}}=
+R-\frac{1}{2}{({\bar \cD}^2 - 4 R)}\D {\bar {\cal F}}~.
+\eea
+
+To determine the supercurrent $T_a$ and supertrace $T$, ${\bar \cD}_\a T=0$, one calculates how the action has varied under (\ref{eq:prepotential_deformation}) to first order in ${\mathbf H}_a$ and $\s$,
+\be
+\D S=S[{\tilde \c}_{(\nabla)}\,;{\tilde \nabla}]-S[\c\,;\cD]=
+{\int\!\!{\rm d}^8z}\,E^{-1}\left\{
+{\mathbf H}^{a}T_{a}+\frac{1}{R}\,\s\,T
++\frac{1}{\bar R}\,{\bar \s}\,{\bar T}
+\right\}~.
+\ee
+
+A useful identity, due to (\ref{eq:E-Rvariation}) and the chiral superspace rule (\ref{eq:chiralrule}), is
+\be
+{\int\!\!{\rm d}^8z}\,\frac{{\tilde {\cal E}}^{-1}}{{\tilde {\mathbf R}}}\,
+{\cal L}_{\rm c}=
+{\int\!\!{\rm d}^8z}\,\frac{E^{-1}}{R}\,(1+3\s)
+{\cal L}_{\rm c}~.
+\ee
+We also note that there is a simple prescription for calculating the supertrace, since the local scaling of the chiral prepotential, $\vf\to{\rm e}^{\s}\vf$, with $\s(z)$ a chiral scalar superfield, ${\bar \cD}_\ad \s=0$, is just the super-Weyl transformation (\ref{eq:superweyl2}) introduced in section \ref{sec:super-weyl}. The supertrace for an action $S[\c\,;H^a,\vf]$ can then be calculated by first performing a super-Weyl transformation (\ref{eq:superweyl2}) and then taking the variational derivative with respect to $\s(z)$ and then setting $\s$ to zero,
+\be
+T=\frac{\d}{\d \s}
+S[\c\,;H^a,{\rm e}^{\s}\vf]\Big|_{\s=0}~,
+\ee
+where variational differentiation with respect to a chiral scalar superfield is defined by (\ref{eq:phi-variation}).
+
+\vskip0.5cm
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\section{Supercurrent and supertrace of the family model}
+\noindent Now, we would like to use the method described above to determine the supercurrent and supertrace of the family of self-dual models (\ref{eq:family action}). 
+
+Turning first to the supertrace, as indicated above, we first perform a super-Weyl rescaling (\ref{eq:superweyl2}) of the family action (\ref{eq:family action}). The linear part of the family action is super-Weyl invariant, while to determine the variation of the nonlinear part we use (\ref{eq:measure-super-weyl}), (\ref{eq:D2super-weyl}) and (\ref{eq:Wsuper-weyl}). We find that under an infinitesimal super-Weyl rescaling (\ref{eq:superweyl2}), the superfunctional $S[W,{\bar W}]$ varies as
+\bea
+\d S[W,{\bar W}]\!\!&=&\!\!-\frac{1}{2}
+{\int\!\!{\rm d}^8z}\,E^{-1}\,\s\,
+W^2{\bar W}^2\left(\G+{\bar \G}-\L\right)
+\\ &=&
+\frac{1}{8}
+{\int\!\!{\rm d}^8z}\,\frac{E^{-1}}{R}\,\s\,
+W^2 ({\bar \cD}^2-4R)\big[
+{\bar W}^2\left(\G+{\bar \G}-\L\right)\!\big]~.
+\eea
+We see that this gives the supertrace $T$ (\ref{eq:supertrace}).
+
+To determine the supercurrent, we first note that since real covariantly scalar prepotential $V$ is invariant under deformations of the supergravity prepotentials, in the quantum chiral representation we have
+\be
+{\tilde V}_{(\nabla)}={\rm e}^{-{\rm i}{\mathbf H}^a\cD_a}V~.
+\ee
+The superfield strength $W_\a$ in the quantum chiral representation is
+\be
+{\tilde W}_{\!(\nabla)\a}=-\frac{1}{4}
+({\tilde {\bar \nabla}}^2\!\!-4{\tilde {\mathbf R}})
+{\tilde \nabla}_\a {\tilde V}_{(\nabla)}
+\ee
+Using the identity
+\be
+({\tilde {\bar \nabla}}^2\!\!-4{\tilde {\mathbf R}})\l_\a=
+(\d_\a{}^\b-A_\a{}^\b)({\bar \cD}^2-4R)\l_\b+({\bar \cD}^2-4R)
+[A_\a{}^\b \l_\b+2\D{\bar {\cal F}}\l_\a]~,
+\ee
+which holds for an arbitrary spinor superfield, $\l_\a$, we can show that
+\bea
+{\tilde W}_{\!\!(\nabla)}^2&=&W^2
+-\frac{1}{4}({\bar \cD}^2-4R)\bigg[
+G_{\a\bd}{\mathbf H}^{\b\bd}(\cD^\a V)W_\b-
+\frac{1}{2}({\bar \cD}_\bd \cD^\a 
+{\mathbf H}^{\b\bd})(\cD_\b V)W_\a\non\\
+&~&\quad\qquad
++\,{\rm i}\,{\mathbf H}^{\b\bd}(\cD_{\b\bd}\cD^\a V)W_\a-
+\frac{\rm i}{2}\cD^\a({\mathbf H}^{\b\bd}\cD_{\b\bd}V)W_\a
+\bigg]~.
+\eea
+Likewise, to determine the transformation of $\o=(1/8)({\bar \cD}^2-4R)W^2$,
+\be
+{\tilde {\bar \o}}_{(\nabla)}=\frac{1}{8}
+({\tilde {\bar \nabla}}^2\!\!-4{\tilde {\mathbf R}})
+{\tilde {\bar W}}_{\!\!(\nabla)}^2~,
+\ee
+we use the identity
+\be
+({\tilde {\bar \nabla}}^2\!\!-4{\tilde {\mathbf R}})U=
+({\bar \cD}^2-4R)U+2({\bar \cD}^2-4R)
+[\D{\bar {\cal F}}U]~,
+\ee
+which holds for arbitrary scalar superfields $U$. We also know that since $W^2$ is a covariantly chiral scalar,
+\be
+{\tilde {\bar W}}_{\!\!(\nabla)}^2=
+{\rm e}^{-2{\rm i}{\mathbf H}^a\cD_a}
+({\tilde W}_{\!\!(\nabla)}^2)^*~.
+\ee
+
+To calculate the supercurrent $T_{\a\ad}$, we must expand out
+\be
+\D S=S[{\tilde W}_{\!(\nabla)},
+{\tilde {\bar W}}_{\!(\nabla)}
+\,;{\tilde \nabla}]-S[W,{\bar W}\,;\cD]
+=-\frac{1}{2}{\int\!\!{\rm d}^8z}\,
+E^{-1}{\mathbf H}^{\a\ad}T_{\a\ad}~,
+\ee
+to first order in ${\mathbf H}_{\a\ad}$, where
+\bea
+S[{\tilde W}_{\!(\nabla)},
+{\tilde {\bar W}}_{\!(\nabla)}
+\,;{\tilde \nabla}]=
+\frac{1}{4}{\int\!\!{\rm d}^8z}\,
+\frac{{\tilde {\cal E}}^{-1}}
+{{\tilde {\mathbf R}}}\,
+{\tilde W}_{\!(\nabla)}^2\!\!&+&\!\!
+\frac{1}{4}{\int\!\!{\rm d}^8z}\,
+\frac{{\tilde {\cal E}}^{-1}}
+{{\tilde {\bar {\mathbf R}}}}\,
+{\tilde {\bar W}}_{\!(\nabla)}^2\\
+\!\!&+&\!\!\frac{1}{4}{\int\!\!{\rm d}^8z}\,
+{\tilde {\cal E}}^{-1}\,
+{\tilde W}_{\!\!(\nabla)}^2
+{\tilde {\bar W}}_{\!\!(\nabla)}^2
+\L({\tilde \o}_{(\nabla)},
+{\tilde {\bar \o}}_{(\nabla)})~.\non
+\eea
+Since $\o$ and $R$ are both chiral scalar superfields, we also have
+\be
+{\tilde \o}_{(\nabla)}=
+{\rm e}^{-2{\rm i}{\mathbf H}^a\cD_a}
+({\tilde {\bar \o}}_{(\nabla)})^*~,
+\quad\qquad
+{\tilde {\bar {\mathbf R}}}=
+{\rm e}^{-2{\rm i}{\mathbf H}^a\cD_a}
+({\tilde {\mathbf R}})^*~.
+\ee
+Putting all these together, after a lengthy calculation we obtain the supercurrent (\ref{eq:supercurrent}).
+ 
+
+\vskip0.5cm
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\section{Duality invariance of the supercurrent and supertrace}
+\noindent Duality invariance of the supercurrent and supertrace of the family model (\ref{eq:family action}) is a consequence of self-duality. To verify that the supertrace is invariant under infinitesimal duality rotations, $\d W_\a=\t M_\a$, $\d M_\a=-\t W_\a$, the following relations which result from the self-duality relation (\ref{eq:differential}) are useful
+\be
+\label{eq:sde-derivative}
+(1-2\,{\bar \o}\,\G)\,\frac{\partial \G}{\partial \o}-
+(1-2\,\o\,{\bar \G})\,\frac{\partial {\bar \G}}{\partial \o}
+=-{\bar \G}^2~,\quad
+(1-2\,{\bar \o}\,\G)\,\frac{\partial \G}{\partial {\bar \o}}-
+(1-2\,\o\,{\bar \G})\,\frac{\partial {\bar \G}}{\partial {\bar \o}}
+=\G^2~,
+\ee
+aswell as the reality condition
+\be
+\label{eq:reality}
+\G-{\bar \G}+
+{\bar \o}\,\frac{\partial \G}{\partial {\bar \o}}
+-\o\,\frac{\partial {\bar \G}}{\partial \o}=0~.
+\ee
+With $M_\a$ defined by (\ref{eq:familyM}), we find that
+\bea
+(\d W^2){\bar W}^2&\!\!=\!\!&
+-2{\rm i}\,\t\,W^2 {\bar W}^2
+(1-2\,{\bar \o}\,\G)~,\\
+W^2(\d {\bar W}^2)&\!\!=\!\!&
+\phantom{-}2{\rm i}\,\t\,W^2 {\bar W}^2
+(1-2\,\o\,{\bar \G})~,\non\\
+W^2{\bar W}^2\,\d \o&\!\!=\!\!&
+-2{\rm i}\,\t\,W^2 {\bar W}^2\,
+\o\,(1-2\,{\bar \o}\,\G)~,\non\\
+W^2{\bar W}^2\,\d {\bar \o}&\!\!=\!\!&
+\phantom{-}2{\rm i}\,\t\,W^2 {\bar W}^2\,
+{\bar \o}\,(1-2\,\o\,{\bar \G})~.\non
+\eea
+With this, if we now vary the supertrace (\ref{eq:supertrace}) directly and use (\ref{eq:sde-derivative}) and (\ref{eq:reality}), we find that $\d T=0$.
+
+A similar calculation confirms the duality invariance of the supercurrent. When performing this check, it is easier to work with the expression
+\bea
+\label{eq:supercurrent2}
+T_{\a \ad} ~&=&~ {\rm i} M_\a {\bar W}_\ad - {\rm i} W_\a {\bar M}_\ad
+~+~ \frac{\rm i}{4} \cD_{\a \ad}\!\left(W^2 {\bar W}^2
+\!\left(\G + {\bar \G} - \L\right)\right) \non \\
+&-& \frac16 G_{\a \ad} W^2 {\bar W}^2 \left(\G +{\bar \G} - \L \right)
+~-~ \frac{1}{24} \left[ \cD_\a , {\bar \cD}_\ad \right]
+\!\left(W^2 {\bar W}^2\!\left(\G +{\bar \G} - \L \right) \right)
+\non \\
+&-& \frac{\rm i}{2} W^2 {\cD}_{\a \ad}\!\left[{\bar W}^2\!\left( \L
++ \frac18 {(\cD^2 - 4 {\bar R})}\!\Big( W^2 \frac{\partial \L }{\partial \o}\Big)\right)\right] \\
+&+& \frac{\rm i}{2} W^2 {\bar W}^2 (\cD_{\a \ad} {\bar \o})
+\frac{\partial \L }{\partial {\bar \o}}
+~-~ \frac{\rm i}{16} W^2 (\cD_{\a \ad} {\bar W}^2)
+{({\bar \cD}^2 - 4 R)} \Big({\bar W}^2 \, \frac{\partial \L }{\partial {\bar \o}} \Big)~,\non
+\eea
+which is equivalent to (\ref{eq:supercurrent}). Notice that duality invariance of the supertrace automatically implies duality invariance for the first two lines of (\ref{eq:supercurrent2}).
+
+
+\numberin{equation}{chapter} 

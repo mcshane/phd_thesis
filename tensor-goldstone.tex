@@ -1,0 +1,112 @@
+\chapter{Dualizing the tensor-Goldstone multiplet}
+\label{app:tensor_dual}
+Here we outline the derivation of the action (\ref{eq:chiral-scalar-goldstone}), dual to the tensor-Goldstone multiplet action (\ref{eq:tensor-goldstone}). Having relaxed the constraint (\ref{eq:linear constraint}) on the superfield $L$, we consider the auxiliary action (\ref{eq:tensor-aux1}), which we can write as
+\be
+\label{eq:tensor-aux2}
+S={\int\!\!{\rm d}^8z}\left\{2\f{\bar \f}
+-(L-\f-{\bar \f})^2+
+\frac{1}{4}(DL)^2({\bar D}L)^2\L(\o,{\bar \o})
+\right\}~,
+\ee
+where
+\be
+\label{eq:def-Q}
+\o=\frac{1}{2}Q^2~,\quad\qquad
+{\bar \o}=\frac{1}{2}{\bar Q}^2~,
+\quad\qquad Q_{\a\ad}=
+{\rm i}{\bar D}_{\ad}D_{\a}L~.
+\ee
+Solving the equation of motion for $L$ gives
+\be
+\label{eq:dual-solution}
+L=\f+{\bar \f}
+-\frac{\rm i}{2}(D^\a L) 
+\big({\bar Q}_{\a\ad} \G-
+Q_{\a\ad} {\bar \G}\big)
+({\bar D}^\ad L)
++\dots~,
+\ee
+where $\G=\G(\o,{\bar \o})$ is defined by (\ref{eq:differential}). The dots refer to higher order terms in $D_\a L$ and ${\bar D}_\ad L$ that do not contribute upon substitution back into the action (\ref{eq:tensor-aux2}), and terms involving $D^2 L$ and ${\bar D}^2 L$. As was explicitly shown in \cite{Gonzalez-Rey:1998kh} the final solution becomes a power series in these latter terms, with only the lowest order term, independent of $D^2 L$ and ${\bar D}^2 L$ being physically relevant. The terms can be absorbed into the Lagrange multiplier by a superfield redefinition since
+\be
+2L(\f+{\bar \f})+f(L)D^2 L+{\bar f}(L){\bar D}^2L
+~\longrightarrow~
+L\big(\f+{\bar \f}+D^2 f+{\bar D}^2 {\bar f}\big)~.
+\ee
+The authors of \cite{Gonzalez-Rey:1998kh} explicitly determined the required superfield redefinition. For our brief analysis, we allow ourselves to ignore these terms.
+
+Substituting the solution (\ref{eq:dual-solution}) in to the auxiliary action (\ref{eq:tensor-aux2}) we obtain
+\be
+\label{eq:tensor-aux3}
+S[\f,{\bar \f}]={\int\!\!{\rm d}^8z}\left\{2\f{\bar \f}+
+\frac{1}{4}(DL)^2({\bar D}L)^2\left(
+\L-\o{\bar \G}^2-{\bar \o}\G^2
++2v\G{\bar \G}\right)
+\right\}~,
+\ee
+where
+\be
+v=\frac{1}{2}Q^{a}{\bar Q}_{a}~.
+\ee
+As a consequence of substituting the solution (\ref{eq:dual-solution}) into $D_\a L$ we find that
+\bea
+\label{eq:Dfsq}
+(D\f)^2&=&(DL)^2\left\{
+(1-{\bar \o}\,\G)^2
++2\,v\,{\bar \G}\,(1-{\bar \o}\,\G)
++\o\,{\bar \o}\,{\bar \G}^2\right\}~,\\
+({\bar D}{\bar \f})^2&=&
+({\bar D}L)^2\left\{
+(1-\o\,{\bar \G})^2
++2\,v\,\G\,(1-\o\,{\bar \G})
++\o\,{\bar \o}\,\G^2\right\}~.\non
+\eea
+Also, substituting the solution (\ref{eq:dual-solution}) into the definition for $Q_{\a\ad}$ (\ref{eq:def-Q}) gives
+\be
+\partial_{\a\ad}\f=
+\frac{1}{2}\,Q_{\a\ad}\,(1-{\bar \o}\,\G)+
+\frac{1}{2}\,\o\,{\bar Q}_{\a\ad}\,{\bar \G}~,
+~\qquad
+\partial_{\a\ad}{\bar \f}=
+\frac{1}{2}\,{\bar Q}_{\a\ad}\,(1-\o\,{\bar \G})+
+\frac{1}{2}\,{\bar \o}\,Q_{\a\ad}\,\G~.
+\ee
+Consequently, defining
+\be
+p=-(\partial^{\a\ad} \f)(\partial_{\a\ad} {\bar \f})~,\quad
+q=-(\partial^{\a\ad} \f)(\partial_{\a\ad} \f)~,\quad
+{\bar q}=-(\partial^{\a\ad}{\bar \f})(\partial_{\a\ad}{\bar \f})~,
+\ee
+we obtain the following coupled equations:
+\bea
+\label{eq:coupled-eqns}
+q&=&\o\left\{
+(1-{\bar \o}\,\G)^2
++2\,v\,{\bar \G}\,(1-{\bar \o}\,\G)
++\o\,{\bar \o}\,{\bar \G}^2\right\}~,\non\\
+{\bar q}&=&{\bar \o}\left\{
+(1-\o\,{\bar \G})^2
++2\,v\,\G\,(1-\o\,{\bar \G})
++\o\,{\bar \o}\,\G^2\right\}~,\\
+p&=&v-\frac{1}{2}(q+{\bar q})
++\frac{1}{2}(\o+{\bar \o})~.\non
+\eea
+Comparing these equations with (\ref{eq:Dfsq}) we see that
+\be
+\label{eq:Dfsq2}
+(D\f)^2\o=(DL)^2 q~,\quad\qquad
+({\bar D}{\bar \f})^2{\bar \o}=
+({\bar D}L)^2{\bar q}~.
+\ee
+The equations (\ref{eq:coupled-eqns}) are hard to solve in general, but for the particular case of the tensor-Goldstone multiplet (\ref{eq:tensor-goldstone}), in which the function $\L(\o,{\bar \o})$ takes the form (\ref{eq:lambda_function}), the solution reads
+\bea
+\label{eq:pq-soln}
+&&\!\!\!\!\!\!\!\!\!\!
+\o+{\bar \o}=\frac{(q+{\bar q})(1+p)+2q{\bar q}}
+{(1+p)^2-q{\bar q}}~,\quad\qquad
+\o-{\bar \o}=\frac{q-{\bar q}}
+{\sqrt{(1+p)^2-q{\bar q}}}~,\\
+&&\qquad\qquad\qquad
+v=p+\frac{1}{2}(q+{\bar q})
+-\frac{1}{2}(\o+{\bar \o})~.\non
+\eea
+Substituting (\ref{eq:pq-soln}) and (\ref{eq:Dfsq2}) into (\ref{eq:tensor-aux3}) and reintroducing the coupling constant $\k$, we obtain the chiral-scalar-Goldstone action (\ref{eq:chiral-scalar-goldstone}).

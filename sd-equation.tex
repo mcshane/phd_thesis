@@ -1,0 +1,75 @@
+\chapter{Self-duality equation in curved superspace}
+\label{app:sd_equation}
+
+Here we derive the matter-self-duality equation (\ref{eq:sd matter equations}) and the $\cN=1$ self-duality equation (\ref{eq:sde}).
+
+From section \ref{sec:dil-ax}, we understand self-duality to be the satisfaction of the two conditions (\ref{eq:sd condition}) and (\ref{eq:phi-eom-covariance}). The first condition for self-duality is that the transformed superfield $M'$ be given by (\ref{eq:sd condition}). Now, since
+\bea
+\frac{\d}{\d W'^\a}S[v]\!\!\!&=&\!\!\!\!\left(
+\frac{\d W^\b}{\d W'^\a}\cdot\frac{\d}{\d W^\b}+
+\frac{\d {\bar W}_\bd}{\d W'^\a}\cdot\frac{\d}{\d {\bar W}_\bd}+
+\frac{\d \F}{\d W'^\a}\cdot\frac{\d}{\d \F}+
+\frac{\d {\bar \F}}{\d W'^\a}\cdot\frac{\d}{\d {\bar \F}}\right)\!S[v]\non\\
+\!\!\!&=&\!\!\!\!\left(\!(1-d)\frac{\d}{\d W^\a}-
+c\left(\frac{\d}{\d W^\a}M^\b[v]\right)\cdot\frac{\d}{\d W^\b}-
+c\left(\frac{\d}{\d W^\a}{\bar M}_\bd[v]\right)\cdot\frac{\d}{\d {\bar W}_\bd}
+\right)\!S[v]\non\\
+\!\!\!&=&\!\!\!\!\frac{\rm i}{2}M_\a[v]-
+\frac{\d}{\d W^\a}\left(
+S[v]+\frac{\rm i}{4}\,c\,(M \cdot M 
+-{\bar M}\cdot{\bar M})\right)~,
+\eea
+this leads to the following requirement 
+\bea
+\label{eq:condition1}
+\frac{\d}{\d W^\a}\d S
+&=&\frac{\rm i}{2}\d M_\a+
+\frac{\d}{\d W^\a}\left(
+S[v]+\frac{\rm i}{4}\,c\,(M \cdot M 
++{\bar M}\cdot{\bar M})\right)\\
+&=&\frac{\d}{\d W^\a}\left((a+d)S[v]+
+\left(\frac{\rm i}{4}(c\,M \cdot M+b\,W \cdot W)
++{\rm c.c}\right)\right)~,\non
+\eea
+where we have used the notation (\ref{eq:dot notation}).
+
+The second condition for self-duality is that the equation of motion (\ref{eq:phi-eom}) for $\F$ transforms covariantly under duality transformations (\ref{eq:phi-eom-covariance}). Since
+\bea
+\frac{\d}{\d \F'}S[v]&=&\left(\frac{\d \F}{\d \F'}\cdot\frac{\d}{\d \F}
++\frac{\d {\bar \F}}{\d \F'}\cdot\frac{\d}{\d {\bar \F}}
++\frac{\d W^\a}{\d \F'}\cdot\frac{\d}{\d W^\a}
++\frac{\d {\bar W}_\ad}{\d \F'}\cdot\frac{\d}{\d {\bar W}_\ad}
+\right)S[v]\non\\
+&=&(1-\frac{\partial \x(\F)}{\partial \F})\Pi[v]
++\frac{\d}{\d \F}\left(\frac{\rm i}{4}\,c\,(M\cdot M-{\bar M}\cdot {\bar M})\right)~,
+\eea
+this leads to the following requirement
+\be
+\frac{\d}{\d \F}\left(\d S+
+\frac{\rm i}{4}\,c\,(M\cdot M-
+{\bar M}\cdot {\bar M})\right)=0~.
+\ee
+Comparing with (\ref{eq:condition1}) we see that, for consistency, we require $a=-d$. So, the action varies under duality transformations as\footnote{Here, the constant of integration is set to zero so that the action agrees with the usual supersymmetric Maxwell action in the weak superfield limit of the matter free case, {\it i.e.} when ${\rm i}M_\a\to W_\a$.}
+\be
+\label{eq:dS1}
+\d S=\frac{\rm i}{4}(c\,M \cdot M
++b\,W \cdot W)+{\rm c.c}~.
+\ee
+Now, it is important to note that we may also directly vary the action \-$S[W,{\bar W},\F,{\bar \F}]$ to give
+\bea
+\label{eq:dS2}
+\d S &=&\left(
+\d \F \cdot \frac{\d}{\d \F}+
+\d {\bar \F} \cdot \frac{\d}{\d {\bar \F}}+
+\d W \cdot \frac{\d}{\d W} +
+\d {\bar W} \cdot \frac{\d}{\d {\bar W}}
+\right) S[v]\\
+&=&\d \F \cdot \frac{\d S}{\d \F}+
+\d {\bar \F} \cdot \frac{\d S}{\d {\bar \F}}+
+\left(\frac{\rm i}{2}(c\,M \cdot M-a\,W \cdot M)+
+{\rm c.c.}\right)\non~.
+\eea
+The two variations (\ref{eq:dS1}) and (\ref{eq:dS2}) must coincide. Equating the two leads to the matter-self-duality equation (\ref{eq:sd matter equations}).
+
+In the absence of matter superfields, the SL($2,{\mathbb R}$) group of duality transformations reduces to its maximal compact subgroup, U(1). The parameters are further restricted such that $a=0$, and $c=-b$ ($=\tau$, the parameter from (\ref{eq:duality rotation})). In this event, the matter-self-duality equation (\ref{eq:sd matter equations}) reduces to the $\cN=1$ self-duality equation (\ref{eq:sde}).
+

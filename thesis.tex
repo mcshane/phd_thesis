@@ -1,0 +1,126 @@
+\documentclass[12pt]{uwathes}
+%\usepackage[noepsf,unsectioned]{uwamaths}
+%\renewcommand{\AtBeginSection}[1]{\numberallin{#1}}
+\usepackage{uwamaths}
+\usepackage{cite}
+%\usepackage{hyperref}
+\usepackage[colorlinks, linktocpage, plainpages=false, pdfpagelabels, citecolor=blue]{hyperref}
+%\usepackage[numbers,sort&compress]{natbib} 
+%\usepackage{hypernat}
+%\ifx\pdfoutput\undefined
+%\usepackage[dvips,bookmarks]{hyperref}  % This is for arXiv.org
+%\else
+%\usepackage{hyperref}   % This is for pdftex
+%\fi
+%\hypersetup{colorlinks, bookmarksopen, linktocpage, bookmarksnumbered, citecolor=blue, pdfstartview=FitH, plainpages=false}
+
+
+\oneandhalfspacing
+
+\title{Topics in nonlinear self-dual supersymmetric theories}
+\author{Shane A. McCarthy}
+%\date{\today}
+\date{December 2005}
+
+\def\a{\alpha}
+\def\b{\beta}
+\def\g{\gamma}
+\def\d{\delta}
+\def\e{\epsilon}
+\def\z{\zeta}
+\def\q{\theta}
+\def\i{\iota}
+\def\k{\kappa}
+\def\l{\lambda}
+\def\m{\mu}
+\def\n{\nu}
+\def\x{\xi}
+\def\p{\pi}
+\def\r{\rho}
+\def\s{\sigma}
+\def\t{\tau}
+\def\u{\upsilon}
+\def\f{\phi}
+\def\c{\chi}
+\def\j{\psi}
+\def\o{\omega}
+
+\def\G{\Gamma}
+\def\D{\Delta}
+\def\Q{\Theta}
+\def\L{\Lambda}
+\def\X{\Xi}
+\def\P{\Pi}
+\def\S{\Sigma}
+\def\U{\Upsilon}
+\def\F{\Phi}
+\def\J{\Psi}
+\def\O{\Omega}
+
+\newcommand{\ve}{\varepsilon}
+\newcommand{\vf}{\varphi}
+
+\newcommand {\cD}{{\cal D}}
+\newcommand {\cN}{{\cal N}}
+\newcommand {\cW}{{\cal W}}
+\newcommand {\cK}{{\cal K}}
+
+\newcommand{\ad}{{\dot{\alpha}}}
+\newcommand{\bd}{{\dot{\beta}}}
+\newcommand{\gd}{{\dot{\gamma}}}
+\newcommand{\dd}{{\dot{\delta}}}
+
+\newcommand{\be}{\begin{equation}}
+\newcommand{\ee}{\end{equation}}
+\newcommand{\bea}{\begin{eqnarray}}
+\newcommand{\eea}{\end{eqnarray}}
+\newcommand{\non}{\nonumber}
+
+%\newcommand{\la}{\langle}
+%\newcommand{\ra}{\rangle}
+
+\raggedbottom
+
+\begin{document}
+
+\maketitle
+
+\newpage
+${}$
+\vfill
+\noindent \rule{7.5cm}{0.01cm}\\
+Supervisor: A/Prof. Sergei M. Kuzenko\\
+Co-supervisor: A/Prof. Ian N. McArthur
+
+\include{abstract}
+\cleardoublepage
+\include{declaration}
+\tableofcontents      
+\include{acknowledgements}
+%\cleardoublepage
+%\include{quote}
+\mainmatter
+
+\include{introduction}
+\include{chapter1}
+\include{chapter2}
+\include{chapter3}
+\include{chapter4}
+\include{chapter5}
+\include{conclusion}
+
+\numberin{equation}{chapter} 
+\appendix
+\include{conventions}
+\include{alternate-sugra}
+\include{sd-equation}
+\include{supercurrent-supertrace}
+\include{akulov-volkov}
+\include{tensor-goldstone}
+
+%\nocite{*}
+\bibliographystyle{utcaps}
+% \bibliographystyle{plainnat}
+\bibliography{thesis}
+
+\end{document}

@@ -1,0 +1,93 @@
+\chapter{Akulov-Volkov action}
+\label{app:av}
+
+With the notation (\ref{eq:not}), the Akulov-Volkov (AV) action (\ref{eq:AV}) for the goldstino can explicitly be rewritten as a polynomial in $v$ and $\bar v$:
+\bea 
+\label{eq:AV2}
+S_{\rm AV}[\l, {\bar \l}] 
+\!\!&\!=\!\!&\!\! \int\!\!{\rm d}^4 x \, \Big \{
+-\frac{1}{2} \la  v+ {\bar v}  \ra 
+- \frac{\k^2}{16} \Big(
+\la v  +{\bar v} \ra^2 
+- \la   (v  +{\bar v})^2 \ra \Big)\\
+&&\qquad\quad
+-\frac{\k^4}{32}  \Big( 
+\la  v^2 {\bar v} \ra
+-\la v  \ra \la  v {\bar v} \ra
+-\frac{1}{2} \la  v^2 \ra \la  {\bar v}  \ra
++ \frac{1}{2} \la v  \ra^2 \la {\bar v } \ra  
+~+~ {\rm c.c.}
+\Big) \non \\
+&&\qquad\quad
++\frac{\k^6}{128} \Big( 
+\la v^2 {\bar v }^2 \ra
++\frac{1}{2} \la v {\bar v } v {\bar v} \ra
+-\Big[ \la v  \ra
+\la v {\bar v}^2 \ra
+- \frac{1}{4}  \la v \ra^2
+\la  {\bar v}^2 \ra ~+~{\rm c.c.} \Big] 
+\non \\
+&& \qquad\qquad\qquad\quad
++\la v  \ra \la {\bar v} \ra
+\la v  {\bar v} \ra
+- \frac{1}{2} \la v  {\bar v} \ra^2
+-\frac{1}{4} \la v^2 \ra 
+\la {\bar v}^2 \ra
+-\frac{1}{4} \la v  \ra^2
+\la {\bar v} \ra^2
+\Big)
+\Big\}~.\non
+\eea
+The fourth-order terms can be simplified slightly:
+\be 
+\frac{1}{4}\int\!\!{\rm d}^4 x \, \Big(
+\la v  +{\bar v} \ra^2 
+- \la   (v  +{\bar v})^2 \ra \Big) 
+=  \int\!\!{\rm d}^4 x \, \Big(
+\la v  \ra \la {\bar v} \ra
+- \la v  {\bar v} \ra \Big)~.
+\ee
+Regarding the eighth-order terms, the situation is more dramatic. Using the (easily verified) identities
+\bea 
+\la v^2 {\bar v }^2 \ra
+\!\!&=&\!\!
+\Big( \la v \ra
+\la v{\bar v }^2  \ra
+- \frac{1}{2} \la v  \ra^2
+\la {\bar v }^2 \ra + {\rm c.c.} \Big)
++\la v {\bar v } \ra
+\Big( \la v {\bar v } \ra
+- \la v  \ra \la {\bar v } \ra
+\Big) 
+~,  \non \\
+2 \la v {\bar v } v {\bar v} \ra
+\!\!&=&\!\! 
+ \la v^2 \ra
+\la {\bar v }^2 \ra 
+-2 \la v{\bar v } \ra^2 
++ \Big( \la v  \ra^2
+\la {\bar v }^2 \ra + {\rm c.c.} \Big)
++   \la  v \ra^2  
+ \la  {\bar v} \ra^2 ~,
+\eea
+one can check that the eighth-order terms in (\ref{eq:AV2}) completely cancel out! This result may seem strange, since the eighth-order terms in the AV action are, to the best of our knowledge, explicitly retained in all relevant publications, starting with the classic papers by Akulov and Volkov \cite{Akulov:1977bu,Volkov:1972jx,Volkov:1973ix} and continuing today, e.g. \cite{Shima:2004cf} (see, however \cite{Lopuszanski:1985ve} where it is demonstrated that the energy-momentum tensor for the AV model does not contain any eighth-order terms). Therefore we will give another, purely algebraic and quite elementary, proof. 
+ 
+The whole contribution from the eighth-order terms in the integrand in (\ref{eq:AV2}) can be shown to be proportional to  
+\be
+ \ve_{abcd}\, \ve^{efgh} \,
+v_{e}{}^{a} v_{f}{}^{b} 
+{\bar v}_{g}{}^{c} {\bar v}_{h}{}^{d}
+=  \l^{2} {\bar \l}^2 \, \ve_{abcd}\,\ve^{efgh} \, 
+\left(\partial_{e} {\bar \l} \, {\tilde \s}^{ab} \, \partial_{f} {\bar \l}\right)
+\, \left( \partial_{g} \l \, \s^{cd} \,\partial_{h} \l \right)~.
+\ee
+Using the well-known property of the sigma-matrices (\ref{eq:self-dual-sigma}), 
+\be 
+\frac{1}{2} \,\ve_{abcd} \, \s^{cd} = - {\rm i} \,\s_{ab}~,
+\quad 
+\frac{1}{2} \,\ve_{abcd} \, \tilde{\s}^{cd} = {\rm i} \,\tilde{\s}_{ab}~,
+\quad \longrightarrow \quad 
+(\s^{ab})_\a{}^\b \,(\tilde{\s}_{ab})^\ad{}_\bd =0~,
+\ee  
+we see that the whole contribution under consideration vanishes. As a result, the AV action takes the form (\ref{eq:AV3}).
+ 
